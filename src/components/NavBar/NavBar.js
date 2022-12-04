@@ -1,9 +1,10 @@
+import '../NavBar/NavBarStyles.scss';
 import { useEffect, useState } from 'react';
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
-import navIcon from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../../assets/img/logo.svg';
+import navIcon from '../../assets/img/nav-icon1.svg';
+import navIcon2 from '../../assets/img/nav-icon2.svg';
+import navIcon3 from '../../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
@@ -34,7 +35,7 @@ export const NavBar = () => {
           <img src={logo} alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
-          <span className='navbar-toggler-iconn'></span>
+          <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
@@ -68,17 +69,20 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='#'>
-                <img src={navIcon} alt='' />
+              <a
+                href='https://www.linkedin.com/in/%C3%A1ngela-curzi-572372ba/'
+                target='_blank1'
+              >
+                <img src={navIcon} alt='LinkedIn Icon' />
               </a>
-              <a href='#'>
-                <img src={navIcon2} alt='' />
+              <a href='https://github.com/AnVolkova10' target='_blank2'>
+                <img src={navIcon2} alt='Github Icon' />
               </a>
-              <a href='#'>
-                <img src={navIcon3} alt='' />
+              <a href='https://youtube.com/@anvolkova10' target='_blank3'>
+                <img src={navIcon3} alt='Youtube Icon' />
               </a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}>
+            <button onClick={() => console.log('connect')}>
               Let's Connect
             </button>
           </span>
