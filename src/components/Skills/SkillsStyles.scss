@@ -22,10 +22,12 @@
       letter-spacing: 0.8px;
       line-height: 1.5em;
       margin: 14px 0 75px 0;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     .skill-slider {
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
       position: relative;
     }
@@ -38,11 +40,10 @@
     }
   }
   .background-image-left {
-    top: 28%;
     position: absolute;
-    bottom: 0;
-    width: 40%;
+    top: 0;
     z-index: -4;
+    opacity: 50%;
   }
 }
 

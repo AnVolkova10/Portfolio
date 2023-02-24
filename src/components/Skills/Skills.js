@@ -7,6 +7,7 @@ import meter3 from '../../assets/img/meter3.svg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../../assets/img/color-sharp.png';
+import colorSharp2 from '../../assets/img/color-sharp2.png';
 
 export const Skills = () => {
   const responsive = {
@@ -37,10 +38,11 @@ export const Skills = () => {
               {' '}
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                alias nemo sit praesentium porro aut? Ratione libero
-                reprehenderit ea velit quisquam architecto, vel est sunt.
-                Pariatur maiores aspernatur non repellendus.
+                Welcome to my skills section! Here I showcase my qualifications
+                and experience in various areas, with a focus on technology and
+                software development. I am passionate about problem solving and
+                continually learning new technologies to stay at the forefront
+                of my field.
               </p>
               <Carousel
                 responsive={responsive}
@@ -56,12 +58,24 @@ export const Skills = () => {
                   <h5>Mark-up Development</h5>
                 </div>
                 <div className='item'>
+                  <img src={meter2} alt='Image example' />
+                  <h5>Three.js Development</h5>
+                </div>
+                <div className='item'>
                   <img src={meter3} alt='Image example' />
                   <h5>Filmmaking</h5>
                 </div>
                 <div className='item'>
                   <img src={meter1} alt='Image example' />
                   <h5>Film Editor</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='Image example' />
+                  <h5>Film Production</h5>
+                </div>
+                <div className='item'>
+                  <img src={meter2} alt='Image example' />
+                  <h5>Film Scripting</h5>
                 </div>
               </Carousel>
             </div>
