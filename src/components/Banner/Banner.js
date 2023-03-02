@@ -4,53 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../../assets/img/header-img.png';
 import myBaby from '../../assets/img/my-baby.png';
+import { SelfWritingTitle } from '../SelfWritingTitle/SelfWritingTitle';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [
-    'Frontend Developer!',
-    'Three.js Developer!',
-    'Video Editor!',
-    'Filmmaker!',
-    'Gamer!!',
-  ];
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(350 - Math.random() * 100);
-  const period = 2000;
-
   const [isHovering, setIsHovering] = useState(false);
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 1.8);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(350 - Math.random() * 100);
-    }
-  };
 
   return (
     <section className='banner' id='home'>
@@ -58,10 +15,7 @@ export const Banner = () => {
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={8}>
             <span className='tagline'>Welcome to my first portfolio</span>
-            <h1>
-              {`Hi, I'm a `}
-              <span className='wrap'>{text} </span>
-            </h1>
+            <SelfWritingTitle />{' '}
             <p>
               My name is Ángela Curzi, also known as Volkova. I was born in Mar
               del Plata but now I'm living in City Bell, Argentina. My purpose

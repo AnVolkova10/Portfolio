@@ -24,20 +24,6 @@
     border-radius: 5px;
   }
 
-  h1 {
-    display: block;
-    min-height: 130px;
-    font-size: 65px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    margin-bottom: 10px;
-
-    .wrap {
-      border-right: 0.08em solid rgba(215, 55, 77, 0.6);
-    }
-  }
-
   p {
     color: index.$text-normal;
     font-size: 18px;
