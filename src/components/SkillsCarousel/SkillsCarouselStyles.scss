@@ -1,0 +1,19 @@
+@use '../../index';
+
+.skill {
+  .skill-slider {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .item {
+    img {
+      width: 50%;
+      margin: 0 auto 15px auto;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+}

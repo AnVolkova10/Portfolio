@@ -17,14 +17,16 @@ export const Banner = () => {
             <span className='tagline'>Welcome to my first portfolio</span>
             <SelfWritingTitle />{' '}
             <p>
-              My name is Ángela Curzi, also known as Volkova. I was born in Mar
-              del Plata but now I'm living in City Bell, Argentina. My purpose
-              in life is to learn everything I can before I die. <br />
-              <b>Knowledge sets me free.</b>
+              My name is Ángela Curzi, also known as <b>Volkova</b>. I was born
+              in Mar del Plata but now I'm living in City Bell, Argentina. As a
+              lifelong learner, I'm on a mission to soak up as much knowledge as
+              possible before my time is up.{' '}
+              <b>I believe that knowledge has the power to set us free.</b>
               <br />I finally found a job I love, CODING! I enjoy spending time
               with my computer, I eat books for dinner and I play videogames
-              everytime I can. This year I'll finish my thesis and graduate in
-              Audiovisual Arts. My soulmate is a cat named <b>Ravenna</b>.
+              everytime I can. I'm on track to graduate with a degree in
+              Audiovisual Arts this year - the culmination of years of hard work
+              and dedication. My soulmate is a cat named <b>Ravenna</b>.
             </p>
             <button onClick={() => console.log('connect')}>
               {' '}

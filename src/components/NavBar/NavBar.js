@@ -10,6 +10,12 @@ export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
   const [scrolled, setScrolled] = useState(false);
 
+  const navLinks = [
+    { href: '#home', label: 'Home' },
+    { href: '#skills', label: 'Skills' },
+    { href: '#projects', label: 'Projects' },
+  ];
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
@@ -39,33 +45,20 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link
-              href='#home'
-              className={
-                activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'
-              }
-              onClick={() => onUpdateActiveLink('home')}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href='#skills'
-              className={
-                activeLink === 'skills' ? 'active-navbar-link' : 'navbar-link'
-              }
-              onClick={() => onUpdateActiveLink('skills')}
-            >
-              Skills
-            </Nav.Link>
-            <Nav.Link
-              href='#projects'
-              className={
-                activeLink === 'projects' ? 'active-navbar-link' : 'navbar-link'
-              }
-              onClick={() => onUpdateActiveLink('projects')}
-            >
-              Projects
-            </Nav.Link>
+            {navLinks.map((link) => (
+              <Nav.Link
+                key={link.label}
+                href={link.href}
+                className={
+                  activeLink === link.label
+                    ? 'active-navbar-link'
+                    : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink(link.label)}
+              >
+                {link.label}
+              </Nav.Link>
+            ))}
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
