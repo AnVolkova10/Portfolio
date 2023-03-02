@@ -1,5 +1,5 @@
 import '../Banner/BannerStyles.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../../assets/img/header-img.png';
@@ -39,7 +39,7 @@ export const Banner = () => {
               onMouseOver={() => setIsHovering(true)}
               onMouseOut={() => setIsHovering(false)}
             >
-              <img src={headerImg} alt='Header Image' className='cat' />
+              <img src={headerImg} alt='Header' className='cat' />
               <img
                 className={isHovering ? 'my-baby' : 'gone'}
                 src={myBaby}
