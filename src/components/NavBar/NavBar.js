@@ -1,20 +1,12 @@
 import '../NavBar/NavBarStyles.scss';
 import { useEffect, useState } from 'react';
+import { navLinks, socialLinks } from '../../helpers/helpers';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../../assets/img/logo.svg';
-import navIcon from '../../assets/img/nav-icon1.svg';
-import navIcon2 from '../../assets/img/nav-icon2.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
   const [scrolled, setScrolled] = useState(false);
-
-  const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-  ];
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -62,18 +54,16 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a
-                href='https://www.linkedin.com/in/%C3%A1ngela-curzi-572372ba/'
-                target='_blank1'
-              >
-                <img src={navIcon} alt='LinkedIn Icon' />
-              </a>
-              <a href='https://github.com/AnVolkova10' target='_blank2'>
-                <img src={navIcon2} alt='Github Icon' />
-              </a>
-              <a href='https://youtube.com/@anvolkova10' target='_blank3'>
-                <img src={navIcon3} alt='Youtube Icon' />
-              </a>
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={link.imgSrc} alt={link.alt} />
+                </a>
+              ))}
             </div>
             <button onClick={() => console.log('connect')}>
               Let's Connect
