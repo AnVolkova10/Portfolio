@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { navLinks, socialLinks } from '../../helpers/helpers';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../../assets/img/logo.svg';
+import { ConnectButton } from '../ConnectButton/ConnectButton';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
@@ -65,9 +66,7 @@ export const NavBar = () => {
                 </a>
               ))}
             </div>
-            <button onClick={() => console.log('connect')}>
-              Let's Connect
-            </button>
+            <ConnectButton children={"Let's Connect"} />
           </span>
         </Navbar.Collapse>
       </Container>

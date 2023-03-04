@@ -1,10 +1,11 @@
 import '../Banner/BannerStyles.scss';
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+
 import headerImg from '../../assets/img/header-img.png';
 import myBaby from '../../assets/img/my-baby.png';
 import { SelfWritingTitle } from '../SelfWritingTitle/SelfWritingTitle';
+import { ConnectButton } from '../ConnectButton/ConnectButton';
 
 export const Banner = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -28,10 +29,7 @@ export const Banner = () => {
               Audiovisual Arts this year - the culmination of years of hard work
               and dedication. My soulmate is a cat named <b>Ravenna</b>.
             </p>
-            <button onClick={() => console.log('connect')}>
-              {' '}
-              Let's connect <ArrowRightCircle size={25} />
-            </button>
+            <ConnectButton children={"Let's connect"} icon />
           </Col>
           <Col xs={12} md={6} xl={4}>
             <div
