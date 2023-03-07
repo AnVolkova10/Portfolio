@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../Skills/SkillsStyles.scss';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../../assets/img/color-sharp.png';
-//import colorSharp2 from '../../assets/img/color-sharp2.png';
+
 import { SkillsCarousel } from '../SkillsCarousel/SkillsCarousel';
 
 export const Skills = () => {

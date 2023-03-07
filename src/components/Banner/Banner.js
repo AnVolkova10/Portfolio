@@ -1,7 +1,6 @@
 import '../Banner/BannerStyles.scss';
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
 import headerImg from '../../assets/img/header-img.png';
 import myBaby from '../../assets/img/my-baby.png';
 import { SelfWritingTitle } from '../SelfWritingTitle/SelfWritingTitle';
