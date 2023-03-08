@@ -29,7 +29,11 @@
       position: absolute;
       width: 0;
       height: 100%;
-      background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+      background: linear-gradient(
+        90.21deg,
+        index.$primary-color -5.91%,
+        index.$secondary-color 111.58%
+      );
       top: 0;
       left: 0;
       z-index: -1;
