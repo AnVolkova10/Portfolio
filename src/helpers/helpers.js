@@ -105,7 +105,7 @@ export const projectsDev = [
     imgUrl: projImg3,
   },
   {
-    title: 'Tetris',
+    title: 'Tetris Game',
     description: 'Javascript Game Development',
     imgUrl: projImg4,
   },
@@ -125,9 +125,9 @@ export const projectsDev = [
     imgUrl: projImg7,
   },
   {
-    title: 'TO-DO Page',
-    description: 'React.js Development',
-    imgUrl: projImg8,
+    title: 'Marvel Cinematic Timeline',
+    description: 'Frontend Development',
+    imgUrl: projImg10,
   },
   {
     title: 'VALORANT Game Web Helper',
@@ -135,9 +135,9 @@ export const projectsDev = [
     imgUrl: projImg9,
   },
   /*{
-    title: 'Marvel Cinematic Timeline',
-    description: 'Frontend Development',
-    imgUrl: projImg10,
+    title: 'TO-DO Page',
+    description: 'React.js Development',
+    imgUrl: projImg8,
   },*/
 ];
 export const projectsFilm = [

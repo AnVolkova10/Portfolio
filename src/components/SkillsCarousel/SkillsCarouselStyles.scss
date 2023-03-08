@@ -1,19 +1,52 @@
 @use '../../index';
 
 .skill {
-  .skill-slider {
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
-  }
+  .skill-bx {
+    .skill-slider {
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
 
-  .item {
-    img {
-      width: 50%;
-      margin: 0 auto 15px auto;
+      .react-multiple-carousel__arrow--left {
+        left: 0;
+      }
+      .react-multiple-carousel__arrow--right {
+        right: 0;
+      }
+    }
+
+    .item {
+      img {
+        width: 50%;
+        margin: 0 auto 15px auto;
+      }
+      h5 {
+        font-size: 20px;
+      }
     }
   }
 }
 
 @media (max-width: 992px) {
+  .skill {
+    .skill-bx {
+      .skill-slider {
+        width: 100%;
+
+        .react-multiple-carousel__arrow {
+          min-width: 30px;
+          min-height: 30px;
+        }
+      }
+
+      .item {
+        img {
+          width: 30%;
+        }
+        h5 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }

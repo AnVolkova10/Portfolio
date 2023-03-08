@@ -1,7 +1,5 @@
 import '../Projects/ProjectsStyles.scss';
-import { useEffect, useState } from 'react';
-import { Nav, Navbar, Container, NavDropdown, Row, Col } from 'react-bootstrap';
-import { projects } from '../../helpers/helpers';
+import { Container, Row, Col } from 'react-bootstrap';
 import { ProjectsTabs } from '../ProjectsTabs/ProjectsTabs';
 import background from '../../assets/img/banner-bg-mob.png';
 

@@ -16,11 +16,27 @@
     line-height: 1.5em;
     margin: 14px auto 30px auto;
     text-align: center;
-    width: 56%;
+    width: 90%;
   }
   .background-image-right {
     top: 0;
     position: absolute;
     z-index: -4;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects {
+    background-image: url('../../assets/img/banner-bg-mob.png');
+
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: auto;
+    }
   }
 }

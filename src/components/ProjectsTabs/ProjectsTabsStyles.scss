@@ -61,4 +61,29 @@
 }
 
 @media (max-width: 992px) {
+  .projects {
+    .nav.nav-pills {
+      width: 90%;
+      .nav-item {
+        width: 33.33333%;
+      }
+      .nav-link {
+        font-size: 13px;
+        letter-spacing: 1.8px;
+      }
+
+      .nav-link.active {
+        border: 0.5px solid rgba(255, 255, 255, 1);
+      }
+      .nav-link#projects-tabs-tab-first {
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+      }
+      .nav-link#projects-tabs-tab-second {
+        border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+      }
+      .nav-link#projects-tabs-tab-third {
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
 }

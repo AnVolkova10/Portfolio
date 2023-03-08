@@ -8,7 +8,7 @@
     background: #151515;
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 60px 30px;
     margin-top: -60px;
 
     h2 {
@@ -48,4 +48,16 @@
 }
 
 @media (max-width: 992px) {
+  .skill {
+    background-image: url('../../assets/img/color-sharp2.png');
+    .skill-bx {
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+        padding: 0;
+      }
+    }
+  }
 }
