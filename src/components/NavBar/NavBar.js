@@ -4,14 +4,28 @@ import { navLinks, socialLinks } from '../../helpers/helpers';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../../assets/img/logo.svg';
 import { ConnectButton } from '../ConnectButton/ConnectButton';
+// Prueba del Contexnt
+import { useContext } from 'react';
+import { AppContext } from '../../context/appContext';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
   const [scrolled, setScrolled] = useState(false);
 
+  // Prueba del Context
+  const { appState, settingState } = useContext(AppContext);
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+
+    // Prueba del Context
+    console.log(appState);
   };
+
+  //Prueba del Context
+  useEffect(() => {
+    settingState();
+  }, [activeLink]);
 
   useEffect(() => {
     const onScroll = () => {
