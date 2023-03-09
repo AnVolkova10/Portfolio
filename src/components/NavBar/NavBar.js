@@ -19,7 +19,7 @@ export const NavBar = () => {
     setActiveLink(value);
 
     // Prueba del Context
-    console.log(appState);
+    //console.log(appState);
   };
 
   //Prueba del Context
