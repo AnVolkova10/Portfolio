@@ -27,6 +27,9 @@ import projImg20 from '../assets/img/project-img20.png';
 import projImg21 from '../assets/img/project-img21.png';
 import projImg22 from '../assets/img/project-img22.png';
 import projImg23 from '../assets/img/project-img23.png';
+import projImg24 from '../assets/img/project-img24.png';
+import projImg25 from '../assets/img/project-img25.png';
+import projImg26 from '../assets/img/project-img26.png';
 
 // NavBar
 export const navLinks = [
@@ -191,6 +194,21 @@ export const projectsFilm = [
     description: ' Director - Producer - Film Editor - Cinematographer - Writer',
     imgUrl: projImg20,
   },*/
+  {
+    title: 'Documental: 8 de Enero',
+    description: 'Film Editor',
+    imgUrl: projImg24,
+  },
+  {
+    title: 'Ads, Reels & Trailers for Social Media & Companies ',
+    description: 'Video Editor',
+    imgUrl: projImg25,
+  },
+  {
+    title: 'Marketing Courses: Atlas Academy',
+    description: 'Video Editor',
+    imgUrl: projImg26,
+  },
 ];
 export const projectsOthers = [
   {
