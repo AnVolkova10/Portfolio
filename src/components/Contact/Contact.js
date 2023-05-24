@@ -1,16 +1,34 @@
 import '../Contact/ContactStyles.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import contactImg from '../../assets/img/contact-img.png';
-import { useContext } from 'react';
-import { AppContext } from '../../context/appContext';
-
-/*import 'animate.css';
-import TrackVisibility from 'react-on-screen';*/
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
-  const { contactData, handleSubmit, status, buttonText, setButtonText } =
-    useContext(AppContext);
+  const [buttonText, setButtonText] = useState('Send');
+  const [status, setStatus] = useState({});
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setButtonText('Sending...');
+
+    emailjs
+      .sendForm(
+        'service_ws1wh4l',
+        'template_uijck8q',
+        form.current,
+        'dUsz9uBsR2w6_NfYg'
+      )
+      .then((response) => {
+        console.log('Email sent successfully', response);
+        setButtonText('SENT!!');
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error('Error sending email', error);
+      });
+  };
 
   return (
     <section className='contact' id='connect'>
@@ -22,22 +40,38 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <div>
               <h2>Get In Touch</h2>
-              <form onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={handleSubmit}>
                 <Row>
-                  {contactData.map((input) => (
-                    <Col
-                      key={input.placeholder}
-                      {...input.size}
-                      className='px-1'
-                    >
-                      {input.type === 'textarea' ? (
-                        <textarea {...input} />
-                      ) : (
-                        <input {...input} />
-                      )}
-                    </Col>
-                  ))}
-                  {status.message && (
+                  <Col size='xs' className='px-1'>
+                    <input
+                      type='text'
+                      name='firstName'
+                      placeholder='First Name'
+                    />
+                  </Col>
+                  <Col xs={12} sm={6} className='px-1'>
+                    <input
+                      type='text'
+                      name='lastName'
+                      placeholder='Last Name'
+                    />
+                  </Col>
+                  <Col xs={12} sm={6} className='px-1'>
+                    <input
+                      type='email'
+                      name='email'
+                      placeholder='Email Address'
+                    />
+                  </Col>
+                  <Col xs={12} sm={6} className='px-1'>
+                    <input type='tel' name='phone' placeholder='Phone No.' />
+                  </Col>
+                  <Col xs={12} className='px-1'>
+                    <textarea name='message' placeholder='Message' rows={6} />
+                  </Col>
+                </Row>
+                {status.message && (
+                  <Row>
                     <Col>
                       <p
                         className={
@@ -47,13 +81,13 @@ export const Contact = () => {
                         {status.message}
                       </p>
                     </Col>
-                  )}
-                  <Col size={12} className='px-1'>
-                    <button type='submit'>
-                      <span>{buttonText}</span>
-                    </button>
-                  </Col>
-                </Row>
+                  </Row>
+                )}
+                <Col size={12} className='px-1'>
+                  <button type='submit'>
+                    <span>{buttonText}</span>
+                  </button>
+                </Col>
               </form>
             </div>
           </Col>

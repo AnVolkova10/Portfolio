@@ -78,14 +78,14 @@ export const responsive = {
 
 export const skills = [
   { imgSrc: meter1, alt: 'example web dev', label: 'Web Development' },
-  { imgSrc: meter2, alt: 'example mark-up dev', label: 'Mark-up Development' },
+  { imgSrc: meter2, alt: 'example mark-up dev', label: 'React.js Development' },
   {
     imgSrc: meter2,
     alt: 'example three.js dev',
     label: 'Three.js Development',
   },
   { imgSrc: meter3, alt: 'example filmmaking', label: 'Filmmaking' },
-  { imgSrc: meter1, alt: 'example film editor', label: 'Film Editor' },
+  { imgSrc: meter1, alt: 'example film editor', label: 'Film Editing' },
   { imgSrc: meter2, alt: 'example film production', label: 'Film Production' },
   { imgSrc: meter2, alt: 'example film scripting', label: 'Film Scripting' },
 ];

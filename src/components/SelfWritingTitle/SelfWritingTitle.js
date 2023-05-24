@@ -6,6 +6,7 @@ export const SelfWritingTitle = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     'Frontend Developer!',
+    'React.js Developer!',
     'Three.js Developer!',
     'Video Editor!',
     'Filmmaker!',
