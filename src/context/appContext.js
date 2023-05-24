@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer, useState, createContext } from 'react';
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
 import Reducer from '../context/Reducer';
-import emailjs from 'emailjs-com';
 
 const initialContext = {
   appState: false,
