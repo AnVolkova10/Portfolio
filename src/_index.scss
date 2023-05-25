@@ -36,7 +36,6 @@ html {
     }
 
     p,
-    a,
     li,
     button,
     ul {
@@ -46,8 +45,13 @@ html {
       text-decoration: none;
     }
 
+    a {
+      color: unset;
+    }
+
     a:hover {
-      text-decoration: none;
+      color: unset;
+      cursor: pointer;
     }
 
     img {

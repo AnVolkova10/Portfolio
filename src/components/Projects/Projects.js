@@ -16,7 +16,7 @@ export const Projects = () => {
               innovative software solutions to producing engaging films, I have
               had the opportunity to work on a variety of projects that
               demonstrate my creativity, technical expertise, and passion for
-              storytelling. Browse through to see some of my latest work!
+              storytelling. Browse through to see my work!
             </p>
             <ProjectsTabs />
           </Col>

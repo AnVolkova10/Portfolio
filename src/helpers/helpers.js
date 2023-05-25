@@ -30,6 +30,10 @@ import projImg23 from '../assets/img/project-img23.png';
 import projImg24 from '../assets/img/project-img24.png';
 import projImg25 from '../assets/img/project-img25.png';
 import projImg26 from '../assets/img/project-img26.png';
+import projImg27 from '../assets/img/project-img27.png';
+import projImg28 from '../assets/img/project-img28.png';
+import projImg29 from '../assets/img/project-img29.png';
+import projImg30 from '../assets/img/project-img30.png';
 
 // NavBar
 export const navLinks = [
@@ -93,123 +97,211 @@ export const skills = [
 //Projects
 export const projectsDev = [
   {
-    title: 'Components in DOT Hotels',
-    description: 'Frontend Development',
-    imgUrl: projImg1,
+    title: 'Inner Space Payment Gateway',
+    description: 'Frontend Development & Database Linkage',
+    languages: 'HTML, CSS, Handlebars, Javascript, Docker, MySQL & Express.',
+    imgUrl: projImg27,
+    link: 'https://payments.istv.live/plans',
+    date: '05/2023',
   },
   {
-    title: 'Graphics in LESA',
-    description: 'Markup Development',
-    imgUrl: projImg2,
+    title: 'Telam: Pope Francis Festivities',
+    description: 'Frontend Development & WebGL Bugfixing',
+    languages: 'React.js, Three.js & Styled Components.',
+    imgUrl: projImg28,
+    link: 'https://www.telam.com.ar/papa/',
+    date: '04/2023',
   },
   {
-    title: 'World & Cat animation',
-    description: 'Three.js Development',
+    title: 'Components, World & Cat animation',
+    description: 'Frontend & WebGL Development',
+    languages:
+      'Next.js, React.js, React Three Fiber, GSAP, Styled Components & Framer Motion.',
     imgUrl: projImg3,
+    link: 'https://front.dev.genosha.com.ar/',
+    date: '11/2022',
   },
   {
-    title: 'Tetris Game',
-    description: 'Javascript Game Development',
-    imgUrl: projImg4,
+    title: 'Components in LESA',
+    description: 'Bug fixing & Markup Development',
+    languages: 'React.js, Styled Components & Recharts.',
+    imgUrl: projImg2,
+    link: 'http://www.juiciosdelesahumanidad.ar/',
+    date: '04/2022',
   },
   {
-    title: 'La Sexta Pata Webpage',
-    description: 'Web Development',
-    imgUrl: projImg5,
+    title: 'Components in DOT Hotels',
+    description: 'Bug fixing & Frontend Development',
+    languages: 'HTML, Sass, Javascript, JQuery & Handlebars.',
+    imgUrl: projImg1,
+    link: 'https://dot-hotels.com/',
+    date: '01/2022',
   },
   {
     title: 'Battleship Game',
     description: 'Javascript Game Development',
+    languages: 'HTML, CSS & Javascript.',
     imgUrl: projImg6,
+    link: 'https://anvolkova10.github.io/VolkosBattleship/',
+    date: '03/2022',
   },
   {
     title: 'Simple Store Page',
-    description: 'React.js Development',
+    description: 'API + Frontend Development',
+    languages: 'React.js, CSS, Javascript, Moment & Framer Motion.',
     imgUrl: projImg7,
+    link: 'https://react-store-bay.vercel.app/',
+    date: '01/2022',
+  },
+  {
+    title: 'TO-DO Page',
+    description: 'App Development',
+    languages: 'React.js, CSS & Javascript',
+    link: 'https://todolist-nu-weld.vercel.app/',
+    imgUrl: projImg8,
+    date: '01/2022',
   },
   {
     title: 'Marvel Cinematic Timeline',
     description: 'Frontend Development',
+    languages: 'HTML & CSS.',
     imgUrl: projImg10,
+    link: 'https://anvolkova10.github.io/mcu',
+    date: '10/2021',
+  },
+  {
+    title: 'La Sexta Pata Webpage',
+    description: 'Design & Web Development',
+    languages: 'HTML, CSS, Javascript & PHP.',
+    imgUrl: projImg5,
+    link: 'https://anvolkova10.github.io/lasextapata/',
+    date: '07/2021',
   },
   {
     title: 'VALORANT Game Web Helper',
-    description: 'Frontend Development',
+    description: 'PHP & App Development',
+    languages: 'HTML, CSS, Javascript & PHP.',
     imgUrl: projImg9,
+    link: 'https://anvolkova10.github.io/ValorantApp/',
+    date: '07/2021',
   },
-  /*{
-    title: 'TO-DO Page',
-    description: 'React.js Development',
-    imgUrl: projImg8,
-  },*/
+  {
+    title: 'Minified Tetris Game',
+    description: 'Javascript Game Development',
+    languages: 'HTML, CSS & Javascript.',
+    imgUrl: projImg4,
+    link: 'https://anvolkova10.github.io/TetrisChiquito/',
+    date: '05/2021',
+  },
 ];
 export const projectsFilm = [
   {
-    title: 'Shortfilm: Sopa de Gaviota',
-    description: 'Director - Film Editor- Script Adaptator',
-    imgUrl: projImg11,
-  },
-  {
-    title: 'Animated Shortfilm: De otro mundo',
-    description: 'Producer - Writer - Animator - Film Editor',
-    imgUrl: projImg12,
-  },
-  {
-    title: 'Shortfilm: Piquenique',
-    description: 'Director - Writer - Film Editor',
-    imgUrl: projImg13,
-  },
-  {
-    title: 'Experimental shortfilm: DISTANCIA CRÍTICA',
-    description: 'Director - Writer - Film Editor',
-    imgUrl: projImg14,
-  },
-  {
-    title: 'Animated shortfilm: Game Over',
-    description: 'Producer - Writer - Animator - Film Editor',
-    imgUrl: projImg15,
-  },
-  {
-    title: 'Oneshot TV Show: Conscientemente',
-    description: 'Producer - Writer - Film Editor',
-    imgUrl: projImg16,
-  },
-  {
-    title: 'Shortfilm: 7 minutos antes del Primer Vórtex',
-    description: 'Director - Writer - Film Editor - Cinematographer',
-    imgUrl: projImg17,
-  },
-  {
-    title: 'Shortfilm: My Funny Valentine',
-    description: 'Producer - Film Editor',
-    imgUrl: projImg18,
-  },
-  {
-    title: 'Documental shortfilm: Un Día de Perros',
-    description: 'Producer - Film Editor',
-    imgUrl: projImg19,
-  },
-  /*{
-    title: 'Shortfilm: A day in a Life',
-    description: ' Director - Producer - Film Editor - Cinematographer - Writer',
-    imgUrl: projImg20,
-  },*/
-  {
-    title: 'Documental: 8 de Enero',
-    description: 'Film Editor',
-    imgUrl: projImg24,
-  },
-  {
-    title: 'Ads, Reels & Trailers for Social Media & Companies ',
+    title: 'DeitaLab Data Science Courses',
     description: 'Video Editor',
-    imgUrl: projImg25,
+    imgUrl: projImg30,
+    link: 'https://deitalab.mailerpage.io/cursos',
+    date: '05/2023',
+  },
+  {
+    title: 'Min. Cultura - Documental Series: Teleras de Santiago del Estero',
+    description: 'Video Editor',
+    imgUrl: projImg29,
+    link: 'https://youtu.be/1t8wTjuZcN8',
+    date: '04/2023',
   },
   {
     title: 'Marketing Courses: Atlas Academy',
     description: 'Video Editor',
     imgUrl: projImg26,
+    link: 'https://www.youtube.com/watch?v=s5tn39aShpQ',
+    date: '03/2022',
+  },
+  {
+    title: 'Ads, Reels & Trailers for Social Media & Companies',
+    description: 'Video Editor',
+    imgUrl: projImg25,
+    link: 'https://www.instagram.com/reel/CXw0S_oljFO/',
+    date: '12/2021',
+  },
+  {
+    title: 'Documental: 8 de Enero',
+    description: 'Film Editor',
+    imgUrl: projImg24,
+    link: 'https://www.imdb.com/title/tt27823929/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_8%2520de%2520enero',
+    date: '01/2022',
+  },
+  {
+    title: 'Shortfilm: A day in a Life',
+    description: 'Director - Producer - Film Editor - Cinematographer - Writer',
+    imgUrl: projImg20,
+    link: 'https://www.youtube.com/watch?v=J4g6-nsCGVs',
+    date: '07/2021',
+  },
+  {
+    title: 'Shortfilm: Sopa de Gaviota',
+    description: 'Director - Film Editor- Script Adapter',
+    imgUrl: projImg11,
+    link: 'https://www.youtube.com/watch?v=Y6RlBPL1vaU',
+    date: '05/2018',
+  },
+  {
+    title: 'Animated Shortfilm: De otro mundo',
+    description: 'Producer - Writer - Animator - Film Editor',
+    imgUrl: projImg12,
+    link: 'https://youtu.be/JTTjqIs7YlM',
+    date: '02/2019',
+  },
+  {
+    title: 'Shortfilm: Piquenique',
+    description: 'Director - Writer - Film Editor',
+    imgUrl: projImg13,
+    link: 'https://youtu.be/Qpb2eatCaeI',
+    date: '10/2018',
+  },
+  {
+    title: 'Experimental shortfilm: DISTANCIA CRÍTICA',
+    description: 'Director - Writer - Film Editor',
+    imgUrl: projImg14,
+    link: 'https://youtu.be/aNGeJPVGJyI',
+    date: '01/2019',
+  },
+  {
+    title: 'Animated shortfilm: Game Over',
+    description: 'Producer - Writer - Animator - Film Editor',
+    imgUrl: projImg15,
+    link: 'https://www.youtube.com/watch?v=eptHG8I0OGw',
+    date: '07/2018',
+  },
+  {
+    title: 'Oneshot TV Show: Conscientemente',
+    description: 'Producer - Writer - Film Editor',
+    imgUrl: projImg16,
+    link: 'https://www.youtube.com/watch?v=jcDuR79r7vo',
+    date: '01/2017',
+  },
+  {
+    title: 'Shortfilm: El primer Vórtex',
+    description: 'Director - Writer - Film Editor - Cinematographer',
+    imgUrl: projImg17,
+    link: 'https://www.youtube.com/watch?v=QN-BeSt9RUA',
+    date: '09/2016',
+  },
+  {
+    title: 'Shortfilm: My Funny Valentine',
+    description: 'Producer - Film Editor',
+    imgUrl: projImg18,
+    link: 'https://www.youtube.com/watch?v=WvjpIZsgQrU',
+    date: '08/2016',
+  },
+  {
+    title: 'Documental shortfilm: Un Día de Perros',
+    description: 'Producer - Film Editor',
+    imgUrl: projImg19,
+    link: 'https://www.youtube.com/watch?v=LhunXPfMcI4',
+    date: '06/2016',
   },
 ];
+
 export const projectsOthers = [
   {
     title: 'Comunidad Valito',

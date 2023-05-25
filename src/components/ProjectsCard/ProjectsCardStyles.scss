@@ -42,9 +42,11 @@
     transition: 0.5s ease-in-out;
     opacity: 0;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .proj-imgbx:hover .proj-txtx {
-    top: 50%;
+    top: 60%;
     opacity: 1;
   }
   .proj-txtx h4 {
@@ -54,8 +56,20 @@
     line-height: 1.1em;
   }
   .proj-txtx span {
+    font-size: 12px;
+    letter-spacing: 0.8px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 200;
+    b {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.8px;
+    }
+  }
+  .proj-txtx p {
+    color: #ffffffc4;
+    font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.8px;
   }
