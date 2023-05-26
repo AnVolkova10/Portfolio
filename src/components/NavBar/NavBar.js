@@ -56,6 +56,7 @@ export const NavBar = () => {
               <Nav.Link
                 key={link.label}
                 href={link.href}
+                download={link.download}
                 className={
                   activeLink === link.label
                     ? 'active-navbar-link'
@@ -63,7 +64,8 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink(link.label)}
               >
-                {link.label}
+                {link.icon ? <span>{link.label}</span> : link.label}
+                {link.icon ? <img src={link.icon}></img> : null}
               </Nav.Link>
             ))}
           </Nav>
