@@ -1,12 +1,11 @@
-import '../Footer/FooterStyles.scss';
-import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../../assets/img/logo.svg';
-import navIcon1 from '../../assets/img/nav-icon1.svg';
-import navIcon2 from '../../assets/img/nav-icon2.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
-import { socialLinks } from '../../helpers/helpers';
+import '../Footer/FooterStyles.scss'
+import { Container, Row, Col } from 'react-bootstrap'
+import logo from '../../assets/img/logo.svg'
+import { socialLinks } from '../../helpers/helpers'
 
 export const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
     <section className='background'>
       <footer className='footer'>
@@ -26,11 +25,11 @@ export const Footer = () => {
                   </a>
                 ))}
               </div>
-              <p>Copyright 2023. All Rights Reserved</p>
+              <p>© {year} Ángela Curzi. All rights reserved.</p>
             </Col>
           </Row>
         </Container>
       </footer>
     </section>
-  );
-};
+  )
+}

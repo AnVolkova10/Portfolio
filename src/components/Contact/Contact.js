@@ -1,17 +1,17 @@
-import '../Contact/ContactStyles.scss';
-import { useState, useRef } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import contactImg from '../../assets/img/contact-img.png';
-import emailjs from 'emailjs-com';
+import '../Contact/ContactStyles.scss'
+import { useState, useRef } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import contactImg from '../../assets/img/contact-img.png'
+import emailjs from 'emailjs-com'
 
 export const Contact = () => {
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
-  const form = useRef();
+  const [buttonText, setButtonText] = useState('Send')
+  const [status, setStatus] = useState({})
+  const form = useRef()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setButtonText('Sending...');
+    e.preventDefault()
+    setButtonText('Sending...')
 
     emailjs
       .sendForm(
@@ -21,14 +21,20 @@ export const Contact = () => {
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then((response) => {
-        console.log('Email sent successfully', response);
-        setButtonText('SENT!!');
-        form.current.reset();
+        console.log('Email sent successfully', response)
+        setButtonText('SENT!!')
+        setTimeout(() => setButtonText('Send'), 3000)
+        setStatus({ success: true, message: 'Message sent successfully!' })
+        form.current.reset()
       })
       .catch((error) => {
-        console.error('Error sending email', error);
-      });
-  };
+        console.error('Error sending email', error)
+        setStatus({
+          success: false,
+          message: 'Something went wrong, please try again.',
+        })
+      })
+  }
 
   return (
     <section className='contact' id='connect'>
@@ -94,5 +100,5 @@ export const Contact = () => {
         </Row>
       </Container>
     </section>
-  );
-};
+  )
+}
