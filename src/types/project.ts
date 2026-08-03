@@ -1,0 +1,83 @@
+export type Locale = 'es' | 'en';
+
+export type ProjectStatus = 'draft' | 'published' | 'archived';
+
+export type ProjectCategory = 'client' | 'personal' | 'audiovisual';
+
+export interface LocalizedText {
+  es: string;
+  en: string;
+}
+
+export interface ProjectImage {
+  file: string;
+  width: number;
+  height: number;
+  alt: LocalizedText;
+}
+
+export interface ProjectVideo {
+  url: string;
+  title: LocalizedText;
+}
+
+export interface ProjectMedia {
+  image?: ProjectImage;
+  video?: ProjectVideo;
+}
+
+export interface ProjectReference {
+  title: LocalizedText;
+  url: string;
+}
+
+export interface ProjectLinks {
+  live?: string;
+  demo?: string;
+  repository?: string;
+  caseStudy?: string;
+  historical?: string;
+  references?: ProjectReference[];
+}
+
+export interface ProjectCardContent {
+  title: LocalizedText;
+  description: LocalizedText;
+  stack: string[];
+}
+
+export interface Project {
+  id: string;
+  slug: string;
+  status: ProjectStatus;
+  category: ProjectCategory;
+  featured: boolean;
+  order: number;
+  date: string;
+  client?: string;
+  agency?: string;
+  company?: string;
+  aiAssisted: boolean;
+  title: LocalizedText;
+  summary: LocalizedText;
+  role: LocalizedText;
+  stack: string[];
+  card: ProjectCardContent;
+  media: ProjectMedia;
+  links?: ProjectLinks;
+}
+
+export interface ProjectCardViewModel {
+  id: string;
+  title: string;
+  description: string;
+  languages?: string;
+  imgUrl: string;
+  imgAlt?: string;
+  imgWidth?: number;
+  imgHeight?: number;
+  liveUrl?: string;
+  demoUrl?: string;
+  link?: string;
+  date?: string;
+}

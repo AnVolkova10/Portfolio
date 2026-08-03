@@ -2,8 +2,6 @@ import downloadIcon from '../assets/img/download.svg';
 import navIcon from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
 import projImg4 from '../assets/img/project-img4.png';
 import projImg5 from '../assets/img/project-img5.png';
@@ -28,8 +26,6 @@ import projImg23 from '../assets/img/project-img23.png';
 import projImg24 from '../assets/img/project-img24.png';
 import projImg25 from '../assets/img/project-img25.png';
 import projImg26 from '../assets/img/project-img26.png';
-import projImg27 from '../assets/img/project-img27.png';
-import projImg28 from '../assets/img/project-img28.png';
 import projImg29 from '../assets/img/project-img29.png';
 import projImg30 from '../assets/img/project-img30.png';
 import bootstrapLogo from '../assets/img/bootstrap-logo.png';
@@ -137,24 +133,8 @@ export const skills = [
   { imgSrc: animatorLogo, alt: 'animator', label: 'Animation' },
 ];
 
-//Projects
-export const projectsDev = [
-  {
-    title: 'Inner Space Payment Gateway',
-    description: 'Frontend Development & Database Linkage',
-    languages: 'HTML, CSS, Handlebars, Javascript, Docker, MySQL & Express.',
-    imgUrl: projImg27,
-    link: 'https://payments.istv.live/plans',
-    date: '05/2023',
-  },
-  {
-    title: 'Telam: Pope Francis Festivities',
-    description: 'Frontend Development & WebGL Bugfixing',
-    languages: 'React.js, Three.js & Styled Components.',
-    imgUrl: projImg28,
-    link: 'https://www.telam.com.ar/papa/',
-    date: '04/2023',
-  },
+// Projects pendientes de migrar al contrato normalizado.
+export const legacyProjectsDev = [
   {
     title: 'Components, World & Cat animation',
     description: 'Frontend & WebGL Development',
@@ -163,22 +143,6 @@ export const projectsDev = [
     imgUrl: projImg3,
     link: 'https://front.dev.genosha.com.ar/',
     date: '11/2022',
-  },
-  {
-    title: 'Components in LESA',
-    description: 'Bug fixing & Markup Development',
-    languages: 'React.js, Styled Components & Recharts.',
-    imgUrl: projImg2,
-    link: 'http://www.juiciosdelesahumanidad.ar/',
-    date: '04/2022',
-  },
-  {
-    title: 'Components in DOT Hotels',
-    description: 'Bug fixing & Frontend Development',
-    languages: 'HTML, Sass,  Bootstrap, Javascript, JQuery & Handlebars.',
-    imgUrl: projImg1,
-    link: 'https://dot-hotels.com/',
-    date: '01/2022',
   },
   {
     title: 'Battleship Game',

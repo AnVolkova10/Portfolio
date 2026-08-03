@@ -1,0 +1,369 @@
+[
+  {
+    "id": "notco-not-so-happy-animals",
+    "slug": "notco-not-so-happy-animals",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 0,
+    "date": "2024-01",
+    "client": "NotCo",
+    "agency": "GUT México",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "NotCo — Not So Happy Animals",
+      "en": "NotCo — Not So Happy Animals"
+    },
+    "summary": {
+      "es": "Desarrollo frontend para “Not So Happy Animals”, una experiencia mobile de NotCo basada en realidad aumentada. Implementación de componentes, estilos, selección de país e idioma, modales, términos, contenido dinámico, estados de carga y error, CTA de compra, metadata social y analytics. Integración y corrección de errores en el flujo AR, incluyendo selección de trackers, conexión de contenido, reproducción de videos y comportamiento de la interfaz durante el reconocimiento.",
+      "en": "Frontend development for “Not So Happy Animals”, a mobile NotCo experience built around augmented reality. Implementation of components, styles, country and language selection, modals, terms, dynamic content, loading and error states, purchase CTAs, social metadata, and analytics. Integration and bug fixing across the AR flow, including tracker selection, content connections, video playback, and interface behavior during recognition."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — integraciones y corrección de errores AR",
+      "en": "Frontend Developer — AR Integrations & Bug Fixing"
+    },
+    "stack": [
+      "React",
+      "JavaScript",
+      "Three.js",
+      "MindAR",
+      "Styled Components",
+      "Sass",
+      "Zustand",
+      "Framer Motion",
+      "GSAP",
+      "Lottie",
+      "HLS.js",
+      "Webpack 5"
+    ],
+    "card": {
+      "title": {
+        "es": "NotCo: Not So Happy Animals",
+        "en": "NotCo: Not So Happy Animals"
+      },
+      "description": {
+        "es": "Desarrollo frontend, integraciones y corrección de errores AR",
+        "en": "Frontend Development, AR Integrations & Bug Fixing"
+      },
+      "stack": [
+        "React",
+        "Three.js",
+        "MindAR",
+        "Styled Components",
+        "Zustand"
+      ]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/notco-not-so-happy-animals.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Ilustración de Not So Happy Animals para NotCo",
+          "en": "Not So Happy Animals illustration for NotCo"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1KqQKS_oX8VVnQIVErvfQHSkQXlMBV3MF/view?usp=sharing",
+      "references": [
+        {
+          "title": {
+            "es": "Ficha de campaña y créditos de Not So Happy Animals",
+            "en": "Not So Happy Animals campaign and credits"
+          },
+          "url": "https://www.adlatina.com/campa%C3%B1as/not-so-happy-animals"
+        },
+        {
+          "title": {
+            "es": "Presentación de Not So Happy Animals por NotCo y GUT",
+            "en": "NotCo and GUT present Not So Happy Animals"
+          },
+          "url": "https://www.adlatina.com/publicidad/preestreno-notco-y-gut-presentan-not-so-happy-animals"
+        }
+      ]
+    }
+  },
+  {
+    "id": "istv-inner-space",
+    "slug": "istv-inner-space-subscriptions",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 1,
+    "date": "2023-05",
+    "client": "Inner Space TV",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "ISTV (Inner Space) — Plataforma de suscripciones y pagos",
+      "en": "ISTV (Inner Space) — Subscription and Payment Platform"
+    },
+    "summary": {
+      "es": "Desarrollo y evolución de la plataforma de suscripciones y pagos de Inner Space TV. Trabajo en los flujos de planes, registro, checkout, estados de éxito y error, perfil y facturación, además del panel administrativo para gestionar clientes, suscripciones, ventas, cupones, planes y programas. Integración de componentes y templates con rutas, controladores, consultas y servicios de Mercado Pago y Uscreen.",
+      "en": "Development and evolution of Inner Space TV’s subscription and payment platform. Work included plan selection, registration, checkout, success and error states, profile and billing flows, as well as the admin dashboard for managing customers, subscriptions, sales, coupons, plans, and programs. Integration of components and templates with routes, controllers, queries, Mercado Pago, and Uscreen services."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend e integración backend",
+      "en": "Frontend Developer & Backend Integration"
+    },
+    "stack": [
+      "Node.js",
+      "Express",
+      "Handlebars",
+      "JavaScript",
+      "CSS",
+      "Bootstrap",
+      "MySQL",
+      "Sequelize",
+      "Mercado Pago",
+      "Uscreen",
+      "Docker"
+    ],
+    "card": {
+      "title": {
+        "es": "Pasarela de pagos de Inner Space",
+        "en": "Inner Space Payment Gateway"
+      },
+      "description": {
+        "es": "Desarrollo frontend e integración backend",
+        "en": "Frontend Development & Backend Integration"
+      },
+      "stack": ["Handlebars", "JavaScript", "Express", "MySQL", "Docker"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/istv-inner-space.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de la pasarela de pagos de Inner Space TV",
+          "en": "Inner Space TV payment gateway cover"
+        }
+      }
+    },
+    "links": {
+      "live": "https://payments.istv.live/plans",
+      "references": [
+        {
+          "title": {
+            "es": "Lanzamiento de la aplicación móvil de training ISTV",
+            "en": "Launch of the ISTV training mobile application"
+          },
+          "url": "https://www.iproup.com/innovacion/31713-lanzan-la-app-movil-de-training-istv-planean-facturar-us1-m.amp"
+        }
+      ]
+    }
+  },
+  {
+    "id": "viajes-del-papa",
+    "slug": "viajes-del-papa-telam",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 2,
+    "date": "2023-03",
+    "client": "Télam",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "Viajes del Papa — Experiencia interactiva 3D",
+      "en": "Pope’s Travels — Interactive 3D Experience"
+    },
+    "summary": {
+      "es": "Desarrollo frontend de una experiencia interactiva bilingüe sobre los viajes del papa Francisco. Trabajo en tarjetas, grilla, filtros, navegación, selector de idioma, integración de contenidos desde CSV, adaptación responsive y correcciones del globo 3D desarrollado con Three.js y WebGL.",
+      "en": "Frontend development for a bilingual interactive experience about Pope Francis’ travels. Work included cards, grid views, filters, navigation, language selection, CSV content integration, responsive adaptations, and fixes to the 3D globe built with Three.js and WebGL."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend y corrección de errores WebGL",
+      "en": "Frontend Developer & WebGL Bug Fixing"
+    },
+    "stack": [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Three.js",
+      "WebGL",
+      "Styled Components",
+      "GSAP",
+      "Lottie"
+    ],
+    "card": {
+      "title": {
+        "es": "Viajes del Papa — Télam",
+        "en": "Télam: Pope Francis’ Travels"
+      },
+      "description": {
+        "es": "Desarrollo frontend y corrección de errores WebGL",
+        "en": "Frontend Development & WebGL Bug Fixing"
+      },
+      "stack": ["React", "Three.js", "Styled Components"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/viajes-del-papa.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de la experiencia Viajes del Papa de Télam",
+          "en": "Cover of Télam’s Pope’s Travels experience"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1kB00HDEEV397tfAfwBcBlBh-_bcTq2vH/view?usp=sharing",
+      "historical": "https://www.telam.com.ar/pope/",
+      "references": [
+        {
+          "title": {
+            "es": "Télam inaugura una muestra inmersiva sobre los viajes del Papa",
+            "en": "Télam opens an immersive exhibition about the Pope’s travels"
+          },
+          "url": "https://www.argentina.gob.ar/noticias/telam-inaugura-en-tecnopolis-la-primera-muestra-inmersiva-en-la-argentina-sobre-los-viajes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lesa-juicios-lesa-humanidad",
+    "slug": "lesa-juicios-lesa-humanidad",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 4,
+    "date": "2022-05",
+    "client": "Secretaría de Derechos Humanos de la Nación",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "LESA — Juicios de Lesa Humanidad",
+      "en": "LESA — Crimes Against Humanity Trials"
+    },
+    "summary": {
+      "es": "Desarrollo y mantenimiento frontend de una plataforma pública e interactiva sobre los juicios por crímenes de lesa humanidad en Argentina. Implementación y corrección de componentes responsive, visualizaciones de datos, filtros, modales, integraciones con APIs y estados de carga y error.",
+      "en": "Frontend development and maintenance for an interactive public platform about crimes against humanity trials in Argentina. Implementation and improvement of responsive components, data visualizations, filters, modals, API integrations, and loading and error states."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend",
+      "en": "Frontend Developer"
+    },
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Styled Components",
+      "Recharts",
+      "Mapbox",
+      "Axios"
+    ],
+    "card": {
+      "title": {
+        "es": "Componentes en LESA",
+        "en": "Components in LESA"
+      },
+      "description": {
+        "es": "Corrección de errores y desarrollo frontend",
+        "en": "Bug Fixing & Frontend Development"
+      },
+      "stack": ["React", "TypeScript", "Styled Components", "Recharts"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/lesa-juicios-lesa-humanidad.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del sitio Juicios de Lesa Humanidad",
+          "en": "Crimes Against Humanity Trials website cover"
+        }
+      }
+    },
+    "links": {
+      "live": "http://www.juiciosdelesahumanidad.ar/",
+      "references": [
+        {
+          "title": {
+            "es": "Presentación del sitio sobre juicios de lesa humanidad",
+            "en": "Presentation of the website about crimes against humanity trials"
+          },
+          "url": "https://www.argentina.gob.ar/noticias/la-secretaria-de-derechos-humanos-presenta-un-sitio-web-con-informacion-sobre-los-juicios"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dot-hotels",
+    "slug": "dot-hotels-platform",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 5,
+    "date": "2022-01",
+    "client": "DOT Hotels",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "DOT Hotels — Plataforma web y micrositios",
+      "en": "DOT Hotels — Web Platform and Microsites"
+    },
+    "summary": {
+      "es": "Desarrollo y mantenimiento frontend para la plataforma de DOT Hotels, trabajando en componentes reutilizables, micrositios, navegación responsive, habitaciones, sliders, modales, beneficios y flujos relacionados con reservas.",
+      "en": "Frontend development and maintenance for the DOT Hotels platform, working on reusable components, microsites, responsive navigation, room pages, sliders, modals, rewards and booking-related flows."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend",
+      "en": "Frontend Developer"
+    },
+    "stack": [
+      "HTML",
+      "Handlebars",
+      "Sass",
+      "Bootstrap 5",
+      "JavaScript",
+      "jQuery",
+      "Webpack 5"
+    ],
+    "card": {
+      "title": {
+        "es": "Componentes en DOT Hotels",
+        "en": "Components in DOT Hotels"
+      },
+      "description": {
+        "es": "Corrección de errores y desarrollo frontend",
+        "en": "Bug Fixing & Frontend Development"
+      },
+      "stack": [
+        "HTML",
+        "Sass",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "Handlebars"
+      ]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/dot-hotels.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de componentes desarrollados para DOT Hotels",
+          "en": "Cover of components developed for DOT Hotels"
+        }
+      }
+    },
+    "links": {
+      "live": "https://dot-hotels.com/",
+      "references": [
+        {
+          "title": {
+            "es": "DOT Hotels simplifica sus marcas y potencia su programa de lealtad",
+            "en": "DOT Hotels streamlines its brands and strengthens its loyalty program"
+          },
+          "url": "https://www.reportur.com/argentina/2022/09/04/dot-hotels-enfoca-su-estrategia-en-el-publico-final-con-una-simplificacion-de-marca/"
+        }
+      ]
+    }
+  }
+]
