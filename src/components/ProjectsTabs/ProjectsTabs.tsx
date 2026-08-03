@@ -1,9 +1,6 @@
 import '../ProjectsTabs/ProjectsTabsStyles.scss';
-import { useEffect, useState } from 'react';
-import { Nav, Navbar, Container, Row, Col, Tab } from 'react-bootstrap';
-import { projectsDev } from '../../helpers/helpers';
-import { projectsFilm } from '../../helpers/helpers';
-import { projectsOthers } from '../../helpers/helpers';
+import { Nav, Row, Tab } from 'react-bootstrap';
+import { projectsDev, projectsFilm, projectsOthers } from '../../data/site';
 import { ProjectsCard } from '../ProjectsCard/ProjectsCard';
 
 export const ProjectsTabs = () => {
@@ -27,23 +24,17 @@ export const ProjectsTabs = () => {
       <Tab.Content>
         <Tab.Pane eventKey='first'>
           <Row>
-            {projectsFilm.map((project, index) => {
-              return [<ProjectsCard key={index} {...project} />];
-            })}
+            {projectsFilm.map((project) => <ProjectsCard key={project.title} {...project} />)}
           </Row>
         </Tab.Pane>
         <Tab.Pane eventKey='second'>
           <Row>
-            {projectsDev.map((project, index) => {
-              return [<ProjectsCard key={index} {...project} />];
-            })}
+            {projectsDev.map((project) => <ProjectsCard key={project.title} {...project} />)}
           </Row>
         </Tab.Pane>
         <Tab.Pane eventKey='third'>
           <Row>
-            {projectsOthers.map((project, index) => {
-              return [<ProjectsCard key={index} {...project} />];
-            })}
+            {projectsOthers.map((project) => <ProjectsCard key={project.title} {...project} />)}
           </Row>
         </Tab.Pane>
       </Tab.Content>

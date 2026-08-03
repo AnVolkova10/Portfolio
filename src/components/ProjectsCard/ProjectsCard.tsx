@@ -1,7 +1,14 @@
-import { useEffect, useState } from 'react';
-import { Nav, Navbar, Container, Row, Col, Tab } from 'react-bootstrap';
-import { projects } from '../../helpers/helpers';
+import { Col } from 'react-bootstrap';
 import '../ProjectsCard/ProjectsCardStyles.scss';
+
+interface ProjectsCardProps {
+  title: string;
+  description: string;
+  imgUrl: string;
+  languages?: string;
+  link?: string;
+  date?: string;
+}
 
 export const ProjectsCard = ({
   title,
@@ -10,12 +17,12 @@ export const ProjectsCard = ({
   languages,
   link,
   date,
-}) => {
+}: ProjectsCardProps) => {
   return (
     <Col sm={6} md={4}>
-      <a href={link} target='_blank'>
+      <a href={link} rel='noreferrer' target='_blank'>
         <div className='proj-imgbx'>
-          <img src={imgUrl} />
+          <img alt={title} src={imgUrl} />
           <div className='proj-txtx'>
             <h4>{title}</h4>
             <span>

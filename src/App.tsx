@@ -5,21 +5,16 @@ import { Projects } from './components/Projects/Projects'
 import { Contact } from './components/Contact/Contact'
 import { Footer } from './components/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { ContextProviderApp } from '../src/context/appContext'
 
-function App() {
+export default function App() {
   return (
-    <ContextProviderApp>
-      <div className='App'>
-        <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </ContextProviderApp>
+    <div className='App'>
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   )
 }
-
-export default App

@@ -1,31 +1,49 @@
 import '../Contact/ContactStyles.scss'
-import { useState, useRef } from 'react'
+import { useState, useRef, type FormEvent } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import contactImg from '../../assets/img/contact-img.png'
 import emailjs from 'emailjs-com'
 
+interface ContactStatus {
+  success?: boolean
+  message?: string
+}
+
 export const Contact = () => {
   const [buttonText, setButtonText] = useState('Send')
-  const [status, setStatus] = useState({})
-  const form = useRef()
+  const [status, setStatus] = useState<ContactStatus>({})
+  const form = useRef<HTMLFormElement>(null)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setButtonText('Sending...')
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? import.meta.env.REACT_APP_EMAILJS_SERVICE_ID
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY
+
+    if (!form.current || !serviceId || !templateId || !publicKey) {
+      setButtonText('Send')
+      setStatus({
+        success: false,
+        message: 'Something went wrong, please try again.',
+      })
+      return
+    }
+
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then((response) => {
         console.log('Email sent successfully', response)
         setButtonText('SENT!!')
         setTimeout(() => setButtonText('Send'), 3000)
         setStatus({ success: true, message: 'Message sent successfully!' })
-        form.current.reset()
+        form.current?.reset()
       })
       .catch((error) => {
         console.error('Error sending email', error)

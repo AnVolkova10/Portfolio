@@ -1,7 +1,7 @@
 import '../Footer/FooterStyles.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import logo from '../../assets/img/logo.svg'
-import { socialLinks } from '../../helpers/helpers'
+import { socialLinks } from '../../data/site'
 
 export const Footer = () => {
   const year = new Date().getFullYear()
@@ -14,9 +14,9 @@ export const Footer = () => {
             <Col size={12} sm={12}>
               <img className='logo' src={logo} alt='Logo' />
               <div className='social-icon'>
-                {socialLinks.map((link, index) => (
+                {socialLinks.map((link) => (
                   <a
-                    key={index}
+                    key={link.href}
                     href={link.href}
                     target='_blank'
                     rel='noreferrer'

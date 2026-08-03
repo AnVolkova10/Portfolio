@@ -1,31 +1,17 @@
 import '../NavBar/NavBarStyles.scss';
 import { useEffect, useState } from 'react';
-import { navLinks, socialLinks } from '../../helpers/helpers';
+import { navLinks, socialLinks } from '../../data/site';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../../assets/img/logo.svg';
 import { ConnectButton } from '../ConnectButton/ConnectButton';
-// Prueba del Contexnt
-import { useContext } from 'react';
-import { AppContext } from '../../context/appContext';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('#home');
   const [scrolled, setScrolled] = useState(false);
 
-  // Prueba del Context
-  const { appState, settingState } = useContext(AppContext);
-
-  const onUpdateActiveLink = (value) => {
+  const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
-
-    // Prueba del Context
-    //console.log(appState);
   };
-
-  //Prueba del Context
-  useEffect(() => {
-    settingState();
-  }, [activeLink]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -38,7 +24,7 @@ export const NavBar = () => {
 
     window.addEventListener('scroll', onScroll);
 
-    return () => window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
@@ -71,9 +57,9 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              {socialLinks.map((link, index) => (
+              {socialLinks.map((link) => (
                 <a
-                  key={index}
+                  key={link.href}
                   href={link.href}
                   target='_blank'
                   rel='noreferrer'
