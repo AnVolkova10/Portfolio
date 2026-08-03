@@ -14,7 +14,7 @@ export const ConnectButton = ({ children, icon = false }: ConnectButtonProps) =>
   return (
     <button onClick={scrollToContact} type='button'>
       {children}
-      {icon && <ArrowRightCircle size={25} />}
+      {icon && <ArrowRightCircle color='currentColor' size={25} />}
     </button>
   );
 };

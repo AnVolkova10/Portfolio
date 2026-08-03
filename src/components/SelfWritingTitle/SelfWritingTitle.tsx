@@ -10,12 +10,13 @@ const TO_ROTATE = [
   'Gamer!!',
 ];
 const PERIOD = 2000;
+const INITIAL_DELTA = 300;
 
 export const SelfWritingTitle = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(350 - Math.random() * 100);
+  const [delta, setDelta] = useState(INITIAL_DELTA);
 
   useEffect(() => {
     const tick = () => {

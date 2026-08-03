@@ -208,6 +208,8 @@ nav.navbar {
       width: 9%;
     }
     .navbar-collapse {
+      width: 100%;
+
       &.collapsing,
       &.show {
         display: flex;
@@ -217,37 +219,57 @@ nav.navbar {
       .navbar-nav {
         display: flex;
         flex-direction: row;
-        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0 !important;
       }
       .navbar-text {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
         padding-top: 10px;
+
         .social-icon {
           display: flex;
-          margin: auto;
+          margin: 0;
         }
         button {
           padding: 7px 15px;
+          margin-left: 0;
           background: $button-background-color;
           border: none;
         }
       }
     }
     .navbar-nav {
-      .nav-link.navbar-link,
-      .nav-link.active {
-        padding: 0px 25px;
+      .nav-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        padding: 3px clamp(4px, 2.5vw, 16px);
+        font-size: clamp(14px, 4vw, 18px);
+        white-space: nowrap;
 
         &:hover {
-          padding-top: 0px;
+          padding-top: 3px;
         }
-      }
-      .navbar-link.nav-link {
-        padding-top: 3px;
+
+        img {
+          flex-shrink: 0;
+          width: 20px;
+          margin-left: clamp(3px, 1.5vw, 7px);
+          margin-bottom: 5px;
+        }
       }
     }
     .navbar-text {
       button {
-        margin-left: 6px;
+        margin-left: 0;
       }
     }
   }
