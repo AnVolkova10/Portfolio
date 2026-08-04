@@ -103,7 +103,7 @@
     "slug": "atma-chatia-pierre-newsan-store",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 1,
     "date": "2024-09",
     "client": "ATMA / Newsan",
@@ -208,7 +208,7 @@
     "slug": "sprite-antiban-ad",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 2,
     "date": "2024-05",
     "client": "The Coca-Cola Company / Sprite",
@@ -283,7 +283,7 @@
     "slug": "notco-not-so-happy-animals",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 3,
     "date": "2024-01",
     "client": "NotCo",
@@ -369,7 +369,7 @@
     "slug": "istv-inner-space-subscriptions",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 4,
     "date": "2023-05",
     "client": "Inner Space TV",
@@ -440,7 +440,7 @@
     "slug": "viajes-del-papa-telam",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 5,
     "date": "2023-03",
     "client": "Télam",
@@ -509,7 +509,7 @@
     "slug": "lesa-juicios-lesa-humanidad",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 7,
     "date": "2022-05",
     "client": "Secretaría de Derechos Humanos de la Nación",
@@ -576,7 +576,7 @@
     "slug": "dot-hotels-platform",
     "status": "published",
     "category": "client",
-    "featured": true,
+    "featured": false,
     "order": 8,
     "date": "2022-01",
     "client": "DOT Hotels",
@@ -643,6 +643,84 @@
           "url": "https://www.reportur.com/argentina/2022/09/04/dot-hotels-enfoca-su-estrategia-en-el-publico-final-con-una-simplificacion-de-marca/"
         }
       ]
+    }
+  },
+  {
+    "id": "newsan-creator",
+    "slug": "newsan-creator-ai-image-platform",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 9,
+    "date": "2025-07",
+    "client": "Newsan",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-4o",
+      "purpose": {
+        "es": "Apoyo ocasional para resolver problemas y orientar algunas implementaciones durante el desarrollo.",
+        "en": "Occasional support for problem-solving and guidance on selected implementations during development."
+      }
+    },
+    "title": {
+      "es": "Newsan Creator — Plataforma interna de generación visual con IA",
+      "en": "Newsan Creator — Internal AI Image Generation Platform"
+    },
+    "summary": {
+      "es": "Desarrollo frontend de Newsan Creator, una plataforma interna para generar y refinar imágenes de productos y campañas mediante inteligencia artificial. Implementación de autenticación, navegación, gestión de productos y campañas, historial, selección de referencias, formatos de salida, descarga de imágenes, estados de carga y comportamiento responsive. Integración del frontend con el backend autenticado y con los flujos de IA, utilizando polling y Socket.IO para comunicar el progreso de las generaciones realizadas con Flux Kontext y Flux Dev.",
+      "en": "Frontend development for Newsan Creator, an internal platform for generating and refining product and campaign images using artificial intelligence. Implementation of authentication, navigation, product and campaign management, history, reference selection, output formats, image downloads, loading states, and responsive behavior. Frontend integration with the authenticated backend and AI workflows, using polling and Socket.IO to communicate generation progress for Flux Kontext and Flux Dev."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend e integración con backend e IA",
+      "en": "Frontend Developer — Backend & AI Integrations"
+    },
+    "stack": [
+      "Next.js 15",
+      "React 19",
+      "TypeScript 5",
+      "Tailwind CSS 4",
+      "Socket.IO",
+      "REST APIs",
+      "JWT",
+      "AWS Amplify",
+      "DotLottie",
+      "Flux Kontext",
+      "Flux Dev",
+      "Replicate"
+    ],
+    "card": {
+      "title": {
+        "es": "Newsan Creator",
+        "en": "Newsan Creator"
+      },
+      "description": {
+        "es": "Frontend e integración con backend e IA",
+        "en": "Frontend & Backend/AI Integrations"
+      },
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Socket.IO", "REST APIs"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/newsan-creator.png",
+        "width": 1235,
+        "height": 608,
+        "alt": {
+          "es": "Modal de imagen generada en la plataforma interna Newsan Creator",
+          "en": "Generated image modal in the internal Newsan Creator platform"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/1tvWyaqCKfj0Rhib6FF3cymJpwsi5vDz9/view?usp=sharing",
+        "title": {
+          "es": "Demostración del flujo de Newsan Creator",
+          "en": "Newsan Creator workflow demonstration"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1tvWyaqCKfj0Rhib6FF3cymJpwsi5vDz9/view?usp=sharing"
     }
   }
 ]

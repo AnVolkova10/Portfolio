@@ -13,6 +13,14 @@ const compareProjects = (first: Project, second: Project): number => {
     return first.featured ? -1 : 1;
   }
 
+  if (!first.featured && !second.featured) {
+    const dateComparison = second.date.localeCompare(first.date);
+
+    if (dateComparison !== 0) {
+      return dateComparison;
+    }
+  }
+
   if (first.order !== second.order) {
     return first.order - second.order;
   }
@@ -81,6 +89,25 @@ const legacyProjectCards: ProjectCardViewModel[] = legacyProjectsDev.map(
   }),
 );
 
+const toSortableDate = (date?: string): string => {
+  if (!date) {
+    return '';
+  }
+
+  if (/^\d{4}-\d{2}$/.test(date)) {
+    return date;
+  }
+
+  const [month, year] = date.split('/');
+
+  return year && month ? `${year}-${month}` : '';
+};
+
+const compareProjectCardDates = (
+  first: ProjectCardViewModel,
+  second: ProjectCardViewModel,
+): number => toSortableDate(second.date).localeCompare(toSortableDate(first.date));
+
 export const projects = validateProjects(rawProjects);
 
 export const publishedProjects = projects
@@ -88,23 +115,19 @@ export const publishedProjects = projects
   .sort(compareProjects);
 
 export const getProjectsDev = (locale: Locale = 'en'): ProjectCardViewModel[] => {
-  const currentProjectCards = publishedProjects.map((project) => ({
-    order: project.order,
-    card: toProjectCard(project, locale),
-  }));
-  const cardsBeforeArmaduki = currentProjectCards
-    .filter(({ order }) => order < 6)
-    .map(({ card }) => card);
-  const cardsAfterArmaduki = currentProjectCards
-    .filter(({ order }) => order >= 6)
-    .map(({ card }) => card);
-  const [armaduki, ...remainingLegacyCards] = legacyProjectCards;
+  const featuredCards = publishedProjects
+    .filter((project) => project.featured)
+    .map((project) => toProjectCard(project, locale));
+  const nonFeaturedCards = [
+    ...publishedProjects
+      .filter((project) => !project.featured)
+      .map((project) => toProjectCard(project, locale)),
+    ...legacyProjectCards,
+  ].sort(compareProjectCardDates);
 
   return [
-    ...cardsBeforeArmaduki,
-    ...(armaduki ? [armaduki] : []),
-    ...cardsAfterArmaduki,
-    ...remainingLegacyCards,
+    ...featuredCards,
+    ...nonFeaturedCards,
   ];
 };
 
