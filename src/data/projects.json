@@ -1,11 +1,290 @@
 [
   {
+    "id": "conmebol-museum",
+    "slug": "conmebol-museum-interactive-experiences",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 0,
+    "date": "2024-03",
+    "client": "CONMEBOL",
+    "productionCompany": "MUDE Museos Deportivos",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-3.5",
+      "purpose": {
+        "es": "Consultas puntuales de apoyo para diagnosticar y corregir errores durante la puesta en marcha.",
+        "en": "Occasional support for diagnosing and fixing bugs during the on-site launch."
+      }
+    },
+    "title": {
+      "es": "Museo CONMEBOL — Experiencias interactivas",
+      "en": "CONMEBOL Museum — Interactive Experiences"
+    },
+    "summary": {
+      "es": "Desarrollo principal del frontend de Content Wall para el Museo CONMEBOL, una instalación táctil multipantalla con contenido administrado desde CMS, soporte en español, inglés y portugués, integración con pulseras NFC y una experiencia «Momento WOW» personalizada por país. Desarrollo adicional de la galería operativa de Magic Mirror Shirts y trabajo transversal sobre las demás experiencias. Durante aproximadamente nueve días en Luque, Paraguay, representación técnica frontend onsite para la puesta en marcha digital de las seis experiencias, con despliegues, integraciones y resolución de incidencias críticas para la reinauguración.",
+      "en": "Primary frontend development of the CONMEBOL Museum Content Wall, a multi-screen touch installation featuring CMS-managed content, Spanish, English, and Portuguese support, NFC wristband integration, and a country-specific ‘WOW Moment’. Additional development of the Magic Mirror Shirts operational gallery and cross-project work across the remaining experiences. Approximately nine days in Luque, Paraguay, as the on-site frontend technical representative for the digital launch of all six experiences, handling deployments, integrations, and critical issue resolution ahead of the museum reopening."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend y referente técnica onsite",
+      "en": "Frontend Developer & On-site Technical Representative"
+    },
+    "stack": [
+      "React",
+      "TypeScript",
+      "Sass",
+      "CSS Modules",
+      "Zustand",
+      "Framer Motion",
+      "Isotope.js",
+      "Webpack 5",
+      "REST APIs",
+      "NFC",
+      "Socket.IO",
+      "Handlebars",
+      "Node.js",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Museo CONMEBOL",
+        "en": "CONMEBOL Museum"
+      },
+      "description": {
+        "es": "Content Wall y soporte onsite para seis experiencias",
+        "en": "Content Wall & On-site Support for Six Experiences"
+      },
+      "stack": ["React", "TypeScript", "Sass", "NFC", "REST APIs"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/conmebol-museum-content-wall.webp",
+        "width": 800,
+        "height": 453,
+        "alt": {
+          "es": "Content Wall y trofeos exhibidos en el Museo CONMEBOL",
+          "en": "Content Wall and trophies displayed at the CONMEBOL Museum"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=esPBrjt4BNc",
+      "caseStudy": "https://www.linkedin.com/pulse/experiencias-en-museo-conmebol-genosha-c5bzf/",
+      "references": [
+        {
+          "title": {
+            "es": "Apertura oficial del Museo CONMEBOL",
+            "en": "Official opening of the CONMEBOL Museum"
+          },
+          "url": "https://www.conmebol.com/noticias/el-museo-conmebol-abre-sus-puertas-oficialmente/"
+        },
+        {
+          "title": {
+            "es": "Proceso de renovación del Museo CONMEBOL",
+            "en": "CONMEBOL Museum renovation process"
+          },
+          "url": "https://www.youtube.com/watch?v=P1A7ZAC6vU8"
+        },
+        {
+          "title": {
+            "es": "Recorrido oficial del Museo CONMEBOL",
+            "en": "Official CONMEBOL Museum tour"
+          },
+          "url": "https://www.youtube.com/watch?v=jHs8-xj7cb0"
+        }
+      ]
+    }
+  },
+  {
+    "id": "atma-chatia-pierre-store",
+    "slug": "atma-chatia-pierre-newsan-store",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 1,
+    "date": "2024-09",
+    "client": "ATMA / Newsan",
+    "agency": "Anita & Vega",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-4",
+      "purpose": {
+        "es": "Apoyo ocasional para resolver problemas y orientar algunas implementaciones durante el cierre del proyecto.",
+        "en": "Occasional support for problem-solving and guidance on selected implementations during the final project stage."
+      }
+    },
+    "title": {
+      "es": "ATMA — ChatIA con Pierre en Tienda Newsan",
+      "en": "ATMA — ChatIA with Pierre at Newsan Store"
+    },
+    "summary": {
+      "es": "Incorporación durante la etapa final para desarrollar y estabilizar la segunda etapa de ChatIA con Pierre, una experiencia interactiva instalada en Tienda Newsan de Unicenter. Desarrollo del frontend y las interacciones del tótem y la tablet de control, con modos de voz y teclado, reconocimiento de voz, estados de conversación, recetas, utensilios, códigos QR, descuentos, reinicio y manejo de errores. Integración con Socket.IO, el asistente conversacional, voz sintetizada, animaciones y pantallas ambientales, además del formulario y los emails de recetas y descuentos. Soporte técnico onsite durante un día de activación y resolución de incidencias de producción.",
+      "en": "Joined during the final stage to develop and stabilize the second phase of ChatIA with Pierre, an interactive experience installed at the Newsan Store in Unicenter. Frontend and interaction development for the totem and control tablet, including voice and keyboard modes, speech recognition, conversation states, recipes, utensils, QR codes, discounts, reset flows, and error handling. Integration with Socket.IO, the conversational assistant, synthesized voice, animations, and ambient screens, plus the recipe form and recipe and discount emails. One day of on-site technical support during activation and production issue resolution."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend y soporte técnico onsite",
+      "en": "Frontend Developer & On-site Technical Support"
+    },
+    "stack": [
+      "React",
+      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
+      "React Three Fiber",
+      "Three.js",
+      "Socket.IO",
+      "Web Speech API",
+      "Lottie",
+      "QR Code",
+      "OpenAI GPT-4",
+      "ElevenLabs",
+      "Handlebars",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "ATMA: ChatIA con Pierre",
+        "en": "ATMA: ChatIA with Pierre"
+      },
+      "description": {
+        "es": "Frontend e interacción para experiencia en tienda",
+        "en": "Frontend & Interaction for an In-store Experience"
+      },
+      "stack": [
+        "React",
+        "Three.js",
+        "Socket.IO",
+        "Web Speech API",
+        "Tailwind CSS"
+      ]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/atma-chatia-pierre-store.png",
+        "width": 1913,
+        "height": 1073,
+        "alt": {
+          "es": "Experiencia ChatIA con Pierre instalada en Tienda Newsan de Unicenter",
+          "en": "ChatIA with Pierre experience installed at the Newsan Store in Unicenter"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/1BC3-YpNY8eBL59Dmua3sD2Lu8yO6Nwrm/view?usp=sharing",
+        "title": {
+          "es": "Demostración de ChatIA con Pierre en Tienda Newsan",
+          "en": "ChatIA with Pierre demonstration at the Newsan Store"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1BC3-YpNY8eBL59Dmua3sD2Lu8yO6Nwrm/view?usp=sharing",
+      "caseStudy": "https://www.lanacion.com.ar/tecnologia/como-nacio-pierre-la-inteligencia-artificial-argentina-que-te-ayuda-a-cocinar-nid09092024/",
+      "references": [
+        {
+          "title": {
+            "es": "Sitio público de ChatIA con Pierre",
+            "en": "ChatIA with Pierre public website"
+          },
+          "url": "https://chatiaconpierre.com.ar/"
+        },
+        {
+          "title": {
+            "es": "Presentación de la experiencia en Tienda Newsan por Genosha",
+            "en": "Genosha presentation of the Newsan Store experience"
+          },
+          "url": "https://es.linkedin.com/posts/genosha_atma-chatia-con-pierre-el-chef-franc%C3%A9s-activity-7239308553037975553-kwdQ"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sprite-antiban-ad",
+    "slug": "sprite-antiban-ad",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 2,
+    "date": "2024-05",
+    "client": "The Coca-Cola Company / Sprite",
+    "agency": "GUT Buenos Aires",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "Sprite — AntiBan-Ad",
+      "en": "Sprite — AntiBan-Ad"
+    },
+    "summary": {
+      "es": "Desarrollo frontend de AntiBan-Ad, una herramienta funcional de Sprite para streamers. Implementación de la landing de presentación y registro, y de la interfaz y overlay integrados a la experiencia del plugin. El sistema utilizaba inteligencia artificial para detectar en tiempo real aumentos de volumen y expresiones de riesgo, silenciar temporalmente la transmisión y reproducir mensajes personalizados para evitar interrupciones o sanciones.",
+      "en": "Frontend development for AntiBan-Ad, a working Sprite tool for streamers. Implementation of the campaign and registration landing page, as well as the interface and overlay integrated into the plugin experience. The system used artificial intelligence to detect volume spikes and risky expressions in real time, temporarily mute the stream, and play personalized messages to prevent interruptions or penalties."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — landing e interfaz del plugin",
+      "en": "Frontend Developer — Landing Page & Plugin Interface"
+    },
+    "stack": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Framer Motion",
+      "Lottie",
+      "Webpack"
+    ],
+    "card": {
+      "title": {
+        "es": "Sprite: AntiBan-Ad",
+        "en": "Sprite: AntiBan-Ad"
+      },
+      "description": {
+        "es": "Desarrollo de landing e interfaz para streamers",
+        "en": "Landing Page & Streamer Interface Development"
+      },
+      "stack": ["React", "JavaScript", "Framer Motion", "Lottie"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/sprite-antiban-ad.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Landing de Sprite AntiBan-Ad para streamers",
+          "en": "Sprite AntiBan-Ad landing page for streamers"
+        }
+      }
+    },
+    "links": {
+      "live": "https://meetings-genosha.s3.amazonaws.com/sprite/sprite-fe/index.html",
+      "caseStudy": "https://vimeo.com/943497300",
+      "references": [
+        {
+          "title": {
+            "es": "Ficha y créditos de AntiBan-Ad en The One Club",
+            "en": "AntiBan-Ad entry and credits at The One Club"
+          },
+          "url": "https://www.oneclub.org/awards/theoneshow/-award/57671/antiban-ad/"
+        },
+        {
+          "title": {
+            "es": "Presentación de Sprite AntiBan-Ad",
+            "en": "Sprite AntiBan-Ad launch article"
+          },
+          "url": "https://conpochoclos.com/tecnologia-y-redes/sprite-presenta-anti-ban-ad-un-aviso-para-twitch-que-salva-a-los-streamers-de-ser-baneados/"
+        }
+      ]
+    }
+  },
+  {
     "id": "notco-not-so-happy-animals",
     "slug": "notco-not-so-happy-animals",
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 0,
+    "order": 3,
     "date": "2024-01",
     "client": "NotCo",
     "agency": "GUT México",
@@ -91,7 +370,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 1,
+    "order": 4,
     "date": "2023-05",
     "client": "Inner Space TV",
     "company": "Genosha",
@@ -162,7 +441,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 2,
+    "order": 5,
     "date": "2023-03",
     "client": "Télam",
     "company": "Genosha",
@@ -231,7 +510,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 4,
+    "order": 7,
     "date": "2022-05",
     "client": "Secretaría de Derechos Humanos de la Nación",
     "company": "Genosha",
@@ -298,7 +577,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 5,
+    "order": 8,
     "date": "2022-01",
     "client": "DOT Hotels",
     "company": "Genosha",

@@ -60,6 +60,7 @@ const toProjectCard = (
     imgHeight: image.height,
     liveUrl: project.links?.live,
     demoUrl: project.links?.demo,
+    caseStudyUrl: project.links?.caseStudy,
     date: formatDate(project.date),
   };
 };
@@ -92,10 +93,10 @@ export const getProjectsDev = (locale: Locale = 'en'): ProjectCardViewModel[] =>
     card: toProjectCard(project, locale),
   }));
   const cardsBeforeArmaduki = currentProjectCards
-    .filter(({ order }) => order < 3)
+    .filter(({ order }) => order < 6)
     .map(({ card }) => card);
   const cardsAfterArmaduki = currentProjectCards
-    .filter(({ order }) => order >= 3)
+    .filter(({ order }) => order >= 6)
     .map(({ card }) => card);
   const [armaduki, ...remainingLegacyCards] = legacyProjectCards;
 

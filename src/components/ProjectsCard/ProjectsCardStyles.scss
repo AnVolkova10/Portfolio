@@ -15,6 +15,11 @@
     -moz-box-shadow: 9px 12px 17px 8px rgba(0, 0, 0, 0.77);
     opacity: 0.8;
   }
+  .proj-imgbx > img {
+    aspect-ratio: 519 / 380;
+    display: block;
+    object-fit: cover;
+  }
   .proj-imgbx::before {
     cursor: pointer;
     content: '';

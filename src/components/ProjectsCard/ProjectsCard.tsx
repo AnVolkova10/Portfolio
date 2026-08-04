@@ -11,6 +11,7 @@ interface ProjectsCardProps {
   languages?: string;
   liveUrl?: string;
   demoUrl?: string;
+  caseStudyUrl?: string;
   link?: string;
   date?: string;
 }
@@ -25,10 +26,11 @@ export const ProjectsCard = ({
   languages,
   liveUrl,
   demoUrl,
+  caseStudyUrl,
   link,
   date,
 }: ProjectsCardProps) => {
-  const destination = liveUrl ?? demoUrl ?? link;
+  const destination = liveUrl ?? demoUrl ?? caseStudyUrl ?? link;
   const cardContent = (
     <div className='proj-imgbx'>
       <img
@@ -53,7 +55,7 @@ export const ProjectsCard = ({
     <Col sm={6} md={4}>
       {destination ? (
         <a
-          aria-label={`Open ${title}${demoUrl && !liveUrl ? ' demo' : ''}`}
+          aria-label={`Open ${title}${demoUrl && !liveUrl ? ' demo' : caseStudyUrl && !liveUrl ? ' case study' : ''}`}
           href={destination}
           rel='noreferrer'
           target='_blank'

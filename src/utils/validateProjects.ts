@@ -1,6 +1,7 @@
 import type {
   LocalizedText,
   Project,
+  ProjectAiUsage,
   ProjectCategory,
   ProjectImage,
   ProjectLinks,
@@ -84,6 +85,16 @@ const requireLocalizedText = (value: unknown, path: string): LocalizedText => {
   return {
     es: requireString(localizedText.es, `${path}.es`),
     en: requireString(localizedText.en, `${path}.en`),
+  };
+};
+
+const requireAiUsage = (value: unknown, path: string): ProjectAiUsage => {
+  const aiUsage = requireRecord(value, path);
+
+  return {
+    tool: requireString(aiUsage.tool, `${path}.tool`),
+    model: requireOptionalString(aiUsage.model, `${path}.model`),
+    purpose: requireLocalizedText(aiUsage.purpose, `${path}.purpose`),
   };
 };
 
@@ -201,6 +212,9 @@ const requireProject = (value: unknown, path: string): Project => {
   const links = project.links === undefined
     ? undefined
     : requireLinks(project.links, `${path}.links`);
+  const aiUsage = project.aiUsage === undefined
+    ? undefined
+    : requireAiUsage(project.aiUsage, `${path}.aiUsage`);
 
   if (status === 'published' && !media.image) {
     return validationError(
@@ -219,8 +233,13 @@ const requireProject = (value: unknown, path: string): Project => {
     date,
     client: requireOptionalString(project.client, `${path}.client`),
     agency: requireOptionalString(project.agency, `${path}.agency`),
+    productionCompany: requireOptionalString(
+      project.productionCompany,
+      `${path}.productionCompany`,
+    ),
     company: requireOptionalString(project.company, `${path}.company`),
     aiAssisted: requireBoolean(project.aiAssisted, `${path}.aiAssisted`),
+    aiUsage,
     title: requireLocalizedText(project.title, `${path}.title`),
     summary: requireLocalizedText(project.summary, `${path}.summary`),
     role: requireLocalizedText(project.role, `${path}.role`),

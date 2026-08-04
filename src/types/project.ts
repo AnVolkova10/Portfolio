@@ -46,6 +46,12 @@ export interface ProjectCardContent {
   stack: string[];
 }
 
+export interface ProjectAiUsage {
+  tool: string;
+  model?: string;
+  purpose: LocalizedText;
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -56,8 +62,10 @@ export interface Project {
   date: string;
   client?: string;
   agency?: string;
+  productionCompany?: string;
   company?: string;
   aiAssisted: boolean;
+  aiUsage?: ProjectAiUsage;
   title: LocalizedText;
   summary: LocalizedText;
   role: LocalizedText;
@@ -78,6 +86,7 @@ export interface ProjectCardViewModel {
   imgHeight?: number;
   liveUrl?: string;
   demoUrl?: string;
+  caseStudyUrl?: string;
   link?: string;
   date?: string;
 }
