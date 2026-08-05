@@ -2,7 +2,6 @@ import downloadIcon from '../assets/img/download.svg';
 import navIcon from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import projImg3 from '../assets/img/project-img3.png';
 import projImg4 from '../assets/img/project-img4.png';
 import projImg5 from '../assets/img/project-img5.png';
 import projImg6 from '../assets/img/project-img6.png';
@@ -135,15 +134,6 @@ export const skills = [
 
 // Projects pendientes de migrar al contrato normalizado.
 export const legacyProjectsDev = [
-  {
-    title: 'Components, World & Cat animation',
-    description: 'Frontend & WebGL Development',
-    languages:
-      'Next.js, React.js, React Three Fiber, GSAP, Styled Components & Framer Motion.',
-    imgUrl: projImg3,
-    link: 'https://front.dev.genosha.com.ar/',
-    date: '11/2022',
-  },
   {
     title: 'Battleship Game',
     description: 'Javascript Game Development',

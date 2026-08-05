@@ -99,6 +99,547 @@
     }
   },
   {
+    "id": "river-museum-content-wall",
+    "slug": "river-museum-interactive-content-wall",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 1,
+    "date": "2024-10",
+    "client": "Club Atlético River Plate / Museo River",
+    "productionCompany": "MUDE Museos Deportivos",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-4o",
+      "purpose": {
+        "es": "Apoyo puntual para diagnosticar y resolver bugs durante el desarrollo y la puesta en marcha.",
+        "en": "Occasional support for diagnosing and fixing bugs during development and launch."
+      }
+    },
+    "title": {
+      "es": "Museo River — Content Wall interactivo",
+      "en": "River Museum — Interactive Content Wall"
+    },
+    "summary": {
+      "es": "Desarrollo integral del frontend de Content Wall para la renovación del Museo River, un muro interactivo de siete pantallas táctiles para explorar imágenes, videos y acontecimientos deportivos, sociales, culturales e institucionales del club. Evolución de la experiencia desarrollada previamente para CONMEBOL, replanteando la grilla dinámica, la carga desde CMS, las categorías, los popups independientes por pantalla, el contenido en español, inglés y portugués y las interacciones táctiles. Optimización de rendimiento y estabilidad mediante precarga por lotes, control del ciclo de vida y la reproducción simultánea de videos, cálculo de proporciones, layouts con Muuri y resolución de overlays y pantallas negras. Dos visitas al Museo River para realizar pruebas, instalación, configuración y resolución de errores durante la puesta en marcha.",
+      "en": "End-to-end frontend development of the Content Wall for the River Museum renovation, an interactive wall made up of seven touchscreens for exploring images, videos, and key sporting, social, cultural, and institutional moments in the club's history. Evolution of the experience previously built for CONMEBOL, redesigning the dynamic grid, CMS-driven content, categories, independent per-screen popups, Spanish, English, and Portuguese content, and touch interactions. Performance and stability improvements through batch preloading, video lifecycle and simultaneous playback control, media-ratio calculations, Muuri layouts, and fixes for overlays and black-screen artifacts. Two visits to the River Museum for testing, installation, configuration, and troubleshooting during launch."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend principal y soporte técnico onsite",
+      "en": "Primary Frontend Developer & On-site Technical Support"
+    },
+    "stack": [
+      "React 18",
+      "TypeScript 5",
+      "Muuri",
+      "Styled Components",
+      "Sass",
+      "Zustand",
+      "Framer Motion",
+      "Lottie",
+      "REST APIs",
+      "CMS",
+      "Webpack 5",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Museo River: Content Wall",
+        "en": "River Museum: Content Wall"
+      },
+      "description": {
+        "es": "Desarrollo integral y soporte onsite de muro interactivo",
+        "en": "End-to-end Interactive Wall Development & On-site Support"
+      },
+      "stack": ["React", "TypeScript", "Muuri", "Styled Components", "REST APIs"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/river-museum-content-wall.jpg",
+        "width": 992,
+        "height": 661,
+        "alt": {
+          "es": "Content Wall de siete pantallas táctiles en el Museo River",
+          "en": "Seven-touchscreen Content Wall at the River Museum"
+        }
+      },
+      "video": {
+        "url": "https://cdn.jwplayer.com/previews/nhqCQRXr",
+        "title": {
+          "es": "Video del Content Wall del Museo River",
+          "en": "River Museum Content Wall video"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://cdn.jwplayer.com/previews/nhqCQRXr",
+      "caseStudy": "https://www.riverplate.com/news/museo-river/20241009-mas-historia-mas-grandeza-el-museo-river-se-renueva",
+      "references": [
+        {
+          "title": {
+            "es": "Sitio oficial del Museo River",
+            "en": "Official River Museum website"
+          },
+          "url": "https://www.riverplate.com/museo"
+        },
+        {
+          "title": {
+            "es": "Las nuevas experiencias interactivas del Museo River",
+            "en": "The River Museum's new interactive experiences"
+          },
+          "url": "https://www.infobae.com/deportes/2024/12/21/las-transformaciones-en-el-monumental-se-trasladaron-al-museo-river-cuales-son-las-nuevas-atracciones/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-4th-judge-chat",
+    "slug": "the-4th-judge-conversational-experience",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 11,
+    "date": "2025-03",
+    "client": "The Ring / DAZN",
+    "agency": "BigTime Creative Shop",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "The 4th Judge — Experiencia conversacional",
+      "en": "The 4th Judge — Conversational Experience"
+    },
+    "summary": {
+      "es": "Colaboración acotada de bug fixing frontend en Chat with The 4th Judge, segunda etapa conversacional del primer sistema de puntuación de boxeo impulsado por IA. Incorporación entre fines de febrero y comienzos de marzo para estabilizar contra reloj un frontend iniciado en Replit: corrección manual de problemas de responsive, scroll y navegación entre pantallas, selector de peleas, estados del chat, loaders, bloqueo de inputs, presentación de mensajes, manejo de errores y comportamiento de compartir. Trabajo limitado a la interfaz; sin participación en el desarrollo central de The 4th Judge, el motor de IA, el backend ni la primera activación en vivo.",
+      "en": "Focused frontend bug-fixing contribution to Chat with The 4th Judge, the conversational second phase of boxing's first AI-powered scoring system. Joined between late February and early March to stabilize a Replit-based frontend under a tight deadline, manually fixing responsive behavior, scrolling and screen navigation, fight selection, chat states, loaders, input locking, message presentation, error handling, and sharing behavior. Work was limited to the interface, with no involvement in the core development of The 4th Judge, its AI engine, backend, or first live activation."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — Bug fixing",
+      "en": "Frontend Developer — Bug Fixing"
+    },
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Fetch API",
+      "REST API",
+      "Web Share API",
+      "Google Analytics",
+      "Animate.css",
+      "Replit"
+    ],
+    "card": {
+      "title": {
+        "es": "The 4th Judge: Chat",
+        "en": "The 4th Judge: Chat"
+      },
+      "description": {
+        "es": "Bug fixing frontend para experiencia conversacional",
+        "en": "Frontend Bug Fixing for a Conversational Experience"
+      },
+      "stack": ["HTML", "CSS", "JavaScript", "REST API", "Replit"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/4th-judge-chat.png",
+        "width": 1911,
+        "height": 907,
+        "alt": {
+          "es": "Pantalla principal de Chat with The 4th Judge para conversar con el juez de boxeo impulsado por IA",
+          "en": "Chat with The 4th Judge homepage for talking to the AI-powered boxing judge"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/17wP5Kd1qL_kePNYpSL9DvJfaUqxsk9PX/view?usp=sharing",
+        "title": {
+          "es": "Demostración de Chat with The 4th Judge",
+          "en": "Chat with The 4th Judge demonstration"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/17wP5Kd1qL_kePNYpSL9DvJfaUqxsk9PX/view?usp=sharing",
+      "caseStudy": "https://www.linkedin.com/posts/genosha_ia-activity-7305608059656060931-E3DZ",
+      "references": [
+        {
+          "title": {
+            "es": "The 4th Judge en Cannes Lions 2025",
+            "en": "The 4th Judge at Cannes Lions 2025"
+          },
+          "url": "https://www.canneslions.com/awards/winners-spotlight/middle-east"
+        },
+        {
+          "title": {
+            "es": "D&AD Wood Pencil 2025",
+            "en": "2025 D&AD Wood Pencil"
+          },
+          "url": "https://www.dandad.org/work/d-ad-awards-archive/4th-judge"
+        },
+        {
+          "title": {
+            "es": "Cresta Gold 2025 — Integración de IA",
+            "en": "2025 Cresta Gold — AI Integration"
+          },
+          "url": "https://www.cresta-awards.com/winners/2025/creative-use-of-ai"
+        },
+        {
+          "title": {
+            "es": "Grand Prix de +Digital para Genosha",
+            "en": "+Digital Grand Prix for Genosha"
+          },
+          "url": "https://www.extradigital.es/interact-e-iab-argentina-presentaron-a-los-ganadores-del-premio-digital-argentina/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lotba-interactive-experiences",
+    "slug": "lotba-el-momento-decisivo-pateando-penales",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 12,
+    "date": "2024-12",
+    "client": "Lotería de la Ciudad de Buenos Aires (LOTBA)",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-4o",
+      "purpose": {
+        "es": "Apoyo puntual para resolver bugs y proponer algunos fragmentos de código durante el desarrollo y la estabilización.",
+        "en": "Occasional support for resolving bugs and proposing a few code snippets during development and stabilization."
+      }
+    },
+    "title": {
+      "es": "LOTBA — El Momento Decisivo y Pateando Penales",
+      "en": "LOTBA — The Decisive Moment and Penalty Shootout"
+    },
+    "summary": {
+      "es": "Desarrollo frontend integral de El Momento Decisivo, una experiencia interactiva para LOTBA en la que las personas miraban videos deportivos hasta una jugada clave, anticipaban cómo terminaría y debían acertar seis respuestas consecutivas para ganar. Implementación del flujo completo, reproducción de video, preguntas y temporizadores, estados y feedback, contenido desde API, métricas, animaciones y manejo de carga y errores. Participación adicional en la etapa final de Pateando Penales, retomando un frontend iniciado por otra desarrolladora para realizar bug fixing y estabilización de la experiencia de tablet, con correcciones responsive, estados de tiros y bonus, progreso, undo, QR, reconexión Socket.IO y despliegue. Trabajo limitado al frontend y a ajustes puntuales de integración; no atribuir el sistema original de visión computacional, backend ni hardware.",
+      "en": "End-to-end frontend development of The Decisive Moment, an interactive LOTBA experience where participants watched sports clips up to a key play, predicted how it would end, and had to answer six consecutive questions correctly to win. Implementation of the complete flow, video playback, questions and timers, state and feedback, API-driven content, metrics, animations, and loading and error handling. Additional participation during the final stage of Penalty Shootout, taking over a frontend started by another developer to provide bug fixing and stabilization for the tablet experience, including responsive fixes, kick and bonus states, progress, undo, QR, Socket.IO reconnection, and deployment. Work was limited to the frontend and selected integration fixes; do not attribute the original computer-vision system, backend, or hardware."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend principal de El Momento Decisivo y soporte frontend en Pateando Penales",
+      "en": "Primary Frontend Developer for The Decisive Moment & Frontend Support for Penalty Shootout"
+    },
+    "stack": [
+      "React 18",
+      "TypeScript 5",
+      "Zustand",
+      "Framer Motion",
+      "Sass",
+      "CSS Modules",
+      "Axios",
+      "Vite 6",
+      "Webpack 5",
+      "Socket.IO",
+      "REST APIs",
+      "Lottie",
+      "QR",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "LOTBA: Experiencias interactivas",
+        "en": "LOTBA: Interactive Experiences"
+      },
+      "description": {
+        "es": "Desarrollo integral y estabilización frontend",
+        "en": "End-to-end Development & Frontend Stabilization"
+      },
+      "stack": ["React", "TypeScript", "Zustand", "Socket.IO", "Sass"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/lotba-interactive-experiences.png",
+        "width": 939,
+        "height": 635,
+        "alt": {
+          "es": "Pantalla de El Momento Decisivo desarrollada para LOTBA",
+          "en": "The Decisive Moment screen developed for LOTBA"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/drive/folders/1SbAh92kk31RcircyrEgCmOVcyvQIUzcp?usp=sharing",
+        "title": {
+          "es": "Demos de El Momento Decisivo y Pateando Penales",
+          "en": "The Decisive Moment and Penalty Shootout demos"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/drive/folders/1SbAh92kk31RcircyrEgCmOVcyvQIUzcp?usp=sharing",
+      "references": [
+        {
+          "title": {
+            "es": "Sitio institucional de LOTBA",
+            "en": "LOTBA Institutional Website"
+          },
+          "url": "https://www.loteriadelaciudad.gob.ar/"
+        },
+        {
+          "title": {
+            "es": "Programa Saber Jugar de LOTBA",
+            "en": "LOTBA's Saber Jugar Program"
+          },
+          "url": "https://www.yogonet.com/latinoamerica/noticias/2021/03/29/85373-gli-destaco-el-programa-34saber-jugar-34-de-la-loteria-de-la-ciudad-de-buenos-aires"
+        }
+      ]
+    }
+  },
+  {
+    "id": "web-gen-3",
+    "slug": "genosha-web-gen-3-interactive-website",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 13,
+    "date": "2022-11",
+    "client": "Genosha",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "title": {
+      "es": "Web Gen 3.0 — Sitio interactivo de Genosha",
+      "en": "Web Gen 3.0 — Genosha Interactive Website"
+    },
+    "summary": {
+      "es": "Desarrollo colaborativo del sitio institucional interactivo de Genosha. Implementación de la primera secuencia 3D protagonizada por Genoshi, trabajando sobre sus animaciones, salida de la caja, desplazamiento, cámara y navegación mediante scroll, además de tótems, botones, paneles de proyectos, contenido desde API, traducciones y adaptación desktop/mobile. Participación central en el frontend y la lógica interactiva inicial, seguida por mantenimiento evolutivo transversal: actualización del catálogo de proyectos y resolución de bugs de animación, audio, responsive, accesibilidad, analytics, contacto, cookies y navegación. En 2024, integración de una renovación importante de las escenas 3D, tótems, palabras, pirámides, videos y rendimiento; último mantenimiento registrado en marzo de 2025.",
+      "en": "Collaborative development of Genosha's interactive corporate website. Implementation of the first 3D sequence starring Genoshi, working on the cat's animations, emergence from the box, movement, camera, and scroll-driven navigation, as well as totems, buttons, project panels, API-driven content, translations, and desktop/mobile adaptations. A central contribution to the initial frontend and interaction logic, followed by cross-cutting evolutionary maintenance: updating the project catalogue and fixing animation, audio, responsive, accessibility, analytics, contact, cookie, and navigation issues. In 2024, integration of a major update to the 3D scenes, totems, words, pyramids, videos, and performance, with the latest recorded maintenance completed in March 2025."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — Interacción 3D y mantenimiento evolutivo",
+      "en": "Frontend Developer — 3D Interaction & Evolutionary Maintenance"
+    },
+    "stack": [
+      "Next.js 12",
+      "React 18",
+      "JavaScript",
+      "Three.js",
+      "React Three Fiber",
+      "Drei",
+      "Theatre.js",
+      "Framer Motion",
+      "GSAP",
+      "Styled Components",
+      "Axios",
+      "Lottie",
+      "Postprocessing",
+      "REST APIs",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Web Gen 3.0",
+        "en": "Web Gen 3.0"
+      },
+      "description": {
+        "es": "Frontend, WebGL e interacción 3D",
+        "en": "Frontend, WebGL & 3D Interaction"
+      },
+      "stack": ["Next.js", "React", "Three.js", "React Three Fiber", "Styled Components"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/web-gen-3.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Escena tridimensional del sitio Web Gen 3.0 de Genosha con Genoshi y los proyectos de la agencia",
+          "en": "Three-dimensional scene from Genosha's Web Gen 3.0 website featuring Genoshi and the agency's projects"
+        }
+      }
+    },
+    "links": {
+      "live": "https://www.genosha.com/",
+      "historical": "https://front.dev.genosha.com.ar/"
+    }
+  },
+  {
+    "id": "mutantxs-workplace-protocol",
+    "slug": "mutantxs-workplace-violence-protocol",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 2,
+    "date": "2025-03",
+    "client": "Genosha",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "o3-mini-high",
+      "purpose": {
+        "es": "Apoyo puntual para resolver bugs, proponer algunos bloques de código complejos y orientar refactorizaciones durante el desarrollo.",
+        "en": "Occasional support for resolving bugs, proposing selected complex code blocks, and guiding refactors during development."
+      }
+    },
+    "title": {
+      "es": "Mutantxs — Protocolo y recursos contra las violencias laborales",
+      "en": "Mutantxs — Workplace Violence Prevention Protocol & Resources"
+    },
+    "summary": {
+      "es": "Desarrollo integral de Mutantxs, una plataforma pública de Genosha destinada a promover espacios de trabajo libres de violencias. Implementación end-to-end del frontend responsive, navegación, introducción animada, protocolo, juegos interactivos, casos reales, glosario, recursos y páginas informativas. Diseño e implementación de un backend liviano de contenidos mediante Google Sheets/Excel y Apps Script, organizando protocolo, juegos, casos, glosario y frases como conjuntos editables independientes, consumidos como CSV, transformados a modelos tipados con PapaParse y administrados mediante Zustand. Configuración de rutas, estados, animaciones, metadata, builds y despliegues automatizados en AWS S3.",
+      "en": "End-to-end development of Mutantxs, a public Genosha platform created to promote violence-free workplaces. Implementation of the responsive frontend, navigation, animated introduction, protocol, interactive games, real-life cases, glossary, resources, and informational pages. Design and implementation of a lightweight content backend using Google Sheets/Excel and Apps Script, organizing the protocol, games, cases, glossary, and quotes as independent editable datasets consumed as CSV, transformed into typed models with PapaParse, and managed through Zustand. Configuration of routing, state, animations, metadata, builds, and automated AWS S3 deployments."
+    },
+    "role": {
+      "es": "Desarrolladora Full Stack y arquitectura de contenidos",
+      "en": "Full Stack Developer & Content Architecture"
+    },
+    "stack": [
+      "Vite 5",
+      "React 18",
+      "TypeScript 5",
+      "React Router 7",
+      "Zustand 5",
+      "Framer Motion",
+      "Sass",
+      "Tailwind CSS 3",
+      "PapaParse",
+      "Google Sheets",
+      "Google Apps Script",
+      "CSV",
+      "Lottie",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Mutantxs",
+        "en": "Mutantxs"
+      },
+      "description": {
+        "es": "Desarrollo Full Stack y arquitectura de contenidos",
+        "en": "Full Stack Development & Content Architecture"
+      },
+      "stack": ["React", "TypeScript", "Zustand", "Google Sheets", "Apps Script"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/mutantxs-workplace-protocol.png",
+        "width": 1573,
+        "height": 907,
+        "alt": {
+          "es": "Página principal de Mutantxs con el mensaje por un espacio de trabajo libre de violencias",
+          "en": "Mutantxs homepage displaying the message for a violence-free workplace"
+        }
+      }
+    },
+    "links": {
+      "live": "https://protocolo.genosha.com/"
+    }
+  },
+  {
+    "id": "shellbox-autitos-ar",
+    "slug": "shellbox-collectible-cars-ar",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 10,
+    "date": "2024-11",
+    "client": "Shell / Raízen Argentina",
+    "agency": "DON",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "o1-preview",
+      "purpose": {
+        "es": "Apoyo puntual para resolver problemas y proponer fragmentos de implementación, algunos incorporados al código durante el desarrollo.",
+        "en": "Occasional support for problem-solving and proposing implementation snippets, some of which were incorporated into the code during development."
+      }
+    },
+    "title": {
+      "es": "Shell Box — Autitos Coleccionables en AR",
+      "en": "Shell Box — Collectible Cars AR Experience"
+    },
+    "summary": {
+      "es": "Desarrollo integral y mayormente autónomo del frontend mobile de una experiencia promocional para Shell Box que permitía visualizar y posicionar una Ferrari F1-75 en el entorno real, escalarla, rotarla, moverla y capturar el momento desde el teléfono. Implementación del flujo de bienvenida y registro, adaptación mobile y desktop, integración del modelo 3D y entornos HDR con Google Model Viewer, compatibilidad AR para iOS y Android mediante Quick Look y Scene Viewer, carga animada, ajustes de iluminación y sombras, analytics y despliegues dev/prod en AWS S3. Iteración y estabilización de múltiples versiones del modelo y de la interfaz antes del lanzamiento de Autitos Coleccionables 2024.",
+      "en": "End-to-end and largely autonomous frontend development of a mobile promotional experience for Shell Box that allowed users to visualize and place a Ferrari F1-75 in their physical environment, scale, rotate and move it, and capture the moment from their phone. Implementation of the welcome and registration flow, mobile and desktop adaptations, 3D model and HDR environment integration with Google Model Viewer, iOS and Android AR support through Quick Look and Scene Viewer, animated loading, lighting and shadow adjustments, analytics, and dev/prod deployments to AWS S3. Iteration and stabilization of multiple model and interface versions ahead of the 2024 Collectible Cars campaign launch."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend principal e integración de realidad aumentada",
+      "en": "Primary Frontend Developer & Augmented Reality Integration"
+    },
+    "stack": [
+      "React 18",
+      "TypeScript 5",
+      "Google Model Viewer",
+      "Three.js",
+      "Sass",
+      "CSS Modules",
+      "Zustand",
+      "Framer Motion",
+      "Lottie",
+      "Quick Look",
+      "Scene Viewer",
+      "Google Analytics",
+      "Webpack 5",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Shell Box: Autitos AR",
+        "en": "Shell Box: Collectible Cars AR"
+      },
+      "description": {
+        "es": "Frontend integral e integración AR para campaña mobile",
+        "en": "End-to-end Frontend & AR Integration for a Mobile Campaign"
+      },
+      "stack": ["React", "TypeScript", "Model Viewer", "Three.js", "Sass"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/shellbox-autitos-ar.png",
+        "width": 519,
+        "height": 469,
+        "alt": {
+          "es": "Ferrari F1-75 de la experiencia de realidad aumentada de Shell Box visualizada desde un teléfono",
+          "en": "Ferrari F1-75 from the Shell Box augmented reality experience displayed on a phone"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/1bEW1j5Yw1uzDa4tTzXt7y8_X1UyEKJ0M/view?usp=sharing",
+        "title": {
+          "es": "Demostración de la experiencia AR de Shell Box",
+          "en": "Shell Box AR experience demonstration"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1bEW1j5Yw1uzDa4tTzXt7y8_X1UyEKJ0M/view?usp=sharing",
+      "historical": "https://meetings-genosha.s3.amazonaws.com/shellbox-ar/dev/index.html",
+      "references": [
+        {
+          "title": {
+            "es": "Campaña Autitos Coleccionables 2024",
+            "en": "2024 Collectible Cars Campaign"
+          },
+          "url": "https://www.youtube.com/watch?v=7V90LY0NeR8"
+        },
+        {
+          "title": {
+            "es": "Términos oficiales de la promoción Shell",
+            "en": "Official Shell Promotion Terms"
+          },
+          "url": "https://www.shell.com.ar/conductores/promocion-shell/autitoscoleccionablestiktok.html"
+        },
+        {
+          "title": {
+            "es": "Presentación periodística de los autitos Shell",
+            "en": "Press Coverage of the Shell Collectible Cars"
+          },
+          "url": "https://eleconomista.com.ar/autos/volvieron-autitos-shell-ahora-puede-manejar-celular-n79184"
+        }
+      ]
+    }
+  },
+  {
     "id": "atma-chatia-pierre-store",
     "slug": "atma-chatia-pierre-newsan-store",
     "status": "published",
@@ -175,7 +716,7 @@
         }
       },
       "video": {
-        "url": "https://drive.google.com/file/d/1BC3-YpNY8eBL59Dmua3sD2Lu8yO6Nwrm/view?usp=sharing",
+        "url": "https://www.youtube.com/watch?v=5IJojMVnjM0",
         "title": {
           "es": "Demostración de ChatIA con Pierre en Tienda Newsan",
           "en": "ChatIA with Pierre demonstration at the Newsan Store"
@@ -183,7 +724,7 @@
       }
     },
     "links": {
-      "demo": "https://drive.google.com/file/d/1BC3-YpNY8eBL59Dmua3sD2Lu8yO6Nwrm/view?usp=sharing",
+      "demo": "https://www.youtube.com/watch?v=5IJojMVnjM0",
       "caseStudy": "https://www.lanacion.com.ar/tecnologia/como-nacio-pierre-la-inteligencia-artificial-argentina-que-te-ayuda-a-cocinar-nid09092024/",
       "references": [
         {
@@ -658,7 +1199,7 @@
     "aiAssisted": false,
     "aiUsage": {
       "tool": "ChatGPT",
-      "model": "GPT-4o",
+      "model": "o3-mini-high",
       "purpose": {
         "es": "Apoyo ocasional para resolver problemas y orientar algunas implementaciones durante el desarrollo.",
         "en": "Occasional support for problem-solving and guidance on selected implementations during development."
