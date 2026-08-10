@@ -5,7 +5,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 0,
+    "order": 1,
     "date": "2024-03",
     "client": "CONMEBOL",
     "productionCompany": "MUDE Museos Deportivos",
@@ -104,7 +104,7 @@
     "status": "published",
     "category": "client",
     "featured": true,
-    "order": 1,
+    "order": 2,
     "date": "2024-10",
     "client": "Club Atlético River Plate / Museo River",
     "productionCompany": "MUDE Museos Deportivos",
@@ -167,7 +167,7 @@
         }
       },
       "video": {
-        "url": "https://cdn.jwplayer.com/previews/nhqCQRXr",
+        "url": "https://www.youtube.com/shorts/M9ERzixQm40",
         "title": {
           "es": "Video del Content Wall del Museo River",
           "en": "River Museum Content Wall video"
@@ -175,7 +175,7 @@
       }
     },
     "links": {
-      "demo": "https://cdn.jwplayer.com/previews/nhqCQRXr",
+      "demo": "https://www.youtube.com/shorts/M9ERzixQm40",
       "caseStudy": "https://www.riverplate.com/news/museo-river/20241009-mas-historia-mas-grandeza-el-museo-river-se-renueva",
       "references": [
         {
@@ -464,8 +464,8 @@
     "slug": "mutantxs-workplace-violence-protocol",
     "status": "published",
     "category": "client",
-    "featured": true,
-    "order": 2,
+    "featured": false,
+    "order": 3,
     "date": "2025-03",
     "client": "Genosha",
     "company": "Genosha",
@@ -604,7 +604,7 @@
         }
       },
       "video": {
-        "url": "https://drive.google.com/file/d/1bEW1j5Yw1uzDa4tTzXt7y8_X1UyEKJ0M/view?usp=sharing",
+        "url": "https://www.youtube.com/shorts/uS-v8lm_nfQ",
         "title": {
           "es": "Demostración de la experiencia AR de Shell Box",
           "en": "Shell Box AR experience demonstration"
@@ -612,7 +612,7 @@
       }
     },
     "links": {
-      "demo": "https://drive.google.com/file/d/1bEW1j5Yw1uzDa4tTzXt7y8_X1UyEKJ0M/view?usp=sharing",
+      "demo": "https://www.youtube.com/shorts/uS-v8lm_nfQ",
       "historical": "https://meetings-genosha.s3.amazonaws.com/shellbox-ar/dev/index.html",
       "references": [
         {
@@ -796,11 +796,19 @@
           "es": "Landing de Sprite AntiBan-Ad para streamers",
           "en": "Sprite AntiBan-Ad landing page for streamers"
         }
+      },
+      "video": {
+        "url": "https://www.youtube.com/shorts/Rgs_v0uyzuc",
+        "title": {
+          "es": "Demostración de Sprite AntiBan-Ad",
+          "en": "Sprite AntiBan-Ad demonstration"
+        }
       }
     },
     "links": {
-      "live": "https://meetings-genosha.s3.amazonaws.com/sprite/sprite-fe/index.html",
-      "caseStudy": "https://vimeo.com/943497300",
+      "demo": "https://www.youtube.com/shorts/Rgs_v0uyzuc",
+      "caseStudy": "https://www.youtube.com/shorts/Rgs_v0uyzuc",
+      "historical": "https://meetings-genosha.s3.amazonaws.com/sprite/sprite-fe/index.html",
       "references": [
         {
           "title": {
@@ -1262,6 +1270,557 @@
     },
     "links": {
       "demo": "https://drive.google.com/file/d/1tvWyaqCKfj0Rhib6FF3cymJpwsi5vDz9/view?usp=sharing"
+    }
+  },
+  {
+    "id": "progressive-last-qb-dashboard",
+    "slug": "progressive-last-qb-dashboard",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 14,
+    "date": "2025-08",
+    "client": "Progressive",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "o3",
+      "purpose": {
+        "es": "Apoyo parcial para resolver problemas y desarrollar algunos componentes relevantes; el modelo se registra como probable según la disponibilidad de ChatGPT durante el proyecto.",
+        "en": "Partial support for problem-solving and developing selected relevant components; the model is recorded as the most likely option based on ChatGPT availability during the project."
+      }
+    },
+    "title": {
+      "es": "Progressive — Last QB Dashboard",
+      "en": "Progressive — Last QB Dashboard"
+    },
+    "summary": {
+      "es": "Desarrollo prácticamente integral del frontend de Last QB Dashboard, una herramienta vinculada con la campaña The Backup de Progressive para monitorear partidos de la NFL y visualizar cambios de quarterback en tiempo real. Implementación del dashboard responsive, partidos en vivo, marcadores, rosters, estadísticas e historial semanal; integración con el backend mediante Socket.IO y APIs REST; autenticación JWT; funcionamiento como PWA y notificaciones push para desktop, Android e iOS. Desarrollo de permisos y suscripciones, estados de carga y error, persistencia local, caché de recursos y despliegues automatizados. Integración con un backend que procesaba feeds deportivos y utilizaba GPT-4.1 para validar detecciones complementarias, sin atribuir su desarrollo.",
+      "en": "Near end-to-end frontend development of Last QB Dashboard, a tool connected to Progressive's The Backup campaign for monitoring NFL games and displaying quarterback changes in real time. Implementation of the responsive dashboard, live games, scores, rosters, statistics, and weekly history; backend integration through Socket.IO and REST APIs; JWT authentication; PWA capabilities and push notifications across desktop, Android, and iOS. Development of permission and subscription flows, loading and error states, local persistence, asset caching, and automated deployments. Integration with a backend that processed sports feeds and used GPT-4.1 to validate additional detections, without claiming its development."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend principal e integraciones en tiempo real",
+      "en": "Lead Frontend Developer & Real-time Integrations"
+    },
+    "stack": [
+      "Vite 5",
+      "React 18",
+      "TypeScript 5",
+      "Tailwind CSS 4",
+      "Zustand 5",
+      "Socket.IO",
+      "Web Push API",
+      "Service Workers",
+      "PWA",
+      "JWT",
+      "REST APIs",
+      "GPT-4.1",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Progressive: Last QB",
+        "en": "Progressive: Last QB"
+      },
+      "description": {
+        "es": "Frontend en tiempo real, PWA y notificaciones push",
+        "en": "Real-time Frontend, PWA & Push Notifications"
+      },
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Zustand", "Socket.IO"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/progressive-last-qb.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Dashboard de Progressive Last QB mostrando un cambio de quarterback durante un partido de la NFL",
+          "en": "Progressive Last QB dashboard displaying a quarterback change during an NFL game"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://meetings-genosha.s3.amazonaws.com/nfl-front/dev/index.html",
+      "references": [
+        {
+          "title": {
+            "es": "Reporte oficial de Progressive sobre la campaña The Backup",
+            "en": "Official Progressive report about The Backup campaign"
+          },
+          "url": "https://www.progressive.com/content/pdf/art/2024-annual-report.pdf"
+        },
+        {
+          "title": {
+            "es": "Segunda temporada de The Backup en 2025",
+            "en": "The Backup's second season in 2025"
+          },
+          "url": "https://lbbonline.com/news/Progressive-The-Backup-Season-Two"
+        }
+      ]
+    }
+  },
+  {
+    "id": "media-party-tarjeta-inteligente",
+    "slug": "media-party-2025-tarjeta-inteligente",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 15,
+    "date": "2025-10",
+    "company": "Genosha",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Replit Agent 3",
+      "model": "Claude Sonnet 4.0",
+      "purpose": {
+        "es": "Desarrollo end-to-end asistido por IA bajo mi dirección, incluyendo arquitectura, frontend, backend, integraciones, iteración visual y resolución de errores.",
+        "en": "AI-assisted end-to-end development under my direction, including architecture, frontend, backend, integrations, visual iteration, and troubleshooting."
+      }
+    },
+    "title": {
+      "es": "Media Party 2025 — Tarjeta Inteligente",
+      "en": "Media Party 2025 — Tarjeta Inteligente"
+    },
+    "summary": {
+      "es": "Desarrollo integral de Tarjeta Inteligente, una activación de networking creada por Genosha para la Media Feria de Media Party 2025. Mediante un flujo mobile-first, las personas completaban su información y redes, tomaban una selfie y obtenían un perfil digital único. La aplicación mejoraba las bios con GPT-4o mini, generaba retratos con Gemini 2.5 Flash Image Preview, persistía los perfiles mediante Google Sheets y Apps Script y transmitía nuevas tarjetas en tiempo real a una pantalla interactiva del evento. Implementación end-to-end en Replit con Replit Agent 3, incluyendo frontend, backend, cámara, validaciones, descarga de tarjetas, QR de acceso, búsqueda y visualización en vivo.",
+      "en": "End-to-end development of Tarjeta Inteligente, a networking activation created by Genosha for the Media Party 2025 Media Fair. Through a mobile-first flow, attendees entered their information and social profiles, captured a selfie, and received a unique digital profile. The application enhanced bios with GPT-4o mini, generated portraits with Gemini 2.5 Flash Image Preview, persisted profiles through Google Sheets and Apps Script, and streamed new cards in real time to an interactive event display. Built end-to-end in Replit with Replit Agent 3, including frontend, backend, camera capture, validation, card downloads, access QR, search, and live visualization."
+    },
+    "role": {
+      "es": "Desarrolladora Full Stack — Desarrollo asistido con IA",
+      "en": "Full Stack Developer — AI-Assisted Development"
+    },
+    "stack": [
+      "Python 3.11",
+      "Flask 3",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Flask-SocketIO",
+      "Google Sheets",
+      "Google Apps Script",
+      "OpenAI API",
+      "GPT-4o mini",
+      "Gemini 2.5 Flash Image Preview",
+      "Replit Agent 3"
+    ],
+    "card": {
+      "title": {
+        "es": "Tarjeta Inteligente",
+        "en": "Tarjeta Inteligente"
+      },
+      "description": {
+        "es": "Activación Full Stack de networking con IA",
+        "en": "AI-Powered Full Stack Networking Activation"
+      },
+      "stack": ["Python", "Flask", "JavaScript", "Socket.IO", "Gemini"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/media-party-tarjeta-inteligente.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Pantalla de bienvenida de Tarjeta Inteligente para Media Party 2025",
+          "en": "Tarjeta Inteligente welcome screen for Media Party 2025"
+        }
+      }
+    },
+    "links": {
+      "references": [
+        {
+          "title": {
+            "es": "Comunicado oficial de Media Party 2025",
+            "en": "Official Media Party 2025 announcement"
+          },
+          "url": "https://mediaparty.org/es/2025/09/18/inteligencia-artificial-periodismo-media-party-2025/"
+        },
+        {
+          "title": {
+            "es": "Media Feria 2025 con la participación de Genosha",
+            "en": "2025 Media Fair featuring Genosha"
+          },
+          "url": "https://es.linkedin.com/pulse/media-party-2025-el-futuro-del-periodismo-se-construye-en-bnyje"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jell-o-meter",
+    "slug": "jell-o-meter-real-time-experience",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 3,
+    "date": "2026-01",
+    "client": "JELL-O / Kraft Heinz",
+    "agency": "GUT Miami",
+    "company": "Genosha",
+    "aiAssisted": false,
+    "aiUsage": {
+      "tool": "ChatGPT",
+      "model": "GPT-5 family",
+      "purpose": {
+        "es": "Apoyo para resolver partes concretas mediante bloques completos de código, revisados e integrados manualmente durante el desarrollo frontend.",
+        "en": "Support for solving specific parts through complete code blocks that were manually reviewed and integrated during frontend development."
+      }
+    },
+    "title": {
+      "es": "JELL-O-METER — Experiencia en tiempo real",
+      "en": "JELL-O-METER — Real-Time Experience"
+    },
+    "summary": {
+      "es": "Desarrollo del frontend de JELL-O-METER, una experiencia de JELL-O y Kraft Heinz creada junto con GUT Miami y Genosha para convertir el ruido y la energía de las tribunas en una puntuación visible de 1 a 10 Jiggles. Implementación de la pantalla pública y de un backoffice autenticado para seleccionar medidores, controlar los estados de la experiencia, seguir puntajes y récords, activar el control manual de vibración, reiniciar dispositivos y recuperar conexiones mediante WebSockets. Trabajo realizado completamente online con dispositivos simulados, sin intervención en el hardware ni soporte onsite.",
+      "en": "Frontend development of JELL-O-METER, a JELL-O and Kraft Heinz experience created with GUT Miami and Genosha to turn crowd noise and energy into a visible score of 1 to 10 Jiggles. Implementation of the public display and an authenticated backoffice for selecting meters, controlling experience states, tracking scores and records, enabling manual vibration control, resetting devices, and recovering connections through WebSockets. Work was completed entirely online using simulated devices, without involvement in the hardware or on-site support."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend e integración en tiempo real",
+      "en": "Frontend Developer & Real-Time Integration"
+    },
+    "stack": [
+      "Vite 5",
+      "React 18",
+      "TypeScript 5",
+      "Tailwind CSS 4",
+      "Zustand 5",
+      "WebSockets",
+      "REST API",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "JELL-O-METER",
+        "en": "JELL-O-METER"
+      },
+      "description": {
+        "es": "Frontend, backoffice e integración en tiempo real",
+        "en": "Frontend, Backoffice & Real-Time Integration"
+      },
+      "stack": ["React", "TypeScript", "Tailwind", "Zustand", "WebSockets"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/jell-o-meter.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Logo blanco de JELL-O-METER sobre fondo rojo",
+          "en": "White JELL-O-METER logo on a red background"
+        }
+      },
+      "video": {
+        "url": "https://www.youtube.com/shorts/jzkSz_MsTYU",
+        "title": {
+          "es": "Video caso de JELL-O-METER producido por Genosha",
+          "en": "JELL-O-METER case video produced by Genosha"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/shorts/jzkSz_MsTYU",
+      "caseStudy": "https://www.gut.agency/work/jell-ometer",
+      "references": [
+        {
+          "title": {
+            "es": "Anuncio oficial de JELL-O y Kraft Heinz",
+            "en": "Official JELL-O and Kraft Heinz announcement"
+          },
+          "url": "https://www.businesswire.com/news/home/20260407701483/en/JELL-O-Introduces-the-JELL-OMETER-the-Worlds-First-Ever-Device-to-Quantifiably-Measure-Fan-Intensity"
+        },
+        {
+          "title": {
+            "es": "Experiencia pública JELL-O-METER",
+            "en": "Public JELL-O-METER experience"
+          },
+          "url": "https://www.jellometerlive.com/"
+        },
+        {
+          "title": {
+            "es": "JELL-O-METER en Reporte Publicidad",
+            "en": "JELL-O-METER in Reporte Publicidad"
+          },
+          "url": "https://revistareporte.com.ar/166/candidatos/"
+        },
+        {
+          "title": {
+            "es": "Bronze Lion de JELL-O-METER en Cannes Lions 2026",
+            "en": "JELL-O-METER Bronze Lion at Cannes Lions 2026"
+          },
+          "url": "https://www.linkedin.com/posts/the-kraft-heinz-company_canneslions2026-hereatkraftheinz-activity-7476315781421494274-eNbk"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nitrofert-aria-360",
+    "slug": "nitrofert-aria-360-voice-assistant",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 16,
+    "date": "2026-05",
+    "client": "Nitrofert / Nitrosoil",
+    "company": "Genosha",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Replit Agent 3",
+      "model": "Claude Sonnet 4.0",
+      "purpose": {
+        "es": "Construcción asistida bajo mi dirección, enfocada en integrar el agente conversacional de ElevenLabs dentro de la experiencia web tipo kiosco.",
+        "en": "AI-assisted construction under my direction, focused on integrating the ElevenLabs conversational agent into the kiosk-style web experience."
+      }
+    },
+    "title": {
+      "es": "Nitrofert — ARIA 360",
+      "en": "Nitrofert — ARIA 360"
+    },
+    "summary": {
+      "es": "Integración frontend de ARIA 360, asistente conversacional por voz de Nitrosoil/Nitrofert para el programa Santander Agro360. Desarrollo asistido mediante Replit de una experiencia web tipo kiosco conectada con ElevenLabs, con acceso seguro mediante signed URL, captura de micrófono, audio en tiempo real, wake word, subtítulos animados, estados de escucha y procesamiento, cierre mediante QR y recuperación ante errores. El agente conversacional y su experiencia UX fueron desarrollados por los especialistas de IA y UX; mi responsabilidad se concentró en su integración dentro de la aplicación web.",
+      "en": "Frontend integration of ARIA 360, Nitrosoil/Nitrofert's voice-based conversational assistant for the Santander Agro360 program. AI-assisted development in Replit of a kiosk-style web experience connected to ElevenLabs, with signed URL access, microphone capture, real-time audio, wake-word detection, animated subtitles, listening and processing states, QR-based session closure, and error recovery. The conversational agent and its UX were developed by the AI and UX specialists; my responsibility focused on integrating them into the web application."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — Integración de IA por voz",
+      "en": "Frontend Developer — Voice AI Integration"
+    },
+    "stack": [
+      "Vite 5",
+      "React 18",
+      "TypeScript 5",
+      "Tailwind CSS",
+      "ElevenLabs",
+      "Web Audio API",
+      "Web Speech API",
+      "Lottie",
+      "Node.js",
+      "Express",
+      "Replit"
+    ],
+    "card": {
+      "title": {
+        "es": "ARIA 360",
+        "en": "ARIA 360"
+      },
+      "description": {
+        "es": "Integración frontend de asistente rural por voz",
+        "en": "Voice AI Assistant Frontend Integration"
+      },
+      "stack": ["React", "TypeScript", "ElevenLabs", "Web Audio API", "Replit"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/nitrofert-aria-360.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Interfaz de ARIA 360 con orbe de voz y acceso a la conversación",
+          "en": "ARIA 360 interface with voice orb and conversation access"
+        }
+      }
+    },
+    "links": {
+      "live": "https://aria360.replit.app/",
+      "references": [
+        {
+          "title": {
+            "es": "Presentación oficial de Santander Agro360",
+            "en": "Official Santander Agro360 presentation"
+          },
+          "url": "https://santander.gov.co/publicaciones/11546/gobernacion-de-santander-informa-que-la-socializacion-del-proyecto-agro-santander-360-se-realizara-el-proximo-8-de-mayo/"
+        },
+        {
+          "title": {
+            "es": "Sitio oficial de Nitrosoil",
+            "en": "Official Nitrosoil website"
+          },
+          "url": "https://nitrosoil.co/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ypf-conexion-weblens",
+    "slug": "ypf-conexion-weblens-mobile-computer-vision",
+    "status": "published",
+    "category": "client",
+    "featured": true,
+    "order": 0,
+    "date": "2026-05",
+    "client": "YPF",
+    "company": "Genosha",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Codex",
+      "model": "GPT-5.2-Codex",
+      "purpose": {
+        "es": "Desarrollo frontend asistido bajo mi dirección, desde la arquitectura mobile-first y la implementación de interfaces hasta las integraciones de Computer Vision e IA, la estabilización en iPhone y la resolución de errores.",
+        "en": "AI-assisted frontend development under my direction, from mobile-first architecture and interface implementation to Computer Vision and AI integrations, iPhone stabilization, and troubleshooting."
+      }
+    },
+    "title": {
+      "es": "Conexión YPF — WebLens",
+      "en": "Conexión YPF — WebLens"
+    },
+    "summary": {
+      "es": "Desarrollo principal del frontend mobile-first de Conexión YPF — WebLens, una experiencia que utiliza la cámara del teléfono para detectar objetos y revelar sus conexiones con la energía, la logística y la innovación de YPF. Construcción de la arquitectura React, flujos de permisos y cámara, lens en tiempo real, bounding boxes, estados de validación, colección de Conexiones, detalles enriquecidos mediante una API de IA, exportación de resúmenes en PNG, soporte ES/EN, analytics y estados de error. Integración en navegador del pipeline TensorFlow.js y MediaPipe desarrollado por el equipo especializado de Computer Vision, junto con un trabajo intensivo de rendimiento, memoria, estabilidad y recuperación del runtime en iPhone.",
+      "en": "Primary frontend development of Conexión YPF — WebLens, a mobile-first experience that uses the phone camera to detect objects and reveal their connections to YPF's energy, logistics, and innovation ecosystem. Built the React architecture, camera and permission flows, real-time lens, bounding boxes, validation states, Connections collection, AI-enriched details, PNG summary exports, Spanish and English support, analytics, and error states. Integrated the TensorFlow.js and MediaPipe pipeline developed by the specialized Computer Vision team into the browser, alongside extensive work on iPhone performance, memory management, runtime stability, and recovery."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — Experiencia móvil e integración de Computer Vision",
+      "en": "Frontend Developer — Mobile Experience & Computer Vision Integration"
+    },
+    "stack": [
+      "Vite 7",
+      "React 19",
+      "TypeScript 5.9",
+      "CSS Modules",
+      "Zustand 5",
+      "TensorFlow.js 4",
+      "MediaPipe Tasks Vision",
+      "Framer Motion 12",
+      "Lottie",
+      "GA4",
+      "AWS API Gateway",
+      "AWS S3",
+      "CloudFront",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Conexión YPF: WebLens",
+        "en": "Conexión YPF: WebLens"
+      },
+      "description": {
+        "es": "Frontend móvil, Computer Vision e integración con IA",
+        "en": "Mobile Frontend, Computer Vision & AI Integration"
+      },
+      "stack": ["React", "TypeScript", "TensorFlow.js", "Zustand", "MediaPipe"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/ypf-conexion-weblens.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Conexión YPF WebLens detectando anteojos desde la cámara de un teléfono",
+          "en": "Conexión YPF WebLens detecting glasses through a phone camera"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/1kPd7-TB_2lVbRnbm9zCqABI0Ewa_jhal/view?usp=sharing",
+        "title": {
+          "es": "Demostración de Conexión YPF WebLens",
+          "en": "Conexión YPF WebLens demonstration"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/1kPd7-TB_2lVbRnbm9zCqABI0Ewa_jhal/view?usp=sharing",
+      "references": [
+        {
+          "title": {
+            "es": "Experiencia activa de Conexión YPF WebLens",
+            "en": "Active Conexión YPF WebLens experience"
+          },
+          "url": "https://conexionypf.com.ar/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mastercard-pedile-una-vez-mas",
+    "slug": "mastercard-banco-ciudad-pedile-una-vez-mas",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 17,
+    "date": "2026-06",
+    "client": "Mastercard / Banco Ciudad / Buepp",
+    "company": "Genosha",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Codex",
+      "model": "GPT-5.5",
+      "purpose": {
+        "es": "Desarrollo frontend asistido bajo mi dirección para las aplicaciones web mobile y tótem, incluyendo arquitectura, componentes, estados, integraciones, responsive, estabilización y resolución de errores.",
+        "en": "AI-assisted frontend development under my direction for the mobile web and totem applications, including architecture, components, state, integrations, responsive behavior, stabilization, and troubleshooting."
+      }
+    },
+    "title": {
+      "es": "Mastercard + Banco Ciudad — Pedile una vez más",
+      "en": "Mastercard + Banco Ciudad — Pedile una vez más"
+    },
+    "summary": {
+      "es": "Desarrollo integral del frontend de las dos aplicaciones de la activación phygital Pedile una vez más para Mastercard y Banco Ciudad/Buepp. La experiencia web mobile, iniciada mediante un QR dinámico del tótem, permitía validar la participación, ingresar un CBU, dejar un mensaje para Lionel Messi, registrar el nombre y completar un flujo separado para reclamar estampitas doradas, con validaciones locales, integración REST, estados de moderación, métricas GA4 y recuperación ante errores. La aplicación vertical del tótem coordinaba el QR, el feed de mensajes, promociones dinámicas, estados y tiempos de participación, animaciones, Socket.IO y la comunicación con el servidor local del dispenser para confirmar o rechazar la entrega física. El trabajo propio abarcó los dos frontends y sus integraciones; no incluyó backend, Arduino, hardware ni soporte onsite.",
+      "en": "End-to-end frontend development of both applications for Mastercard and Banco Ciudad/Buepp's Pedile una vez más phygital activation. The mobile web experience, launched through a dynamic QR code on the totem, handled participation validation, CBU entry, messages for Lionel Messi, participant names, and a separate golden-stamp claim flow, with local validation, REST integration, moderation states, GA4 analytics, and error recovery. The vertical totem application coordinated the QR code, message feed, dynamic promotions, participation states and timing, animations, Socket.IO, and communication with the local dispenser server to confirm or reject physical delivery. My work covered both frontends and their integrations; it did not include the backend, Arduino, hardware, or on-site support."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend principal — Web mobile y tótem interactivo",
+      "en": "Primary Frontend Developer — Mobile Web & Interactive Totem"
+    },
+    "stack": [
+      "Vite 7",
+      "React 19",
+      "TypeScript 5.9",
+      "CSS Modules",
+      "Tailwind CSS 4",
+      "Zustand 5",
+      "Framer Motion 12",
+      "Socket.IO",
+      "QRCode",
+      "REST API",
+      "Google Analytics 4",
+      "AWS S3",
+      "Bitbucket Pipelines"
+    ],
+    "card": {
+      "title": {
+        "es": "Pedile una vez más",
+        "en": "Pedile una vez más"
+      },
+      "description": {
+        "es": "Frontend integral de web mobile y tótem interactivo",
+        "en": "End-to-end Mobile Web & Interactive Totem Frontend"
+      },
+      "stack": ["React", "TypeScript", "Socket.IO", "Zustand", "Framer Motion"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/mastercard-pedile-una-vez-mas.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Tótem de la activación Pedile una vez más mostrando la confirmación de un mensaje y la web mobile en un teléfono",
+          "en": "Pedile una vez más activation totem showing a message confirmation and the mobile web experience on a phone"
+        }
+      },
+      "video": {
+        "url": "https://drive.google.com/file/d/13ttWjFKMWzdTcCZQ9lHeVTNmLqHduYSE/view?usp=sharing",
+        "title": {
+          "es": "Demostración de la activación Pedile una vez más",
+          "en": "Pedile una vez más activation demonstration"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://drive.google.com/file/d/13ttWjFKMWzdTcCZQ9lHeVTNmLqHduYSE/view?usp=sharing",
+      "references": [
+        {
+          "title": {
+            "es": "Promoción Pedile una vez más de Banco Ciudad",
+            "en": "Banco Ciudad's Pedile una vez más promotion"
+          },
+          "url": "https://bancociudad.com.ar/institucional/micrositio/PromoUnaVezMas"
+        },
+        {
+          "title": {
+            "es": "Activación de Buepp y Mastercard en el DOT",
+            "en": "Buepp and Mastercard activation at DOT"
+          },
+          "url": "https://www.minutodecierre.com/nota/2026-6-12-18-50-0-gana-una-camiseta-firmada-por-messi-pedile-una-vez-mas-con-buepp-y-mastercard-en-el-dot"
+        }
+      ]
     }
   }
 ]

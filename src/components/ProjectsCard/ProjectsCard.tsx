@@ -4,6 +4,10 @@ import '../ProjectsCard/ProjectsCardStyles.scss';
 interface ProjectsCardProps {
   title: string;
   description: string;
+  featured?: boolean;
+  aiAssisted?: boolean;
+  aiAssistedLabel?: string;
+  aiUsage?: string;
   imgUrl: string;
   imgAlt?: string;
   imgWidth?: number;
@@ -19,6 +23,10 @@ interface ProjectsCardProps {
 export const ProjectsCard = ({
   title,
   description,
+  featured = false,
+  aiAssisted = false,
+  aiAssistedLabel = 'AI Assisted',
+  aiUsage,
   imgUrl,
   imgAlt,
   imgWidth,
@@ -32,13 +40,18 @@ export const ProjectsCard = ({
 }: ProjectsCardProps) => {
   const destination = liveUrl ?? demoUrl ?? caseStudyUrl ?? link;
   const cardContent = (
-    <div className='proj-imgbx'>
+    <div
+      className={`proj-imgbx${featured ? ' proj-imgbx--featured' : ''}`}
+    >
       <img
         alt={imgAlt ?? title}
         height={imgHeight}
         src={imgUrl}
         width={imgWidth}
       />
+      {aiAssisted && (
+        <span className='ai-assisted-badge'>{aiAssistedLabel}</span>
+      )}
       <div className='proj-txtx'>
         <h4>{title}</h4>
         <span>
@@ -46,6 +59,7 @@ export const ProjectsCard = ({
         </span>
         <br />
         <span>{languages}</span>
+        {aiUsage && <span className='ai-usage'>{aiUsage}</span>}
         <p>{date}</p>
       </div>
     </div>

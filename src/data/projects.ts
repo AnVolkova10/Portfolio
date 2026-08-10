@@ -45,6 +45,19 @@ const formatStack = (stack: string[], locale: Locale): string => {
   return `${firstItems}${conjunction}${stack.at(-1)}.`;
 };
 
+const formatAiUsage = (
+  project: Project,
+  locale: Locale,
+): string | undefined => {
+  if (!project.aiAssisted || !project.aiUsage) {
+    return undefined;
+  }
+
+  const label = locale === 'es' ? 'IA' : 'AI';
+
+  return `${label}: ${project.aiUsage.tool} · ${project.aiUsage.model}`;
+};
+
 const toProjectCard = (
   project: Project,
   locale: Locale,
@@ -61,6 +74,10 @@ const toProjectCard = (
     id: project.id,
     title: project.card.title[locale],
     description: project.card.description[locale],
+    featured: project.featured,
+    aiAssisted: project.aiAssisted,
+    aiAssistedLabel: locale === 'es' ? 'Asistido con IA' : 'AI Assisted',
+    aiUsage: formatAiUsage(project, locale),
     languages: formatStack(project.card.stack, locale),
     imgUrl: resolvePublicAsset(image.file),
     imgAlt: image.alt[locale],

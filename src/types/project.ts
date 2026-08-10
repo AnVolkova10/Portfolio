@@ -48,7 +48,7 @@ export interface ProjectCardContent {
 
 export interface ProjectAiUsage {
   tool: string;
-  model?: string;
+  model: string;
   purpose: LocalizedText;
 }
 
@@ -79,6 +79,10 @@ export interface ProjectCardViewModel {
   id: string;
   title: string;
   description: string;
+  featured?: boolean;
+  aiAssisted?: boolean;
+  aiAssistedLabel?: string;
+  aiUsage?: string;
   languages?: string;
   imgUrl: string;
   imgAlt?: string;

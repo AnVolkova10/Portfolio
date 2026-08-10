@@ -93,7 +93,7 @@ const requireAiUsage = (value: unknown, path: string): ProjectAiUsage => {
 
   return {
     tool: requireString(aiUsage.tool, `${path}.tool`),
-    model: requireOptionalString(aiUsage.model, `${path}.model`),
+    model: requireString(aiUsage.model, `${path}.model`),
     purpose: requireLocalizedText(aiUsage.purpose, `${path}.purpose`),
   };
 };
@@ -215,11 +215,22 @@ const requireProject = (value: unknown, path: string): Project => {
   const aiUsage = project.aiUsage === undefined
     ? undefined
     : requireAiUsage(project.aiUsage, `${path}.aiUsage`);
+  const aiAssisted = requireBoolean(
+    project.aiAssisted,
+    `${path}.aiAssisted`,
+  );
 
   if (status === 'published' && !media.image) {
     return validationError(
       `${path}.media.image`,
       'es obligatoria para un proyecto publicado en la grilla actual.',
+    );
+  }
+
+  if (aiAssisted && !aiUsage) {
+    return validationError(
+      `${path}.aiUsage`,
+      'es obligatorio cuando aiAssisted es true.',
     );
   }
 
@@ -238,7 +249,7 @@ const requireProject = (value: unknown, path: string): Project => {
       `${path}.productionCompany`,
     ),
     company: requireOptionalString(project.company, `${path}.company`),
-    aiAssisted: requireBoolean(project.aiAssisted, `${path}.aiAssisted`),
+    aiAssisted,
     aiUsage,
     title: requireLocalizedText(project.title, `${path}.title`),
     summary: requireLocalizedText(project.summary, `${path}.summary`),
