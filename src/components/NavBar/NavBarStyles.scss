@@ -8,6 +8,10 @@ nav.navbar {
   z-index: 9999;
   transition: 0.32s ease-in-out;
 
+  > .container {
+    padding-right: 86px;
+  }
+
   &.scrolled {
     padding: 0px 0;
     background-color: $background-color;

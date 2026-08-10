@@ -6,6 +6,7 @@ import type {
 } from '../types/project';
 import { resolvePublicAsset } from '../utils/resolvePublicAsset';
 import { validateProjects } from '../utils/validateProjects';
+import { translateStackItem } from '../i18n/messages';
 
 const compareProjects = (first: Project, second: Project): number => {
   if (first.featured !== second.featured) {
@@ -34,14 +35,16 @@ const formatDate = (date: string): string => {
 };
 
 const formatStack = (stack: string[], locale: Locale): string => {
-  if (stack.length === 1) {
-    return `${stack[0]}.`;
+  const localizedStack = stack.map((item) => translateStackItem(item, locale));
+
+  if (localizedStack.length === 1) {
+    return `${localizedStack[0]}.`;
   }
 
   const conjunction = locale === 'es' ? ' y ' : ' & ';
-  const firstItems = stack.slice(0, -1).join(', ');
+  const firstItems = localizedStack.slice(0, -1).join(', ');
 
-  return `${firstItems}${conjunction}${stack.at(-1)}.`;
+  return `${firstItems}${conjunction}${localizedStack.at(-1)}.`;
 };
 
 const formatAiUsage = (
@@ -120,7 +123,3 @@ export const getProjectsFilm = (
   publishedProjects
     .filter((project) => project.category === 'audiovisual')
     .map((project) => toProjectCard(project, locale));
-
-export const projectsDev = getProjectsDev();
-export const projectsOthers = getProjectsOthers();
-export const projectsFilm = getProjectsFilm();

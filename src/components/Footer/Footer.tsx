@@ -2,8 +2,10 @@ import '../Footer/FooterStyles.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import logo from '../../assets/img/logo.svg'
 import { socialLinks } from '../../data/site'
+import { useLanguage } from '../../i18n/LanguageProvider'
 
 export const Footer = () => {
+  const { messages } = useLanguage()
   const year = new Date().getFullYear()
 
   return (
@@ -12,7 +14,7 @@ export const Footer = () => {
         <Container>
           <Row className='align-items-center '>
             <Col size={12} sm={12}>
-              <img className='logo' src={logo} alt='Logo' />
+              <img className='logo' src={logo} alt={messages.footer.logoAlt} />
               <div className='social-icon'>
                 {socialLinks.map((link) => (
                   <a
@@ -20,12 +22,15 @@ export const Footer = () => {
                     href={link.href}
                     target='_blank'
                     rel='noreferrer'
+                    aria-label={link.label}
                   >
-                    <img src={link.imgSrc} alt={link.alt} />
+                    <img src={link.imgSrc} alt='' />
                   </a>
                 ))}
               </div>
-              <p>© {year} Ángela Curzi. All rights reserved.</p>
+              <p>
+                © {year} Ángela Curzi. {messages.footer.rights}
+              </p>
             </Col>
           </Row>
         </Container>

@@ -1,4 +1,3 @@
-import downloadIcon from '../assets/img/download.svg';
 import navIcon from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -26,34 +25,21 @@ import productionLogo from '../assets/img/production-logo.png';
 import filmWriterLogo from '../assets/img/film-writer-logo.png';
 import animatorLogo from '../assets/img/animator-logo.png';
 
-// NavBar
-export const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
-  {
-    href: '/cvs/cv-en-angela-curzi.pdf',
-    label: 'Resume',
-    download: 'cv-en-angela-curzi.pdf',
-    icon: downloadIcon,
-  },
-];
-
 export const socialLinks = [
   {
     href: 'https://www.linkedin.com/in/%C3%A1ngela-curzi-572372ba/',
     imgSrc: navIcon,
-    alt: 'LinkedIn Icon',
+    label: 'LinkedIn',
   },
   {
     href: 'https://github.com/AnVolkova10',
     imgSrc: navIcon2,
-    alt: 'Github Icon',
+    label: 'GitHub',
   },
   {
     href: 'https://youtube.com/@anvolkova10',
     imgSrc: navIcon3,
-    alt: 'Youtube Icon',
+    label: 'YouTube',
   },
 ];
 
@@ -77,32 +63,62 @@ export const responsive = {
   },
 };
 
+const skillLabel = (en: string, es: string = en) => ({ es, en });
+
 export const skills = [
-  { imgSrc: reactLogo, alt: 'react', label: 'React' },
-  { imgSrc: threejsLogo, alt: 'three.js', label: 'Three.js' },
-  { imgSrc: jsLogo, alt: 'js', label: 'JavaScript' },
-  { imgSrc: bootstrapLogo, alt: 'bootstrap', label: 'Bootstrap' },
-  { imgSrc: htmlLogo, alt: 'html', label: 'HTML' },
-  { imgSrc: cssLogo, alt: 'css', label: 'CSS' },
-  { imgSrc: sassLogo, alt: 'sass', label: 'Sass' },
-  { imgSrc: handlebarsLogo, alt: 'handlebars', label: 'Handlebars' },
+  { id: 'react', imgSrc: reactLogo, label: skillLabel('React') },
+  { id: 'three-js', imgSrc: threejsLogo, label: skillLabel('Three.js') },
+  { id: 'javascript', imgSrc: jsLogo, label: skillLabel('JavaScript') },
+  { id: 'bootstrap', imgSrc: bootstrapLogo, label: skillLabel('Bootstrap') },
+  { id: 'html', imgSrc: htmlLogo, label: skillLabel('HTML') },
+  { id: 'css', imgSrc: cssLogo, label: skillLabel('CSS') },
+  { id: 'sass', imgSrc: sassLogo, label: skillLabel('Sass') },
+  { id: 'handlebars', imgSrc: handlebarsLogo, label: skillLabel('Handlebars') },
   {
+    id: 'styled-components',
     imgSrc: styledComponentsLogo,
-    alt: 'styled-components',
-    label: 'Styled Components',
+    label: skillLabel('Styled Components'),
   },
-  { imgSrc: jqueryLogo, alt: 'jquery', label: 'jQuery' },
-  { imgSrc: gsapLogo, alt: 'gsap', label: 'GSAP' },
-  { imgSrc: framerMotionLogo, alt: 'framer-motion', label: 'Framer Motion' },
-  { imgSrc: nextLogo, alt: 'next', label: 'Next.js' },
-  { imgSrc: nodeLogo, alt: 'node', label: 'Node.js' },
-  { imgSrc: phpLogo, alt: 'php', label: 'PHP' },
-  { imgSrc: mysqlLogo, alt: 'mysql', label: 'MySQL' },
-  { imgSrc: dockerLogo, alt: 'docker', label: 'Docker' },
-  { imgSrc: filmmakingLogo, alt: 'filmmaking', label: 'Filmmaking' },
-  { imgSrc: filmEditingLogo, alt: 'film-editing', label: 'Film Editing' },
-  { imgSrc: visualEffectsLogo, alt: 'visual-effects', label: 'Visual Effects' },
-  { imgSrc: productionLogo, alt: 'production', label: 'Production' },
-  { imgSrc: filmWriterLogo, alt: 'film-writer', label: 'Film Writing' },
-  { imgSrc: animatorLogo, alt: 'animator', label: 'Animation' },
+  { id: 'jquery', imgSrc: jqueryLogo, label: skillLabel('jQuery') },
+  { id: 'gsap', imgSrc: gsapLogo, label: skillLabel('GSAP') },
+  {
+    id: 'framer-motion',
+    imgSrc: framerMotionLogo,
+    label: skillLabel('Framer Motion'),
+  },
+  { id: 'next-js', imgSrc: nextLogo, label: skillLabel('Next.js') },
+  { id: 'node-js', imgSrc: nodeLogo, label: skillLabel('Node.js') },
+  { id: 'php', imgSrc: phpLogo, label: skillLabel('PHP') },
+  { id: 'mysql', imgSrc: mysqlLogo, label: skillLabel('MySQL') },
+  { id: 'docker', imgSrc: dockerLogo, label: skillLabel('Docker') },
+  {
+    id: 'filmmaking',
+    imgSrc: filmmakingLogo,
+    label: skillLabel('Filmmaking', 'Realización audiovisual'),
+  },
+  {
+    id: 'film-editing',
+    imgSrc: filmEditingLogo,
+    label: skillLabel('Film Editing', 'Edición audiovisual'),
+  },
+  {
+    id: 'visual-effects',
+    imgSrc: visualEffectsLogo,
+    label: skillLabel('Visual Effects', 'Efectos visuales'),
+  },
+  {
+    id: 'production',
+    imgSrc: productionLogo,
+    label: skillLabel('Production', 'Producción'),
+  },
+  {
+    id: 'film-writing',
+    imgSrc: filmWriterLogo,
+    label: skillLabel('Film Writing', 'Guion'),
+  },
+  {
+    id: 'animation',
+    imgSrc: animatorLogo,
+    label: skillLabel('Animation', 'Animación'),
+  },
 ];

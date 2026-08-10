@@ -1,5 +1,6 @@
 import { Col } from 'react-bootstrap';
 import '../ProjectsCard/ProjectsCardStyles.scss';
+import { useLanguage } from '../../i18n/LanguageProvider';
 
 interface ProjectsCardProps {
   title: string;
@@ -38,7 +39,15 @@ export const ProjectsCard = ({
   link,
   date,
 }: ProjectsCardProps) => {
+  const { messages } = useLanguage();
   const destination = liveUrl ?? demoUrl ?? caseStudyUrl ?? link;
+  const destinationLabel = liveUrl
+    ? `${messages.projects.openProject} ${title}`
+    : demoUrl
+      ? `${messages.projects.openDemo} ${title}`
+      : caseStudyUrl
+        ? `${messages.projects.openCaseStudy} ${title}`
+        : `${messages.projects.openRepository} ${title}`;
   const cardContent = (
     <div
       className={`proj-imgbx${featured ? ' proj-imgbx--featured' : ''}`}
@@ -69,7 +78,7 @@ export const ProjectsCard = ({
     <Col sm={6} md={4}>
       {destination ? (
         <a
-          aria-label={`Open ${title}${demoUrl && !liveUrl ? ' demo' : caseStudyUrl && !liveUrl ? ' case study' : ''}`}
+          aria-label={destinationLabel}
           href={destination}
           rel='noreferrer'
           target='_blank'

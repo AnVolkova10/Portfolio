@@ -4,8 +4,11 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../../assets/img/color-sharp.png';
 
 import { SkillsCarousel } from '../SkillsCarousel/SkillsCarousel';
+import { useLanguage } from '../../i18n/LanguageProvider';
 
 export const Skills = () => {
+  const { messages } = useLanguage();
+
   return (
     <section className='skill' id='skills'>
       <Container>
@@ -13,14 +16,8 @@ export const Skills = () => {
           <Col>
             <div className='skill-bx'>
               {' '}
-              <h2>Skills</h2>
-              <p>
-                Welcome to my skills section! Here I showcase my qualifications
-                and experience in various areas, with a focus on technology and
-                software development. I am passionate about problem solving and
-                continually learning new technologies to stay at the forefront
-                of my field.
-              </p>
+              <h2>{messages.skills.title}</h2>
+              <p>{messages.skills.description}</p>
               <SkillsCarousel />
             </div>
           </Col>
@@ -28,7 +25,7 @@ export const Skills = () => {
       </Container>
       <img
         className='background-image-left'
-        alt='background color'
+        alt={messages.skills.backgroundAlt}
         src={colorSharp}
       ></img>
     </section>

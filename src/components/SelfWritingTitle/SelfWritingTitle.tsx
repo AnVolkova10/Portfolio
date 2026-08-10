@@ -1,18 +1,13 @@
 import '../SelfWritingTitle/SelfWritingTitleStyles.scss';
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageProvider';
 
-const TO_ROTATE = [
-  'Frontend Developer!',
-  'React.js Developer!',
-  'Three.js Developer!',
-  'Video Editor!',
-  'Filmmaker!',
-  'Gamer!!',
-];
 const PERIOD = 2000;
 const INITIAL_DELTA = 300;
 
 export const SelfWritingTitle = () => {
+  const { messages } = useLanguage();
+  const roles = messages.banner.roles;
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -20,8 +15,8 @@ export const SelfWritingTitle = () => {
 
   useEffect(() => {
     const tick = () => {
-      const index = loopNum % TO_ROTATE.length;
-      const fullText = TO_ROTATE[index];
+      const index = loopNum % roles.length;
+      const fullText = roles[index];
       const updatedText = isDeleting
         ? fullText.substring(0, text.length - 1)
         : fullText.substring(0, text.length + 1);
@@ -45,11 +40,11 @@ export const SelfWritingTitle = () => {
     return () => {
       window.clearInterval(ticker);
     };
-  }, [delta, isDeleting, loopNum, text]);
+  }, [delta, isDeleting, loopNum, roles, text]);
 
   return (
     <h1>
-      {`Hi, I'm a `}
+      {messages.banner.headingPrefix}
       <span className='wrap'>{text} </span>
     </h1>
   );

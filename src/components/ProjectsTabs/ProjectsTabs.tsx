@@ -1,13 +1,19 @@
 import '../ProjectsTabs/ProjectsTabsStyles.scss';
 import { Nav, Row, Tab } from 'react-bootstrap';
 import {
-  projectsDev,
-  projectsFilm,
-  projectsOthers,
+  getProjectsDev,
+  getProjectsFilm,
+  getProjectsOthers,
 } from '../../data/projects';
 import { ProjectsCard } from '../ProjectsCard/ProjectsCard';
+import { useLanguage } from '../../i18n/LanguageProvider';
 
 export const ProjectsTabs = () => {
+  const { locale, messages } = useLanguage();
+  const projectsDev = getProjectsDev(locale);
+  const projectsFilm = getProjectsFilm(locale);
+  const projectsOthers = getProjectsOthers(locale);
+
   return (
     <Tab.Container id='projects-tabs' defaultActiveKey='second'>
       <Nav
@@ -16,13 +22,15 @@ export const ProjectsTabs = () => {
         id='pills'
       >
         <Nav.Item>
-          <Nav.Link eventKey='first'>FILM</Nav.Link>
+          <Nav.Link eventKey='first'>{messages.projects.tabs.film}</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='second'>DEV</Nav.Link>
+          <Nav.Link eventKey='second'>
+            {messages.projects.tabs.development}
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='third'>OTHERS</Nav.Link>
+          <Nav.Link eventKey='third'>{messages.projects.tabs.others}</Nav.Link>
         </Nav.Item>
       </Nav>
       <Tab.Content>
