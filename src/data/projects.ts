@@ -1,5 +1,4 @@
 import rawProjects from './projects.json';
-import { legacyProjectsDev } from './site';
 import type {
   Locale,
   Project,
@@ -78,7 +77,10 @@ const toProjectCard = (
     aiAssisted: project.aiAssisted,
     aiAssistedLabel: locale === 'es' ? 'Asistido con IA' : 'AI Assisted',
     aiUsage: formatAiUsage(project, locale),
-    languages: formatStack(project.card.stack, locale),
+    languages:
+      project.category === 'audiovisual'
+        ? undefined
+        : formatStack(project.card.stack, locale),
     imgUrl: resolvePublicAsset(image.file),
     imgAlt: image.alt[locale],
     imgWidth: image.width,
@@ -86,44 +88,10 @@ const toProjectCard = (
     liveUrl: project.links?.live,
     demoUrl: project.links?.demo,
     caseStudyUrl: project.links?.caseStudy,
+    link: project.links?.repository,
     date: formatDate(project.date),
   };
 };
-
-const slugify = (value: string): string =>
-  value
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
-
-const legacyProjectCards: ProjectCardViewModel[] = legacyProjectsDev.map(
-  (project) => ({
-    id: `legacy-dev-${slugify(project.title)}`,
-    ...project,
-    liveUrl: project.link,
-  }),
-);
-
-const toSortableDate = (date?: string): string => {
-  if (!date) {
-    return '';
-  }
-
-  if (/^\d{4}-\d{2}$/.test(date)) {
-    return date;
-  }
-
-  const [month, year] = date.split('/');
-
-  return year && month ? `${year}-${month}` : '';
-};
-
-const compareProjectCardDates = (
-  first: ProjectCardViewModel,
-  second: ProjectCardViewModel,
-): number => toSortableDate(second.date).localeCompare(toSortableDate(first.date));
 
 export const projects = validateProjects(rawProjects);
 
@@ -131,21 +99,28 @@ export const publishedProjects = projects
   .filter((project) => project.status === 'published')
   .sort(compareProjects);
 
-export const getProjectsDev = (locale: Locale = 'en'): ProjectCardViewModel[] => {
-  const featuredCards = publishedProjects
-    .filter((project) => project.featured)
+export const getProjectsDev = (locale: Locale = 'en'): ProjectCardViewModel[] =>
+  publishedProjects
+    .filter(
+      (project) =>
+        project.category !== 'other' && project.category !== 'audiovisual',
+    )
     .map((project) => toProjectCard(project, locale));
-  const nonFeaturedCards = [
-    ...publishedProjects
-      .filter((project) => !project.featured)
-      .map((project) => toProjectCard(project, locale)),
-    ...legacyProjectCards,
-  ].sort(compareProjectCardDates);
 
-  return [
-    ...featuredCards,
-    ...nonFeaturedCards,
-  ];
-};
+export const getProjectsOthers = (
+  locale: Locale = 'en',
+): ProjectCardViewModel[] =>
+  publishedProjects
+    .filter((project) => project.category === 'other')
+    .map((project) => toProjectCard(project, locale));
+
+export const getProjectsFilm = (
+  locale: Locale = 'en',
+): ProjectCardViewModel[] =>
+  publishedProjects
+    .filter((project) => project.category === 'audiovisual')
+    .map((project) => toProjectCard(project, locale));
 
 export const projectsDev = getProjectsDev();
+export const projectsOthers = getProjectsOthers();
+export const projectsFilm = getProjectsFilm();

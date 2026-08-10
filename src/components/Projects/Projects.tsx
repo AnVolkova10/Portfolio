@@ -1,7 +1,6 @@
 import '../Projects/ProjectsStyles.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ProjectsTabs } from '../ProjectsTabs/ProjectsTabs';
-import background from '../../assets/img/banner-bg-mob.png';
 
 export const Projects = () => {
   return (
@@ -22,11 +21,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img
-        className='background-image-right'
-        alt='background color'
-        src={background}
-      ></img>
     </section>
   );
 };

@@ -16,6 +16,7 @@ const projectCategories: ProjectCategory[] = [
   'client',
   'personal',
   'audiovisual',
+  'other',
 ];
 
 const validationError = (path: string, message: string): never => {

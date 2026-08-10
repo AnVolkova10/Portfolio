@@ -1822,5 +1822,1284 @@
         }
       ]
     }
+  },
+  {
+    "id": "armaduki-team-generator",
+    "slug": "armaduki-intelligent-5v5-team-generator",
+    "status": "published",
+    "category": "personal",
+    "featured": false,
+    "order": 18,
+    "date": "2026-02",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Codex",
+      "model": "GPT-5.5",
+      "purpose": {
+        "es": "Desarrollo full stack asistido bajo mi dirección, desde la definición del producto y la experiencia mobile-first hasta el algoritmo de generación, la interfaz, el estado, la integración con Google Sheets y el backend en Apps Script.",
+        "en": "AI-assisted full-stack development under my direction, from product definition and the mobile-first experience to the generation algorithm, interface, state, Google Sheets integration, and Apps Script backend."
+      }
+    },
+    "title": {
+      "es": "Armaduki — Generador inteligente de equipos 5v5",
+      "en": "Armaduki — Intelligent 5v5 Team Generator"
+    },
+    "summary": {
+      "es": "Diseño y desarrollo integral de Armaduki, una aplicación personal nacida de una necesidad real para administrar jugadoras y generar equipos 5v5 equilibrados. El sistema combina roles, puntuaciones, atributos futbolísticos, preferencias sociales, incompatibilidades y disposición para atajar mediante un algoritmo propio con restricciones estrictas, scoring y estrategias de fallback. Incluye gestión y filtrado de jugadoras, comparación y análisis de formaciones, privacidad, estado global, diseño mobile-first y sincronización con Google Sheets mediante un backend desarrollado en Apps Script.",
+      "en": "End-to-end design and development of Armaduki, a personal application born from a real need to manage players and generate balanced 5v5 teams. The system combines roles, ratings, football attributes, social preferences, incompatibilities, and goalkeeper willingness through a custom algorithm with strict constraints, scoring, and fallback strategies. It includes player management and filtering, lineup comparison and analysis, privacy controls, global state, mobile-first design, and Google Sheets synchronization through an Apps Script backend."
+    },
+    "role": {
+      "es": "Creadora, Product Designer y Full Stack Developer",
+      "en": "Creator, Product Designer & Full Stack Developer"
+    },
+    "stack": [
+      "Vite 7",
+      "React 19",
+      "TypeScript 5.9",
+      "React Router 7",
+      "Zustand 5",
+      "Google Apps Script",
+      "Google Sheets",
+      "Vercel"
+    ],
+    "card": {
+      "title": {
+        "es": "Armaduki — Generador 5v5",
+        "en": "Armaduki — 5v5 Team Generator"
+      },
+      "description": {
+        "es": "Creadora, diseño de producto y desarrollo full stack",
+        "en": "Creator, Product Designer & Full Stack Developer"
+      },
+      "stack": ["React", "TypeScript", "Zustand", "Apps Script", "Google Sheets"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/armaduki-team-generator.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Interfaz de Armaduki con el listado de jugadoras, sus posiciones y perfiles",
+          "en": "Armaduki interface showing the player roster, positions, and profiles"
+        }
+      }
+    },
+    "links": {
+      "live": "https://armaduki.vercel.app/",
+      "repository": "https://github.com/AnVolkova10/armaduki"
+    }
+  },
+  {
+    "id": "volkovas-battleship-game",
+    "slug": "volkovas-battleship-javascript-game",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 19,
+    "date": "2022-03",
+    "aiAssisted": false,
+    "title": {
+      "es": "Volkova's Battleship — Juego de batalla naval",
+      "en": "Volkova's Battleship — Battleship Game"
+    },
+    "summary": {
+      "es": "Juego web de batalla naval desarrollado como proyecto de aprendizaje en JavaScript. Implementa un tablero de 7×7, generación aleatoria de barcos, validación de coordenadas, control de disparos repetidos y estados visuales de impacto, fallo y barco hundido mediante una separación simple entre vista, modelo y controlador.",
+      "en": "Browser-based Battleship game built as a JavaScript learning project. It implements a 7×7 board, random ship placement, coordinate validation, repeated-shot handling, and visual hit, miss, and sunk states through a simple separation between view, model, and controller."
+    },
+    "role": {
+      "es": "Diseñadora y desarrolladora del videojuego",
+      "en": "Game Designer & Developer"
+    },
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "card": {
+      "title": {
+        "es": "Battleship Game",
+        "en": "Battleship Game"
+      },
+      "description": {
+        "es": "Diseño y desarrollo del videojuego",
+        "en": "Game Design & Development"
+      },
+      "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/volkovas-battleship-game.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Tablero verde del juego Battleship con coordenadas, disparos y controles",
+          "en": "Green Battleship game board with coordinates, shots, and controls"
+        }
+      }
+    },
+    "links": {
+      "live": "https://anvolkova10.github.io/VolkosBattleship/",
+      "repository": "https://github.com/AnVolkova10/VolkosBattleship"
+    }
+  },
+  {
+    "id": "simple-store-page",
+    "slug": "simple-store-smartwatch-product-page",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 20,
+    "date": "2022-01",
+    "aiAssisted": false,
+    "title": {
+      "es": "Simple Store Page — Experiencia de producto",
+      "en": "Simple Store Page — Product Experience"
+    },
+    "summary": {
+      "es": "Página de producto desarrollada con React para explorar variantes de color de un smartwatch y alternar entre hora, frecuencia cardíaca, cronómetro y clima. Incluye una interfaz dividida en componentes, manejo de estados locales, datos de producto, acciones de compra e interacciones visuales.",
+      "en": "React product page for exploring smartwatch color variants and switching between time, heart rate, stopwatch, and weather features. It includes a component-based interface, local state management, product data, purchase actions, and visual interactions."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend",
+      "en": "Frontend Developer"
+    },
+    "stack": [
+      "Create React App",
+      "React 17",
+      "JavaScript",
+      "CSS",
+      "Semantic UI React",
+      "Moment.js"
+    ],
+    "card": {
+      "title": {
+        "es": "Simple Store Page",
+        "en": "Simple Store Page"
+      },
+      "description": {
+        "es": "Desarrollo frontend e interacción de producto",
+        "en": "Frontend & Product Interaction Development"
+      },
+      "stack": ["React", "JavaScript", "CSS", "Semantic UI", "Moment.js"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/simple-store-page.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Página de producto de un smartwatch con selector de funciones y colores",
+          "en": "Smartwatch product page with feature and color selectors"
+        }
+      }
+    },
+    "links": {
+      "repository": "https://github.com/AnVolkova10/ReactStore",
+      "historical": "https://react-store-bay.vercel.app/"
+    }
+  },
+  {
+    "id": "todo-page",
+    "slug": "react-todo-page-local-storage",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 21,
+    "date": "2022-01",
+    "aiAssisted": false,
+    "title": {
+      "es": "TO-DO Page — Gestión de tareas",
+      "en": "TO-DO Page — Task Management"
+    },
+    "summary": {
+      "es": "Aplicación de tareas desarrollada con React y Context API. Permite buscar, crear, completar y eliminar tareas, persiste la información mediante un hook de localStorage y utiliza un portal para presentar el formulario dentro de un modal.",
+      "en": "Task application built with React and Context API. It supports searching, creating, completing, and deleting tasks, persists data through a custom localStorage hook, and uses a portal to display the creation form inside a modal."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend",
+      "en": "Frontend Developer"
+    },
+    "stack": [
+      "Create React App",
+      "React 17",
+      "Context API",
+      "JavaScript",
+      "CSS",
+      "localStorage",
+      "React Portals"
+    ],
+    "card": {
+      "title": {
+        "es": "TO-DO Page",
+        "en": "TO-DO Page"
+      },
+      "description": {
+        "es": "Desarrollo frontend de aplicación de tareas",
+        "en": "Task Application Frontend Development"
+      },
+      "stack": ["React", "Context API", "JavaScript", "CSS", "localStorage"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/todo-page.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Aplicación TO-DO con contador, buscador, lista de tareas y botón de creación",
+          "en": "TO-DO application with counter, search, task list, and creation button"
+        }
+      }
+    },
+    "links": {
+      "repository": "https://github.com/AnVolkova10/todolist",
+      "historical": "https://todolist-nu-weld.vercel.app/"
+    }
+  },
+  {
+    "id": "marvel-cinematic-timeline",
+    "slug": "marvel-cinematic-universe-timeline",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 22,
+    "date": "2021-10",
+    "aiAssisted": false,
+    "title": {
+      "es": "Marvel Cinematic Timeline — Cronología del MCU",
+      "en": "Marvel Cinematic Timeline — MCU Chronology"
+    },
+    "summary": {
+      "es": "Cronología web extensa del universo cinematográfico de Marvel construida con HTML semántico y CSS. Organiza miles de años de eventos en artículos y secciones, utilizando estilos y códigos visuales diferenciados para personajes, lugares, objetos y conexiones narrativas.",
+      "en": "Extensive web chronology of the Marvel Cinematic Universe built with semantic HTML and CSS. It organizes thousands of years of events into articles and sections, using distinct visual styles for characters, locations, objects, and narrative connections."
+    },
+    "role": {
+      "es": "Diseñadora y desarrolladora Frontend",
+      "en": "Designer & Frontend Developer"
+    },
+    "stack": ["HTML", "CSS", "Semantic HTML", "GitHub Pages"],
+    "card": {
+      "title": {
+        "es": "Marvel Cinematic Timeline",
+        "en": "Marvel Cinematic Timeline"
+      },
+      "description": {
+        "es": "Diseño y desarrollo frontend de cronología",
+        "en": "Timeline Design & Frontend Development"
+      },
+      "stack": ["HTML", "CSS", "Semantic HTML"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/marvel-cinematic-timeline.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Cronología del MCU con eventos históricos y referencias destacadas por color",
+          "en": "MCU timeline with historical events and color-coded references"
+        }
+      }
+    },
+    "links": {
+      "live": "https://anvolkova10.github.io/mcu/",
+      "repository": "https://github.com/AnVolkova10/mcu"
+    }
+  },
+  {
+    "id": "la-sexta-pata-podcast-website",
+    "slug": "la-sexta-pata-podcast-website",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 23,
+    "date": "2021-07",
+    "aiAssisted": false,
+    "title": {
+      "es": "La Sexta Pata — Sitio web del podcast",
+      "en": "La Sexta Pata — Podcast Website"
+    },
+    "summary": {
+      "es": "Diseño y desarrollo del sitio de La Sexta Pata, un podcast de true crime, teorías conspirativas y cultura. Incluye presentación del proyecto, navegación por episodios y conductores, galería, enlaces sociales, espacios de comunidad y flujos experimentales de ingreso y validación con PHP.",
+      "en": "Design and development of the website for La Sexta Pata, a podcast about true crime, conspiracy theories, and culture. It includes the project introduction, episode and host navigation, a gallery, social links, community spaces, and experimental login and validation flows built with PHP."
+    },
+    "role": {
+      "es": "Diseñadora y desarrolladora web",
+      "en": "Web Designer & Developer"
+    },
+    "stack": ["HTML", "CSS", "JavaScript", "PHP", "GitHub Pages"],
+    "card": {
+      "title": {
+        "es": "La Sexta Pata",
+        "en": "La Sexta Pata"
+      },
+      "description": {
+        "es": "Diseño y desarrollo del sitio web",
+        "en": "Website Design & Development"
+      },
+      "stack": ["HTML", "CSS", "JavaScript", "PHP"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/la-sexta-pata-podcast.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Sitio del podcast La Sexta Pata con identidad visual violeta y fotografías",
+          "en": "La Sexta Pata podcast website with purple visual identity and photographs"
+        }
+      }
+    },
+    "links": {
+      "live": "https://anvolkova10.github.io/lasextapata/",
+      "repository": "https://github.com/AnVolkova10/lasextapata"
+    }
+  },
+  {
+    "id": "valorant-game-web-helper",
+    "slug": "valorant-team-strategy-web-helper",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 24,
+    "date": "2021-07",
+    "aiAssisted": false,
+    "title": {
+      "es": "VALORANT Game Web Helper — Asistente de estrategia",
+      "en": "VALORANT Game Web Helper — Strategy Assistant"
+    },
+    "summary": {
+      "es": "Aplicación web de apoyo para armar y comparar composiciones de equipos de VALORANT. Organiza agentes, roles, habilidades y lore, permite seleccionar cinco integrantes por equipo y explora flujos de registro e inicio de sesión mediante PHP.",
+      "en": "Web helper for building and comparing VALORANT team compositions. It organizes agents, roles, abilities, and lore, supports selecting five members per team, and explores registration and login flows through PHP."
+    },
+    "role": {
+      "es": "Diseñadora y desarrolladora Full Stack",
+      "en": "Designer & Full Stack Developer"
+    },
+    "stack": ["HTML", "CSS", "JavaScript", "PHP", "GitHub Pages"],
+    "card": {
+      "title": {
+        "es": "VALORANT Game Web Helper",
+        "en": "VALORANT Game Web Helper"
+      },
+      "description": {
+        "es": "Diseño y desarrollo de asistente estratégico",
+        "en": "Strategy Helper Design & Development"
+      },
+      "stack": ["HTML", "CSS", "JavaScript", "PHP"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/valorant-game-web-helper.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Asistente de estrategia de VALORANT con selección de agentes para dos equipos",
+          "en": "VALORANT strategy helper with agent selection for two teams"
+        }
+      }
+    },
+    "links": {
+      "live": "https://anvolkova10.github.io/ValorantApp/",
+      "repository": "https://github.com/AnVolkova10/ValorantApp"
+    }
+  },
+  {
+    "id": "minified-tetris-game",
+    "slug": "minified-tetris-canvas-game",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 25,
+    "date": "2021-05",
+    "aiAssisted": false,
+    "title": {
+      "es": "Minified Tetris Game — Juego en Canvas",
+      "en": "Minified Tetris Game — Canvas Game"
+    },
+    "summary": {
+      "es": "Versión compacta de Tetris desarrollada con JavaScript y Canvas. Implementa tablero, piezas y colores, movimiento, rotación, colisiones, fijación de bloques, eliminación de líneas y reinicio de partida mediante lógica propia en el navegador.",
+      "en": "Compact Tetris implementation built with JavaScript and Canvas. It implements the board, pieces and colors, movement, rotation, collisions, block placement, line clearing, and game resets through browser-based game logic."
+    },
+    "role": {
+      "es": "Desarrolladora del videojuego",
+      "en": "Game Developer"
+    },
+    "stack": ["HTML", "JavaScript", "Canvas API", "GitHub Pages"],
+    "card": {
+      "title": {
+        "es": "Minified Tetris Game",
+        "en": "Minified Tetris Game"
+      },
+      "description": {
+        "es": "Desarrollo de videojuego en Canvas",
+        "en": "Canvas Game Development"
+      },
+      "stack": ["HTML", "JavaScript", "Canvas API"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/minified-tetris-game.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Juego Tetris minimalista con piezas geométricas de colores",
+          "en": "Minimal Tetris game with colorful geometric pieces"
+        }
+      }
+    },
+    "links": {
+      "live": "https://anvolkova10.github.io/TetrisChiquito/",
+      "repository": "https://github.com/AnVolkova10/TetrisChiquito"
+    }
+  },
+  {
+    "id": "comunidad-valito",
+    "slug": "comunidad-valito-valorant-latam",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 26,
+    "date": "2023-03",
+    "aiAssisted": false,
+    "title": {
+      "es": "Comunidad Valito — Comunidad latinoamericana de VALORANT",
+      "en": "Comunidad Valito — Latin American VALORANT Community"
+    },
+    "summary": {
+      "es": "Participación en una comunidad latinoamericana de VALORANT mediante moderación, administración de página, organización de actividades y acompañamiento de torneos orientados a conectar y sostener a sus integrantes.",
+      "en": "Participation in a Latin American VALORANT community through moderation, page administration, activity coordination, and tournament support focused on connecting and sustaining its members."
+    },
+    "role": {
+      "es": "Moderadora, administradora de página y organizadora de comunidad",
+      "en": "Moderator, Page Administrator & Community Organizer"
+    },
+    "stack": ["Community Management", "Social Media", "Tournaments", "VALORANT"],
+    "card": {
+      "title": {
+        "es": "Comunidad Valito",
+        "en": "Comunidad Valito"
+      },
+      "description": {
+        "es": "Moderación, administración y organización de comunidad",
+        "en": "Community Moderation, Administration & Organization"
+      },
+      "stack": ["Community Management", "Social Media", "Tournaments"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/comunidad-valito.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Arte de Comunidad Valito para torneos de VALORANT",
+          "en": "Comunidad Valito artwork for VALORANT tournaments"
+        }
+      }
+    }
+  },
+  {
+    "id": "futbol-5-team",
+    "slug": "futbol-5-amateur-team",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 27,
+    "date": "2023-03",
+    "aiAssisted": false,
+    "title": {
+      "es": "Fútbol 5 — Equipo amateur",
+      "en": "5-a-Side Football — Amateur Team"
+    },
+    "summary": {
+      "es": "Participación sostenida en un equipo amateur de fútbol 5 como mediocampista, combinando lectura de juego, comunicación, constancia y trabajo colectivo dentro y fuera de la cancha.",
+      "en": "Ongoing participation in an amateur five-a-side football team as a midfielder, combining game awareness, communication, consistency, and teamwork on and off the pitch."
+    },
+    "role": {
+      "es": "Mediocampista",
+      "en": "Midfielder"
+    },
+    "stack": ["Fútbol 5", "Trabajo en equipo", "Entrenamiento"],
+    "card": {
+      "title": {
+        "es": "Equipo de fútbol 5",
+        "en": "5-a-Side Football Team"
+      },
+      "description": {
+        "es": "Mediocampista",
+        "en": "Midfielder"
+      },
+      "stack": ["Fútbol 5", "Trabajo en equipo", "Entrenamiento"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/futbol-5-team.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Equipo amateur de fútbol 5 reunido dentro de la cancha",
+          "en": "Amateur five-a-side football team gathered on the pitch"
+        }
+      }
+    }
+  },
+  {
+    "id": "dungeons-and-dragons-monthly-group",
+    "slug": "dungeons-and-dragons-monthly-group-dungeon-master",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 28,
+    "date": "2023-03",
+    "aiAssisted": false,
+    "title": {
+      "es": "Dungeons & Dragons — Grupo mensual",
+      "en": "Dungeons & Dragons — Monthly Group"
+    },
+    "summary": {
+      "es": "Dirección de partidas mensuales de Dungeons & Dragons, preparando aventuras, mundos, personajes y reglas, y coordinando narración, improvisación y decisiones grupales durante cada sesión.",
+      "en": "Dungeon Master for monthly Dungeons & Dragons sessions, preparing adventures, worlds, characters, and rules while coordinating storytelling, improvisation, and group decisions during each game."
+    },
+    "role": {
+      "es": "Dungeon Master",
+      "en": "Dungeon Master"
+    },
+    "stack": ["Dungeons & Dragons", "Narrativa", "Worldbuilding", "Facilitación"],
+    "card": {
+      "title": {
+        "es": "Grupo mensual de Dungeons & Dragons",
+        "en": "Monthly Dungeons & Dragons Group"
+      },
+      "description": {
+        "es": "Dungeon Master",
+        "en": "Dungeon Master"
+      },
+      "stack": ["Narrativa", "Worldbuilding", "Improvisación", "Facilitación"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/dungeons-and-dragons-monthly-group.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Pantalla de Dungeon Master, dados y mapas preparados para una partida",
+          "en": "Dungeon Master screen, dice, and maps prepared for a game session"
+        }
+      }
+    }
+  },
+  {
+    "id": "deitalab-data-science-courses",
+    "slug": "deitalab-data-science-courses-video-editing",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 29,
+    "date": "2023-05",
+    "aiAssisted": false,
+    "title": {
+      "es": "DeitaLab — Cursos de Data Science",
+      "en": "DeitaLab — Data Science Courses"
+    },
+    "summary": {
+      "es": "Edición de video para los contenidos educativos de los cursos de Data Science de DeitaLab.",
+      "en": "Video editing for the educational content of DeitaLab's Data Science courses."
+    },
+    "role": {
+      "es": "Editora de video",
+      "en": "Video Editor"
+    },
+    "stack": ["Edición de video", "Contenido educativo", "Postproducción audiovisual"],
+    "card": {
+      "title": {
+        "es": "Cursos de Data Science de DeitaLab",
+        "en": "DeitaLab Data Science Courses"
+      },
+      "description": {
+        "es": "Editora de video",
+        "en": "Video Editor"
+      },
+      "stack": ["Edición de video", "Contenido educativo", "Postproducción"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/deitalab-data-science-courses.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de los cursos de Data Science de DeitaLab",
+          "en": "Cover for DeitaLab's Data Science courses"
+        }
+      }
+    },
+    "links": {
+      "live": "https://deitalab.mailerpage.io/cursos"
+    }
+  },
+  {
+    "id": "teleras-santiago-del-estero-documentary-series",
+    "slug": "ministerio-cultura-teleras-santiago-del-estero",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 30,
+    "date": "2023-04",
+    "aiAssisted": false,
+    "title": {
+      "es": "Ministerio de Cultura — Serie documental: Teleras de Santiago del Estero",
+      "en": "Ministry of Culture — Documentary Series: Weavers of Santiago del Estero"
+    },
+    "summary": {
+      "es": "Edición de video para la serie documental sobre las teleras de Santiago del Estero.",
+      "en": "Video editing for the documentary series about the weavers of Santiago del Estero."
+    },
+    "role": {
+      "es": "Editora de video",
+      "en": "Video Editor"
+    },
+    "stack": ["Edición de video", "Documental", "Postproducción audiovisual"],
+    "card": {
+      "title": {
+        "es": "Serie documental: Teleras de Santiago del Estero",
+        "en": "Documentary Series: Weavers of Santiago del Estero"
+      },
+      "description": {
+        "es": "Editora de video",
+        "en": "Video Editor"
+      },
+      "stack": ["Edición de video", "Documental", "Postproducción"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/teleras-santiago-del-estero-documentary-series.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de la serie documental sobre las teleras de Santiago del Estero",
+          "en": "Cover for the documentary series about the weavers of Santiago del Estero"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://youtu.be/1t8wTjuZcN8"
+    }
+  },
+  {
+    "id": "atlas-academy-marketing-courses",
+    "slug": "atlas-academy-marketing-courses-video-editing",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 31,
+    "date": "2022-03",
+    "aiAssisted": false,
+    "title": {
+      "es": "Atlas Academy — Cursos de marketing",
+      "en": "Atlas Academy — Marketing Courses"
+    },
+    "summary": {
+      "es": "Edición de video para los contenidos formativos de los cursos de marketing de Atlas Academy.",
+      "en": "Video editing for the educational content of Atlas Academy's marketing courses."
+    },
+    "role": {
+      "es": "Editora de video",
+      "en": "Video Editor"
+    },
+    "stack": ["Edición de video", "Contenido educativo", "Postproducción audiovisual"],
+    "card": {
+      "title": {
+        "es": "Cursos de marketing: Atlas Academy",
+        "en": "Marketing Courses: Atlas Academy"
+      },
+      "description": {
+        "es": "Editora de video",
+        "en": "Video Editor"
+      },
+      "stack": ["Edición de video", "Contenido educativo", "Postproducción"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/atlas-academy-marketing-courses.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de los cursos de marketing de Atlas Academy",
+          "en": "Cover for Atlas Academy's marketing courses"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=s5tn39aShpQ"
+    }
+  },
+  {
+    "id": "documentary-8-de-enero",
+    "slug": "documentary-8-de-enero-film-editing",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 32,
+    "date": "2022-01",
+    "aiAssisted": false,
+    "title": {
+      "es": "Documental: 8 de Enero",
+      "en": "Documentary: 8 de Enero"
+    },
+    "summary": {
+      "es": "Montaje cinematográfico del documental 8 de Enero.",
+      "en": "Film editing for the documentary 8 de Enero."
+    },
+    "role": {
+      "es": "Montajista",
+      "en": "Film Editor"
+    },
+    "stack": ["Montaje cinematográfico", "Documental", "Postproducción audiovisual"],
+    "card": {
+      "title": {
+        "es": "Documental: 8 de Enero",
+        "en": "Documentary: 8 de Enero"
+      },
+      "description": {
+        "es": "Montajista",
+        "en": "Film Editor"
+      },
+      "stack": ["Montaje cinematográfico", "Documental", "Postproducción"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/documentary-8-de-enero.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del documental 8 de Enero",
+          "en": "Cover for the documentary 8 de Enero"
+        }
+      }
+    },
+    "links": {
+      "caseStudy": "https://www.imdb.com/title/tt27823929/"
+    }
+  },
+  {
+    "id": "social-media-ads-reels-trailers",
+    "slug": "social-media-ads-reels-trailers-video-editing",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 33,
+    "date": "2021-12",
+    "aiAssisted": false,
+    "title": {
+      "es": "Publicidad, reels y tráileres para redes sociales y empresas",
+      "en": "Ads, Reels & Trailers for Social Media & Companies"
+    },
+    "summary": {
+      "es": "Edición de piezas audiovisuales breves para comunicación, redes sociales y empresas, incluyendo publicidad, reels y tráileres.",
+      "en": "Editing of short-form audiovisual pieces for communications, social media, and companies, including ads, reels, and trailers."
+    },
+    "role": {
+      "es": "Editora de video",
+      "en": "Video Editor"
+    },
+    "stack": ["Edición de video", "Contenido para redes sociales", "Postproducción audiovisual"],
+    "card": {
+      "title": {
+        "es": "Publicidad, reels y tráileres para redes y empresas",
+        "en": "Ads, Reels & Trailers for Social Media & Companies"
+      },
+      "description": {
+        "es": "Editora de video",
+        "en": "Video Editor"
+      },
+      "stack": ["Edición de video", "Redes sociales", "Postproducción"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/social-media-ads-reels-trailers.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada de trabajos de publicidad, reels y tráileres",
+          "en": "Cover for advertising, reels, and trailer editing work"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.instagram.com/reel/CXw0S_oljFO/"
+    }
+  },
+  {
+    "id": "a-day-in-a-life-short-film",
+    "slug": "a-day-in-a-life-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 34,
+    "date": "2021-07",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje: A Day in a Life",
+      "en": "Short Film: A Day in a Life"
+    },
+    "summary": {
+      "es": "Cortometraje en el que trabajé como directora, productora, montajista, directora de fotografía y guionista.",
+      "en": "Short film in which I worked as director, producer, film editor, cinematographer, and writer."
+    },
+    "role": {
+      "es": "Directora, productora, montajista, directora de fotografía y guionista",
+      "en": "Director, Producer, Film Editor, Cinematographer & Writer"
+    },
+    "stack": ["Dirección", "Producción", "Montaje", "Dirección de fotografía", "Guion"],
+    "card": {
+      "title": {
+        "es": "Cortometraje: A Day in a Life",
+        "en": "Short Film: A Day in a Life"
+      },
+      "description": {
+        "es": "Dirección, producción, montaje, fotografía y guion",
+        "en": "Director, Producer, Film Editor, Cinematographer & Writer"
+      },
+      "stack": ["Dirección", "Producción", "Montaje", "Fotografía", "Guion"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/a-day-in-a-life-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje A Day in a Life",
+          "en": "Cover for the short film A Day in a Life"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=J4g6-nsCGVs"
+    }
+  },
+  {
+    "id": "de-otro-mundo-animated-short-film",
+    "slug": "de-otro-mundo-animated-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 35,
+    "date": "2019-02",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje animado: De otro mundo",
+      "en": "Animated Short Film: De otro mundo"
+    },
+    "summary": {
+      "es": "Cortometraje animado en el que trabajé como productora, guionista, animadora y montajista.",
+      "en": "Animated short film in which I worked as producer, writer, animator, and film editor."
+    },
+    "role": {
+      "es": "Productora, guionista, animadora y montajista",
+      "en": "Producer, Writer, Animator & Film Editor"
+    },
+    "stack": ["Producción", "Guion", "Animación", "Montaje"],
+    "card": {
+      "title": {
+        "es": "Cortometraje animado: De otro mundo",
+        "en": "Animated Short Film: De otro mundo"
+      },
+      "description": {
+        "es": "Producción, guion, animación y montaje",
+        "en": "Producer, Writer, Animator & Film Editor"
+      },
+      "stack": ["Producción", "Guion", "Animación", "Montaje"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/de-otro-mundo-animated-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje animado De otro mundo",
+          "en": "Cover for the animated short film De otro mundo"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://youtu.be/JTTjqIs7YlM"
+    }
+  },
+  {
+    "id": "distancia-critica-experimental-short-film",
+    "slug": "distancia-critica-experimental-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 36,
+    "date": "2019-01",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje experimental: DISTANCIA CRÍTICA",
+      "en": "Experimental Short Film: DISTANCIA CRÍTICA"
+    },
+    "summary": {
+      "es": "Cortometraje experimental en el que trabajé como directora, guionista y montajista.",
+      "en": "Experimental short film in which I worked as director, writer, and film editor."
+    },
+    "role": {
+      "es": "Directora, guionista y montajista",
+      "en": "Director, Writer & Film Editor"
+    },
+    "stack": ["Dirección", "Guion", "Montaje", "Cine experimental"],
+    "card": {
+      "title": {
+        "es": "Cortometraje experimental: DISTANCIA CRÍTICA",
+        "en": "Experimental Short Film: DISTANCIA CRÍTICA"
+      },
+      "description": {
+        "es": "Dirección, guion y montaje",
+        "en": "Director, Writer & Film Editor"
+      },
+      "stack": ["Dirección", "Guion", "Montaje", "Cine experimental"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/distancia-critica-experimental-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje experimental DISTANCIA CRÍTICA",
+          "en": "Cover for the experimental short film DISTANCIA CRÍTICA"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://youtu.be/aNGeJPVGJyI"
+    }
+  },
+  {
+    "id": "piquenique-short-film",
+    "slug": "piquenique-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 37,
+    "date": "2018-10",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje: Piquenique",
+      "en": "Short Film: Piquenique"
+    },
+    "summary": {
+      "es": "Cortometraje en el que trabajé como directora, guionista y montajista.",
+      "en": "Short film in which I worked as director, writer, and film editor."
+    },
+    "role": {
+      "es": "Directora, guionista y montajista",
+      "en": "Director, Writer & Film Editor"
+    },
+    "stack": ["Dirección", "Guion", "Montaje"],
+    "card": {
+      "title": {
+        "es": "Cortometraje: Piquenique",
+        "en": "Short Film: Piquenique"
+      },
+      "description": {
+        "es": "Dirección, guion y montaje",
+        "en": "Director, Writer & Film Editor"
+      },
+      "stack": ["Dirección", "Guion", "Montaje"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/piquenique-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje Piquenique",
+          "en": "Cover for the short film Piquenique"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://youtu.be/Qpb2eatCaeI"
+    }
+  },
+  {
+    "id": "game-over-animated-short-film",
+    "slug": "game-over-animated-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 38,
+    "date": "2018-07",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje animado: Game Over",
+      "en": "Animated Short Film: Game Over"
+    },
+    "summary": {
+      "es": "Cortometraje animado en el que trabajé como productora, guionista, animadora y montajista.",
+      "en": "Animated short film in which I worked as producer, writer, animator, and film editor."
+    },
+    "role": {
+      "es": "Productora, guionista, animadora y montajista",
+      "en": "Producer, Writer, Animator & Film Editor"
+    },
+    "stack": ["Producción", "Guion", "Animación", "Montaje"],
+    "card": {
+      "title": {
+        "es": "Cortometraje animado: Game Over",
+        "en": "Animated Short Film: Game Over"
+      },
+      "description": {
+        "es": "Producción, guion, animación y montaje",
+        "en": "Producer, Writer, Animator & Film Editor"
+      },
+      "stack": ["Producción", "Guion", "Animación", "Montaje"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/game-over-animated-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje animado Game Over",
+          "en": "Cover for the animated short film Game Over"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=eptHG8I0OGw"
+    }
+  },
+  {
+    "id": "sopa-de-gaviota-short-film",
+    "slug": "sopa-de-gaviota-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 39,
+    "date": "2018-05",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje: Sopa de Gaviota",
+      "en": "Short Film: Sopa de Gaviota"
+    },
+    "summary": {
+      "es": "Cortometraje en el que trabajé como directora, montajista y adaptadora de guion.",
+      "en": "Short film in which I worked as director, film editor, and screenplay adapter."
+    },
+    "role": {
+      "es": "Directora, montajista y adaptadora de guion",
+      "en": "Director, Film Editor & Screenplay Adapter"
+    },
+    "stack": ["Dirección", "Montaje", "Adaptación de guion"],
+    "card": {
+      "title": {
+        "es": "Cortometraje: Sopa de Gaviota",
+        "en": "Short Film: Sopa de Gaviota"
+      },
+      "description": {
+        "es": "Dirección, montaje y adaptación de guion",
+        "en": "Director, Film Editor & Screenplay Adapter"
+      },
+      "stack": ["Dirección", "Montaje", "Adaptación de guion"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/sopa-de-gaviota-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje Sopa de Gaviota",
+          "en": "Cover for the short film Sopa de Gaviota"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=Y6RlBPL1vaU"
+    }
+  },
+  {
+    "id": "conscientemente-tv-show",
+    "slug": "conscientemente-one-shot-tv-show",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 40,
+    "date": "2017-01",
+    "aiAssisted": false,
+    "title": {
+      "es": "Programa unitario de TV: Conscientemente",
+      "en": "One-Shot TV Show: Conscientemente"
+    },
+    "summary": {
+      "es": "Programa unitario de televisión en el que trabajé como productora, guionista y montajista.",
+      "en": "One-shot television program in which I worked as producer, writer, and film editor."
+    },
+    "role": {
+      "es": "Productora, guionista y montajista",
+      "en": "Producer, Writer & Film Editor"
+    },
+    "stack": ["Producción", "Guion", "Montaje", "Televisión"],
+    "card": {
+      "title": {
+        "es": "Programa unitario de TV: Conscientemente",
+        "en": "One-Shot TV Show: Conscientemente"
+      },
+      "description": {
+        "es": "Producción, guion y montaje",
+        "en": "Producer, Writer & Film Editor"
+      },
+      "stack": ["Producción", "Guion", "Montaje", "Televisión"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/conscientemente-tv-show.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del programa unitario Conscientemente",
+          "en": "Cover for the one-shot TV show Conscientemente"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=jcDuR79r7vo"
+    }
+  },
+  {
+    "id": "el-primer-vortex-short-film",
+    "slug": "el-primer-vortex-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 41,
+    "date": "2016-09",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje: El primer Vórtex",
+      "en": "Short Film: El primer Vórtex"
+    },
+    "summary": {
+      "es": "Cortometraje en el que trabajé como directora, guionista, montajista y directora de fotografía.",
+      "en": "Short film in which I worked as director, writer, film editor, and cinematographer."
+    },
+    "role": {
+      "es": "Directora, guionista, montajista y directora de fotografía",
+      "en": "Director, Writer, Film Editor & Cinematographer"
+    },
+    "stack": ["Dirección", "Guion", "Montaje", "Dirección de fotografía"],
+    "card": {
+      "title": {
+        "es": "Cortometraje: El primer Vórtex",
+        "en": "Short Film: El primer Vórtex"
+      },
+      "description": {
+        "es": "Dirección, guion, montaje y fotografía",
+        "en": "Director, Writer, Film Editor & Cinematographer"
+      },
+      "stack": ["Dirección", "Guion", "Montaje", "Fotografía"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/el-primer-vortex-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje El primer Vórtex",
+          "en": "Cover for the short film El primer Vórtex"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=QN-BeSt9RUA"
+    }
+  },
+  {
+    "id": "my-funny-valentine-short-film",
+    "slug": "my-funny-valentine-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 42,
+    "date": "2016-08",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje: My Funny Valentine",
+      "en": "Short Film: My Funny Valentine"
+    },
+    "summary": {
+      "es": "Cortometraje en el que trabajé como productora y montajista.",
+      "en": "Short film in which I worked as producer and film editor."
+    },
+    "role": {
+      "es": "Productora y montajista",
+      "en": "Producer & Film Editor"
+    },
+    "stack": ["Producción", "Montaje"],
+    "card": {
+      "title": {
+        "es": "Cortometraje: My Funny Valentine",
+        "en": "Short Film: My Funny Valentine"
+      },
+      "description": {
+        "es": "Producción y montaje",
+        "en": "Producer & Film Editor"
+      },
+      "stack": ["Producción", "Montaje"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/my-funny-valentine-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje My Funny Valentine",
+          "en": "Cover for the short film My Funny Valentine"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=WvjpIZsgQrU"
+    }
+  },
+  {
+    "id": "un-dia-de-perros-documentary-short-film",
+    "slug": "un-dia-de-perros-documentary-short-film",
+    "status": "published",
+    "category": "audiovisual",
+    "featured": false,
+    "order": 43,
+    "date": "2016-06",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cortometraje documental: Un Día de Perros",
+      "en": "Documentary Short Film: Un Día de Perros"
+    },
+    "summary": {
+      "es": "Cortometraje documental en el que trabajé como productora y montajista.",
+      "en": "Documentary short film in which I worked as producer and film editor."
+    },
+    "role": {
+      "es": "Productora y montajista",
+      "en": "Producer & Film Editor"
+    },
+    "stack": ["Producción", "Montaje", "Documental"],
+    "card": {
+      "title": {
+        "es": "Cortometraje documental: Un Día de Perros",
+        "en": "Documentary Short Film: Un Día de Perros"
+      },
+      "description": {
+        "es": "Producción y montaje",
+        "en": "Producer & Film Editor"
+      },
+      "stack": ["Producción", "Montaje", "Documental"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/un-dia-de-perros-documentary-short-film.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Portada del cortometraje documental Un Día de Perros",
+          "en": "Cover for the documentary short film Un Día de Perros"
+        }
+      }
+    },
+    "links": {
+      "demo": "https://www.youtube.com/watch?v=LhunXPfMcI4"
+    }
   }
 ]

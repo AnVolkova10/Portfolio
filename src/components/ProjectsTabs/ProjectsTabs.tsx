@@ -1,7 +1,10 @@
 import '../ProjectsTabs/ProjectsTabsStyles.scss';
 import { Nav, Row, Tab } from 'react-bootstrap';
-import { projectsDev } from '../../data/projects';
-import { projectsFilm, projectsOthers } from '../../data/site';
+import {
+  projectsDev,
+  projectsFilm,
+  projectsOthers,
+} from '../../data/projects';
 import { ProjectsCard } from '../ProjectsCard/ProjectsCard';
 
 export const ProjectsTabs = () => {
@@ -26,7 +29,7 @@ export const ProjectsTabs = () => {
         <Tab.Pane eventKey='first'>
           <Row>
             {projectsFilm.map((project) => (
-              <ProjectsCard key={project.title} {...project} />
+              <ProjectsCard key={project.id} {...project} />
             ))}
           </Row>
         </Tab.Pane>
@@ -40,7 +43,7 @@ export const ProjectsTabs = () => {
         <Tab.Pane eventKey='third'>
           <Row>
             {projectsOthers.map((project) => (
-              <ProjectsCard key={project.title} {...project} />
+              <ProjectsCard key={project.id} {...project} />
             ))}
           </Row>
         </Tab.Pane>
