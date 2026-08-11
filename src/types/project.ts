@@ -2,7 +2,12 @@ export type Locale = 'es' | 'en';
 
 export type ProjectStatus = 'draft' | 'published' | 'archived';
 
-export type ProjectCategory = 'client' | 'personal' | 'audiovisual' | 'other';
+export type ProjectCategory =
+  | 'professional'
+  | 'own'
+  | 'lab'
+  | 'audiovisual'
+  | 'beyond-code';
 
 export interface LocalizedText {
   es: string;

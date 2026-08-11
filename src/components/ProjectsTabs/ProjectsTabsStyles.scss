@@ -2,13 +2,14 @@
 
 .projects {
   .nav.nav-pills {
-    width: 72%;
+    width: 92%;
     margin: 0 auto;
     border-radius: 50px;
     background-color: rgb(255 255 255 / 10%);
     overflow: hidden;
     .nav-item {
-      width: 33.33333%;
+      width: 20%;
+      display: flex;
     }
     .nav-link {
       background-color: transparent;
@@ -16,7 +17,7 @@
       padding: 17px 0;
       color: #fff;
       width: 100%;
-      font-size: 17px;
+      font-size: 15px;
       letter-spacing: 0.8px;
       font-weight: 500;
       position: relative;
@@ -45,15 +46,15 @@
     .nav-link.active {
       border: 1px solid rgba(255, 255, 255, 1);
     }
-    .nav-link#projects-tabs-tab-first {
+    .nav-item:first-child .nav-link {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 55px 0px 0px 55px;
     }
-    .nav-link#projects-tabs-tab-second {
+    .nav-item:not(:first-child):not(:last-child) .nav-link {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
-    .nav-link#projects-tabs-tab-third {
+    .nav-item:last-child .nav-link {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 0 55px 55px 0;
     }
@@ -63,26 +64,35 @@
 @media (max-width: 992px) {
   .projects {
     .nav.nav-pills {
-      width: 90%;
+      width: 100%;
+      justify-content: flex-start;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 18px;
+      scrollbar-color: index.$primary-color transparent;
+      scrollbar-width: thin;
+
       .nav-item {
-        width: 33.33333%;
+        width: auto;
+        flex: 0 0 auto;
       }
       .nav-link {
+        min-height: 48px;
+        padding: 12px 18px;
         font-size: 13px;
-        letter-spacing: 1.8px;
+        letter-spacing: 1px;
+        white-space: nowrap;
       }
 
       .nav-link.active {
         border: 0.5px solid rgba(255, 255, 255, 1);
       }
-      .nav-link#projects-tabs-tab-first {
-        border: 0.5px solid rgba(255, 255, 255, 0.5);
-      }
-      .nav-link#projects-tabs-tab-second {
-        border-top: 0.5px solid rgba(255, 255, 255, 0.5);
-      }
-      .nav-link#projects-tabs-tab-third {
-        border: 0.5px solid rgba(255, 255, 255, 0.5);
+      .nav-item:first-child .nav-link,
+      .nav-item:not(:first-child):not(:last-child) .nav-link,
+      .nav-item:last-child .nav-link {
+        border: 0;
+        border-radius: 0;
       }
     }
   }

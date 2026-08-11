@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageProvider';
 
 const PERIOD = 2000;
-const INITIAL_DELTA = 300;
+const INITIAL_DELTA = 220;
 
 export const SelfWritingTitle = () => {
   const { messages } = useLanguage();
@@ -32,7 +32,7 @@ export const SelfWritingTitle = () => {
       } else if (isDeleting && updatedText === '') {
         setIsDeleting(false);
         setLoopNum((currentLoop) => currentLoop + 1);
-        setDelta(350 - Math.random() * 100);
+        setDelta(INITIAL_DELTA - Math.random() * 60);
       }
     };
 

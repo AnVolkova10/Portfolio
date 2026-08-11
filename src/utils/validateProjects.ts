@@ -13,10 +13,11 @@ import type {
 
 const projectStatuses: ProjectStatus[] = ['draft', 'published', 'archived'];
 const projectCategories: ProjectCategory[] = [
-  'client',
-  'personal',
+  'professional',
+  'own',
+  'lab',
   'audiovisual',
-  'other',
+  'beyond-code',
 ];
 
 const validationError = (path: string, message: string): never => {

@@ -2,6 +2,7 @@ import rawProjects from './projects.json';
 import type {
   Locale,
   Project,
+  ProjectCategory,
   ProjectCardViewModel,
 } from '../types/project';
 import { resolvePublicAsset } from '../utils/resolvePublicAsset';
@@ -105,24 +106,10 @@ export const publishedProjects = projects
   .filter((project) => project.status === 'published')
   .sort(compareProjects);
 
-export const getProjectsDev = (locale: Locale = 'en'): ProjectCardViewModel[] =>
-  publishedProjects
-    .filter(
-      (project) =>
-        project.category !== 'other' && project.category !== 'audiovisual',
-    )
-    .map((project) => toProjectCard(project, locale));
-
-export const getProjectsOthers = (
+export const getProjectsByCategory = (
+  category: ProjectCategory,
   locale: Locale = 'en',
 ): ProjectCardViewModel[] =>
   publishedProjects
-    .filter((project) => project.category === 'other')
-    .map((project) => toProjectCard(project, locale));
-
-export const getProjectsFilm = (
-  locale: Locale = 'en',
-): ProjectCardViewModel[] =>
-  publishedProjects
-    .filter((project) => project.category === 'audiovisual')
+    .filter((project) => project.category === category)
     .map((project) => toProjectCard(project, locale));

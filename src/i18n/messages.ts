@@ -1,78 +1,80 @@
-import type { Locale, LocalizedText } from '../types/project';
+import type { Locale, LocalizedText } from '../types/project'
 
 export interface SiteMessages {
   meta: {
-    title: string;
-    description: string;
-  };
+    title: string
+    description: string
+  }
   language: {
-    label: string;
-    spanish: string;
-    english: string;
-  };
+    label: string
+    spanish: string
+    english: string
+  }
   nav: {
-    home: string;
-    skills: string;
-    projects: string;
-    resume: string;
-    connect: string;
-    logoAlt: string;
-    toggleMenu: string;
-  };
+    home: string
+    skills: string
+    projects: string
+    resume: string
+    connect: string
+    logoAlt: string
+    toggleMenu: string
+  }
   banner: {
-    tagline: string;
-    headingPrefix: string;
-    roles: string[];
+    tagline: string
+    headingPrefix: string
+    roles: string[]
     bio: {
-      namePrefix: string;
-      knownAsPrefix: string;
-      journey: string;
-      belief: string;
-      learning: string;
-      coding: string;
-      life: string;
-      ravennaPrefix: string;
-    };
-    catAlt: string;
-    babyAlt: string;
-    connect: string;
-  };
+      namePrefix: string
+      knownAsPrefix: string
+      journey: string
+      belief: string
+      learning: string
+      coding: string
+      life: string
+      ravennaPrefix: string
+    }
+    catAlt: string
+    babyAlt: string
+    connect: string
+  }
   skills: {
-    title: string;
-    description: string;
-    backgroundAlt: string;
-  };
+    title: string
+    description: string
+    backgroundAlt: string
+  }
   projects: {
-    title: string;
-    description: string;
+    title: string
+    description: string
     tabs: {
-      film: string;
-      development: string;
-      others: string;
-    };
-    openProject: string;
-    openDemo: string;
-    openCaseStudy: string;
-    openRepository: string;
-  };
+      professional: string
+      own: string
+      lab: string
+      audiovisual: string
+      beyondCode: string
+    }
+    openProject: string
+    openDemo: string
+    openCaseStudy: string
+    openRepository: string
+  }
   contact: {
-    title: string;
-    imageAlt: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    message: string;
-    send: string;
-    sending: string;
-    sent: string;
-    success: string;
-    error: string;
-  };
+    title: string
+    imageAlt: string
+    firstName: string
+    lastName: string
+    email: string
+    phone: string
+    message: string
+    send: string
+    sending: string
+    sent: string
+    success: string
+    error: string
+  }
   footer: {
-    logoAlt: string;
-    rights: string;
-  };
+    logoAlt: string
+    rights: string
+  }
 }
 
 export const messages: Record<Locale, SiteMessages> = {
@@ -105,6 +107,7 @@ export const messages: Record<Locale, SiteMessages> = {
         '¡Desarrolladora Three.js!',
         '¡Editora de video!',
         '¡Realizadora audiovisual!',
+        '¡Futbolista!',
         '¡Gamer!',
       ],
       bio: {
@@ -116,8 +119,7 @@ export const messages: Record<Locale, SiteMessages> = {
         learning:
           '. Como aprendiz de por vida, quiero absorber todo el conocimiento posible antes de que se acabe el tiempo. Al fin encontré un trabajo que amo: ',
         coding: '¡PROGRAMAR!',
-        life:
-          ' Disfruto pasar tiempo con mi computadora, devoro libros y juego videojuegos siempre que puedo. También juego al fútbol con amigas, porque el trabajo en equipo y la alegría importan tanto fuera de la pantalla como dentro de ella. Hace poco me recibí de Licenciada en Artes Audiovisuales, y eso afinó mi forma de pensar las historias, la imagen y las interfaces.',
+        life: ' Disfruto pasar tiempo con mi computadora, devoro libros y juego videojuegos siempre que puedo. También juego al fútbol con amigxs, porque el trabajo en equipo y la alegría importan tanto fuera de la pantalla como dentro de ella. Hace poco me recibí de Licenciada en Artes Audiovisuales, y eso afinó mi forma de pensar las historias, la imagen y las interfaces.',
         ravennaPrefix: ' Mi alma gemela es una gata llamada ',
       },
       catAlt: 'Ilustración de una gata programando',
@@ -135,9 +137,11 @@ export const messages: Record<Locale, SiteMessages> = {
       description:
         'Como programadora y realizadora audiovisual, me entusiasma compartir la diversidad de habilidades y proyectos que atraviesan mi trabajo. Acá vas a encontrar desde soluciones de software hasta piezas audiovisuales: cada experiencia refleja mi creatividad, mis conocimientos técnicos y mi pasión por contar historias.',
       tabs: {
-        film: 'AUDIOVISUAL',
-        development: 'DEV',
-        others: 'OTROS',
+        professional: 'PROFESIONAL',
+        own: 'PROPIOS',
+        lab: 'LAB',
+        audiovisual: 'AUDIOVISUAL',
+        beyondCode: 'MÁS ALLÁ DEL CÓDIGO',
       },
       openProject: 'Abrir',
       openDemo: 'Abrir demo de',
@@ -192,6 +196,7 @@ export const messages: Record<Locale, SiteMessages> = {
         'Three.js Developer!',
         'Video Editor!',
         'Filmmaker!',
+        'Football Player!',
         'Gamer!',
       ],
       bio: {
@@ -203,8 +208,7 @@ export const messages: Record<Locale, SiteMessages> = {
         learning:
           ". As a lifelong learner, I'm on a mission to soak up as much knowledge as possible before my time is up. I finally found a job I love: ",
         coding: 'CODING!',
-        life:
-          ' I enjoy spending time with my computer, I eat books for dinner, and I play video games whenever I can. I also play football with friends, because teamwork and joy matter as much off the screen as they do on it. I recently earned my degree in Audiovisual Arts, which sharpened how I think about story, image, and interface.',
+        life: ' I enjoy spending time with my computer, I eat books for dinner, and I play video games whenever I can. I also play football with friends, because teamwork and joy matter as much off the screen as they do on it. I recently earned my degree in Audiovisual Arts, which sharpened how I think about story, image, and interface.',
         ravennaPrefix: ' My soulmate is a cat named ',
       },
       catAlt: 'Illustration of a cat coding',
@@ -222,9 +226,11 @@ export const messages: Record<Locale, SiteMessages> = {
       description:
         'As a programmer and filmmaker, I am excited to share the diverse range of skills and projects behind my work. From software solutions to audiovisual pieces, each experience reflects my creativity, technical expertise, and passion for storytelling.',
       tabs: {
-        film: 'FILM',
-        development: 'DEV',
-        others: 'OTHERS',
+        professional: 'PROFESSIONAL',
+        own: 'OWN PROJECTS',
+        lab: 'LAB',
+        audiovisual: 'AUDIOVISUAL',
+        beyondCode: 'BEYOND CODE',
       },
       openProject: 'Open',
       openDemo: 'Open demo for',
@@ -250,7 +256,7 @@ export const messages: Record<Locale, SiteMessages> = {
       rights: 'All rights reserved.',
     },
   },
-};
+}
 
 const stackLabels: Record<string, LocalizedText> = {
   'Adaptación de guion': {
@@ -294,7 +300,7 @@ const stackLabels: Record<string, LocalizedText> = {
   Tournaments: { es: 'Torneos', en: 'Tournaments' },
   'Trabajo en equipo': { es: 'Trabajo en equipo', en: 'Teamwork' },
   Worldbuilding: { es: 'Construcción de mundos', en: 'Worldbuilding' },
-};
+}
 
 export const translateStackItem = (item: string, locale: Locale): string =>
-  stackLabels[item]?.[locale] ?? item;
+  stackLabels[item]?.[locale] ?? item
