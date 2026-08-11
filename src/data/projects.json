@@ -914,6 +914,65 @@
     }
   },
   {
+    "id": "leaf-stamp-contractor-platform",
+    "slug": "leaf-stamp-contractor-platform",
+    "status": "published",
+    "category": "client",
+    "featured": false,
+    "order": 18,
+    "date": "2023-10",
+    "aiAssisted": false,
+    "title": {
+      "es": "Leaf Stamp — Plataforma de gestión para contratistas",
+      "en": "Leaf Stamp — Contractor Management Platform"
+    },
+    "summary": {
+      "es": "Implementación frontend y maquetación responsive de un prototipo navegable para un cliente indirecto estadounidense del sector de plomería y servicios técnicos, desarrollado a partir de diseños provistos. Construí las vistas de usuario y administración para trabajos, rebates, inventario, empresas, programas, códigos postales y carga de datos, junto con tablas, filtros, formularios, modales, firma y visualizaciones. El alcance fue exclusivamente frontend con datos simulados: no incluyó backend ni integraciones productivas.",
+      "en": "Frontend implementation and responsive markup of a navigable prototype for an indirect US client in the plumbing and contractor-services sector, built from supplied designs. I created the user and admin views for jobs, rebates, inventory, companies, programs, ZIP codes, and data uploads, along with tables, filters, forms, modals, signatures, and data visualizations. The scope was exclusively frontend with simulated data and did not include a backend or production integrations."
+    },
+    "role": {
+      "es": "Desarrolladora Frontend — Implementación de markup responsive",
+      "en": "Frontend Developer — Responsive Markup Implementation"
+    },
+    "stack": [
+      "Handlebars",
+      "JavaScript",
+      "Sass",
+      "Webpack 5",
+      "Chart.js",
+      "jQuery",
+      "Bootstrap",
+      "Materialize",
+      "DataTables",
+      "Signature Pad"
+    ],
+    "card": {
+      "title": {
+        "es": "Leaf Stamp",
+        "en": "Leaf Stamp"
+      },
+      "description": {
+        "es": "Maquetación frontend responsive para contratistas",
+        "en": "Responsive Frontend Markup for Contractors"
+      },
+      "stack": ["Handlebars", "JavaScript", "Sass", "Webpack 5", "Chart.js"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/leaf-stamp-dashboard.png",
+        "width": 519,
+        "height": 380,
+        "alt": {
+          "es": "Dashboard de Leaf Stamp con trabajos y resumen de rebates",
+          "en": "Leaf Stamp dashboard showing jobs and a rebates summary"
+        }
+      }
+    },
+    "links": {
+      "live": "https://leaf-stamp-app.vercel.app/"
+    }
+  },
+  {
     "id": "istv-inner-space",
     "slug": "istv-inner-space-subscriptions",
     "status": "published",
@@ -1824,6 +1883,74 @@
     }
   },
   {
+    "id": "volkos-food",
+    "slug": "volkos-food-home-kitchen-manager",
+    "status": "published",
+    "category": "personal",
+    "featured": false,
+    "order": 19,
+    "date": "2026-06",
+    "aiAssisted": true,
+    "workInProgress": true,
+    "aiUsage": {
+      "tool": "Codex",
+      "model": "GPT-5.5",
+      "purpose": {
+        "es": "Asistencia material bajo mi dirección para definir la arquitectura, modelar los datos e implementar y refactorizar el frontend y la API en Google Apps Script.",
+        "en": "Material assistance under my direction to define the architecture, model the data, and implement and refactor the frontend and Google Apps Script API."
+      }
+    },
+    "title": {
+      "es": "Volko's Food — Cocina e inventario doméstico",
+      "en": "Volko's Food — Home Kitchen & Inventory Manager"
+    },
+    "summary": {
+      "es": "Diseño y desarrollo full stack de una aplicación personal para decidir qué cocinar según el inventario disponible, administrar ingredientes, stock, precios por mercado y recetas, generar listas de faltantes y descontar cantidades al cocinar. Construí el frontend mobile-first y una API en Google Apps Script conectada a Google Sheets, con validación de datos, relaciones entre recetas e ingredientes, alternativas locales y manejo explícito de errores. El MVP está funcional y publicado, pero el producto continúa en desarrollo.",
+      "en": "End-to-end product design and full stack development of a personal application for deciding what to cook from the available inventory, managing ingredients, stock, market-specific prices and recipes, generating missing-item lists, and deducting quantities after cooking. I built the mobile-first frontend and a Google Apps Script API connected to Google Sheets, including data validation, recipe-to-ingredient relationships, local alternatives, and explicit error handling. The MVP is functional and published, while the product remains under active development."
+    },
+    "role": {
+      "es": "Creadora, diseñadora de producto y desarrolladora full stack",
+      "en": "Creator, Product Designer & Full Stack Developer"
+    },
+    "stack": [
+      "Vite 8",
+      "React 19",
+      "TypeScript 6",
+      "Tailwind CSS 4",
+      "Zustand 5",
+      "Google Apps Script",
+      "Google Sheets",
+      "REST API",
+      "Vercel"
+    ],
+    "card": {
+      "title": {
+        "es": "Volko's Food — ¿Qué puedo cocinar?",
+        "en": "Volko's Food — What Can I Cook?"
+      },
+      "description": {
+        "es": "Creadora, diseño de producto y desarrollo full stack",
+        "en": "Creator, Product Designer & Full Stack Developer"
+      },
+      "stack": ["React", "TypeScript", "Zustand", "Apps Script", "Google Sheets"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/volkos-food-wip.png",
+        "width": 979,
+        "height": 626,
+        "alt": {
+          "es": "Pantalla de Volko's Food con recetas disponibles según el inventario",
+          "en": "Volko's Food screen showing recipes available from the current inventory"
+        }
+      }
+    },
+    "links": {
+      "live": "https://volkos-food.vercel.app/",
+      "repository": "https://github.com/AnVolkova10/volkos-food"
+    }
+  },
+  {
     "id": "armaduki-team-generator",
     "slug": "armaduki-intelligent-5v5-team-generator",
     "status": "published",
@@ -2293,48 +2420,99 @@
     }
   },
   {
-    "id": "futbol-5-team",
-    "slug": "futbol-5-amateur-team",
+    "id": "saladillo-fc",
+    "slug": "saladillo-fc-football-7-right-winger",
     "status": "published",
     "category": "other",
     "featured": false,
     "order": 27,
-    "date": "2023-03",
+    "date": "2026-02",
     "aiAssisted": false,
     "title": {
-      "es": "Fútbol 5 — Equipo amateur",
-      "en": "5-a-Side Football — Amateur Team"
+      "es": "Saladillo FC — Fútbol 7",
+      "en": "Saladillo FC — 7-a-Side Football"
     },
     "summary": {
-      "es": "Participación sostenida en un equipo amateur de fútbol 5 como mediocampista, combinando lectura de juego, comunicación, constancia y trabajo colectivo dentro y fuera de la cancha.",
-      "en": "Ongoing participation in an amateur five-a-side football team as a midfielder, combining game awareness, communication, consistency, and teamwork on and off the pitch."
+      "es": "Participación en Saladillo FC desde febrero de 2026, jugando fútbol 7 como extrema derecha dentro de un espacio de entrenamiento, competencia y trabajo colectivo.",
+      "en": "Playing for Saladillo FC since February 2026 in seven-a-side football as a right winger, within a team environment focused on training, competition, and collective play."
     },
     "role": {
-      "es": "Mediocampista",
-      "en": "Midfielder"
+      "es": "Extrema derecha",
+      "en": "Right Winger"
     },
-    "stack": ["Fútbol 5", "Trabajo en equipo", "Entrenamiento"],
+    "stack": ["Fútbol 7", "Extrema derecha", "Trabajo en equipo"],
     "card": {
       "title": {
-        "es": "Equipo de fútbol 5",
-        "en": "5-a-Side Football Team"
+        "es": "Saladillo FC",
+        "en": "Saladillo FC"
       },
       "description": {
-        "es": "Mediocampista",
-        "en": "Midfielder"
+        "es": "Fútbol 7 — Extrema derecha",
+        "en": "7-a-Side Football — Right Winger"
+      },
+      "stack": ["Fútbol 7", "Trabajo en equipo", "Entrenamiento"]
+    },
+    "media": {
+      "image": {
+        "file": "images/projects/saladillo-fc.jpeg",
+        "width": 543,
+        "height": 383,
+        "alt": {
+          "es": "Plantel de Saladillo FC reunido en una cancha de fútbol",
+          "en": "Saladillo FC squad gathered on a football pitch"
+        }
+      }
+    },
+    "links": {
+      "live": "https://www.instagram.com/saladillofc.fem/"
+    }
+  },
+  {
+    "id": "cocucha-fc",
+    "slug": "cocucha-fc-football-5-right-wing",
+    "status": "published",
+    "category": "other",
+    "featured": false,
+    "order": 28,
+    "date": "2025-05",
+    "aiAssisted": false,
+    "title": {
+      "es": "Cocucha FC — Fútbol 5",
+      "en": "Cocucha FC — 5-a-Side Football"
+    },
+    "summary": {
+      "es": "Participación en Cocucha FC desde mayo de 2025, jugando fútbol 5 como ala derecha y sosteniendo una experiencia de competencia, constancia y trabajo en equipo.",
+      "en": "Playing for Cocucha FC since May 2025 in five-a-side football as a right winger, sustaining an experience built around competition, consistency, and teamwork."
+    },
+    "role": {
+      "es": "Ala derecha",
+      "en": "Right Winger"
+    },
+    "stack": ["Fútbol 5", "Ala derecha", "Trabajo en equipo"],
+    "card": {
+      "title": {
+        "es": "Cocucha FC",
+        "en": "Cocucha FC"
+      },
+      "description": {
+        "es": "Fútbol 5 — Ala derecha",
+        "en": "5-a-Side Football — Right Winger"
       },
       "stack": ["Fútbol 5", "Trabajo en equipo", "Entrenamiento"]
     },
     "media": {
       "image": {
-        "file": "images/projects/futbol-5-team.png",
-        "width": 519,
-        "height": 380,
+        "file": "images/projects/cocucha-fc.jpeg",
+        "width": 1572,
+        "height": 1144,
         "alt": {
-          "es": "Equipo amateur de fútbol 5 reunido dentro de la cancha",
-          "en": "Amateur five-a-side football team gathered on the pitch"
+          "es": "Plantel de Cocucha FC reunido junto a una cancha de fútbol",
+          "en": "Cocucha FC squad gathered beside a football pitch"
         }
       }
+    },
+    "links": {
+      "live": "https://www.instagram.com/cocuchafc/"
     }
   },
   {

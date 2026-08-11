@@ -8,6 +8,8 @@ interface ProjectsCardProps {
   featured?: boolean;
   aiAssisted?: boolean;
   aiAssistedLabel?: string;
+  workInProgress?: boolean;
+  workInProgressLabel?: string;
   aiUsage?: string;
   imgUrl: string;
   imgAlt?: string;
@@ -27,6 +29,8 @@ export const ProjectsCard = ({
   featured = false,
   aiAssisted = false,
   aiAssistedLabel = 'AI Assisted',
+  workInProgress = false,
+  workInProgressLabel = 'Work in progress',
   aiUsage,
   imgUrl,
   imgAlt,
@@ -60,6 +64,15 @@ export const ProjectsCard = ({
       />
       {aiAssisted && (
         <span className='ai-assisted-badge'>{aiAssistedLabel}</span>
+      )}
+      {workInProgress && (
+        <span
+          aria-label={workInProgressLabel}
+          className='wip-badge'
+          title={workInProgressLabel}
+        >
+          WIP
+        </span>
       )}
       <div className='proj-txtx'>
         <h4>{title}</h4>

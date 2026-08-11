@@ -65,6 +65,7 @@ export interface Project {
   productionCompany?: string;
   company?: string;
   aiAssisted: boolean;
+  workInProgress: boolean;
   aiUsage?: ProjectAiUsage;
   title: LocalizedText;
   summary: LocalizedText;
@@ -82,6 +83,8 @@ export interface ProjectCardViewModel {
   featured?: boolean;
   aiAssisted?: boolean;
   aiAssistedLabel?: string;
+  workInProgress?: boolean;
+  workInProgressLabel?: string;
   aiUsage?: string;
   languages?: string;
   imgUrl: string;

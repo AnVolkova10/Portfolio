@@ -79,6 +79,9 @@ const toProjectCard = (
     featured: project.featured,
     aiAssisted: project.aiAssisted,
     aiAssistedLabel: locale === 'es' ? 'Asistido con IA' : 'AI Assisted',
+    workInProgress: project.workInProgress,
+    workInProgressLabel:
+      locale === 'es' ? 'Proyecto en desarrollo' : 'Work in progress',
     aiUsage: formatAiUsage(project, locale),
     languages:
       project.category === 'audiovisual'

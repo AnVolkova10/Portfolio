@@ -78,7 +78,7 @@ export interface SiteMessages {
 export const messages: Record<Locale, SiteMessages> = {
   es: {
     meta: {
-      title: 'Ángela Curzi | Desarrolladora Frontend',
+      title: 'Ángela Curzi aka Volkova - Web',
       description:
         'Portfolio de Ángela Curzi, desarrolladora frontend y realizadora audiovisual especializada en experiencias web interactivas.',
     },
@@ -165,7 +165,7 @@ export const messages: Record<Locale, SiteMessages> = {
   },
   en: {
     meta: {
-      title: 'Ángela Curzi | Frontend Developer',
+      title: 'Ángela Curzi aka Volkova - Web',
       description:
         'Portfolio of Ángela Curzi, a frontend developer and filmmaker specializing in interactive web experiences.',
     },
@@ -274,6 +274,9 @@ const stackLabels: Record<string, LocalizedText> = {
   Facilitación: { es: 'Facilitación', en: 'Facilitation' },
   Fotografía: { es: 'Fotografía', en: 'Cinematography' },
   'Fútbol 5': { es: 'Fútbol 5', en: '5-a-Side Football' },
+  'Fútbol 7': { es: 'Fútbol 7', en: '7-a-Side Football' },
+  'Ala derecha': { es: 'Ala derecha', en: 'Right Winger' },
+  'Extrema derecha': { es: 'Extrema derecha', en: 'Right Winger' },
   Guion: { es: 'Guion', en: 'Screenwriting' },
   Improvisación: { es: 'Improvisación', en: 'Improvisation' },
   Montaje: { es: 'Montaje', en: 'Film Editing' },

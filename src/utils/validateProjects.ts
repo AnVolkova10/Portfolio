@@ -220,6 +220,9 @@ const requireProject = (value: unknown, path: string): Project => {
     project.aiAssisted,
     `${path}.aiAssisted`,
   );
+  const workInProgress = project.workInProgress === undefined
+    ? false
+    : requireBoolean(project.workInProgress, `${path}.workInProgress`);
 
   if (status === 'published' && !media.image) {
     return validationError(
@@ -251,6 +254,7 @@ const requireProject = (value: unknown, path: string): Project => {
     ),
     company: requireOptionalString(project.company, `${path}.company`),
     aiAssisted,
+    workInProgress,
     aiUsage,
     title: requireLocalizedText(project.title, `${path}.title`),
     summary: requireLocalizedText(project.summary, `${path}.summary`),
