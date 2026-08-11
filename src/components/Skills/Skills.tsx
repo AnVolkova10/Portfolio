@@ -17,7 +17,9 @@ export const Skills = () => {
             <div className='skill-bx'>
               {' '}
               <h2>{messages.skills.title}</h2>
-              <p>{messages.skills.description}</p>
+              <p className='skill-bx__description'>
+                {messages.skills.description}
+              </p>
               <SkillsCarousel />
             </div>
           </Col>

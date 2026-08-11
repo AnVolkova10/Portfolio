@@ -17,7 +17,7 @@
       font-weight: 700;
     }
 
-    p {
+    .skill-bx__description {
       color: #b8b8b8;
       font-size: 18px;
       letter-spacing: 0.8px;
@@ -27,18 +27,6 @@
       padding-right: 60px;
     }
 
-    .skill-slider {
-      width: 70%;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .item {
-      img {
-        width: 50%;
-        margin: 0 auto 15px auto;
-      }
-    }
   }
   .background-image-left {
     position: absolute;
@@ -55,9 +43,10 @@
       h2 {
         font-size: 25px;
       }
-      p {
+      .skill-bx__description {
         font-size: 15px;
         padding: 0;
+        margin-bottom: 48px;
       }
     }
   }

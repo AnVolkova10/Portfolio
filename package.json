@@ -17,7 +17,8 @@
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "19.2.7",
     "react-multi-carousel": "^2.8.2",
-    "sass": "^1.91.0"
+    "sass": "^1.91.0",
+    "simple-icons": "^16.28.0"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

@@ -32,17 +32,34 @@ export const NavBar = () => {
   };
 
   useEffect(() => {
+    const sectionLinks = ['#home', '#skills', '#projects'];
+
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
+
+      let visibleSection = '#home';
+
+      sectionLinks.forEach((sectionLink) => {
+        const section = document.querySelector<HTMLElement>(sectionLink);
+
+        if (section && section.getBoundingClientRect().top <= 120) {
+          visibleSection = sectionLink;
+        }
+      });
+
+      setActiveLink(visibleSection);
     };
 
-    window.addEventListener('scroll', onScroll);
+    const animationFrame = window.requestAnimationFrame(onScroll);
 
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('pageshow', onScroll);
+
+    return () => {
+      window.cancelAnimationFrame(animationFrame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('pageshow', onScroll);
+    };
   }, []);
 
   return (
@@ -64,11 +81,9 @@ export const NavBar = () => {
                 key={link.href}
                 href={link.href}
                 download={link.download}
-                className={
-                  activeLink === link.href
-                    ? 'active-navbar-link'
-                    : 'navbar-link'
-                }
+                className={`navbar-link${
+                  activeLink === link.href ? ' active-navbar-link' : ''
+                }`}
                 onClick={() => onUpdateActiveLink(link.href)}
               >
                 {link.icon ? <span>{link.label}</span> : link.label}
