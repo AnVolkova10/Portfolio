@@ -1888,7 +1888,7 @@
     "status": "published",
     "category": "own",
     "featured": false,
-    "order": 19,
+    "order": 2,
     "date": "2026-06",
     "aiAssisted": true,
     "workInProgress": true,
@@ -2182,43 +2182,60 @@
     "id": "marvel-cinematic-timeline",
     "slug": "marvel-cinematic-universe-timeline",
     "status": "published",
-    "category": "lab",
+    "category": "own",
     "featured": false,
-    "order": 22,
-    "date": "2021-10",
-    "aiAssisted": false,
+    "order": 3,
+    "date": "2026-08",
+    "aiAssisted": true,
+    "aiUsage": {
+      "tool": "Google Antigravity",
+      "model": "Gemini 3.7 Flash",
+      "purpose": {
+        "es": "Rediseño y reconstrucción asistidos bajo mi dirección, incluyendo arquitectura, migración y modelado de datos, interfaz, navegación, filtros, búsqueda, estado persistente y despliegue.",
+        "en": "AI-assisted redesign and rebuild under my direction, including architecture, data migration and modeling, interface, navigation, filters, search, persistent state, and deployment."
+      }
+    },
     "title": {
-      "es": "Marvel Cinematic Timeline — Cronología del MCU",
-      "en": "Marvel Cinematic Timeline — MCU Chronology"
+      "es": "MCU Timeline Archive — Cronología interactiva",
+      "en": "MCU Timeline Archive — Interactive Chronology"
     },
     "summary": {
-      "es": "Cronología web extensa del universo cinematográfico de Marvel construida con HTML semántico y CSS. Organiza miles de años de eventos en artículos y secciones, utilizando estilos y códigos visuales diferenciados para personajes, lugares, objetos y conexiones narrativas.",
-      "en": "Extensive web chronology of the Marvel Cinematic Universe built with semantic HTML and CSS. It organizes thousands of years of events into articles and sections, using distinct visual styles for characters, locations, objects, and narrative connections."
+      "es": "Rediseño y reconstrucción completa de una cronología personal del Universo Cinematográfico de Marvel, evolucionada desde el sitio HTML y CSS que inicié en 2021 hasta una aplicación interactiva con React y TypeScript. Organiza 103 eventos en 43 épocas históricas y permite explorar la cronología, producciones, personajes y Gemas del Infinito; buscar y combinar filtros; abrir fichas relacionadas; guardar eventos; marcar lecturas y consultar estadísticas. Incluye estado persistente en el navegador, una identidad visual inspirada en el MCU y despliegue automatizado en GitHub Pages.",
+      "en": "Complete redesign and rebuild of a personal Marvel Cinematic Universe chronology, evolved from the HTML and CSS site I started in 2021 into an interactive React and TypeScript application. It organizes 103 events across 43 historical eras and lets users explore the timeline, productions, characters, and Infinity Stones; search and combine filters; open related detail views; bookmark events; track reading progress; and review statistics. It includes persistent browser state, an MCU-inspired visual identity, and automated deployment to GitHub Pages."
     },
     "role": {
-      "es": "Diseñadora y desarrolladora Frontend",
-      "en": "Designer & Frontend Developer"
+      "es": "Creadora, diseñadora y desarrolladora Frontend",
+      "en": "Creator, Designer & Frontend Developer"
     },
-    "stack": ["HTML", "CSS", "Semantic HTML", "GitHub Pages"],
+    "stack": [
+      "Vite 8",
+      "React 19",
+      "TypeScript 5.9",
+      "Tailwind CSS 4",
+      "Zustand 5",
+      "localStorage",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
     "card": {
       "title": {
-        "es": "Marvel Cinematic Timeline",
-        "en": "Marvel Cinematic Timeline"
+        "es": "MCU Timeline Archive",
+        "en": "MCU Timeline Archive"
       },
       "description": {
-        "es": "Diseño y desarrollo frontend de cronología",
-        "en": "Timeline Design & Frontend Development"
+        "es": "Creadora, diseño y desarrollo frontend interactivo",
+        "en": "Creator, Interactive Design & Frontend Development"
       },
-      "stack": ["HTML", "CSS", "Semantic HTML"]
+      "stack": ["React", "TypeScript", "Zustand", "Tailwind CSS", "Vite"]
     },
     "media": {
       "image": {
-        "file": "images/projects/marvel-cinematic-timeline.png",
+        "file": "images/projects/mcu-timeline-archive.png",
         "width": 519,
         "height": 380,
         "alt": {
-          "es": "Cronología del MCU con eventos históricos y referencias destacadas por color",
-          "en": "MCU timeline with historical events and color-coded references"
+          "es": "Pantalla de MCU Timeline Archive con navegación, búsqueda y filtros sobre la cronología del Universo Cinematográfico de Marvel",
+          "en": "MCU Timeline Archive screen with navigation, search, and filters for the Marvel Cinematic Universe chronology"
         }
       }
     },
@@ -2282,7 +2299,7 @@
     "status": "published",
     "category": "own",
     "featured": false,
-    "order": 24,
+    "order": 4,
     "date": "2021-07",
     "aiAssisted": false,
     "workInProgress": true,

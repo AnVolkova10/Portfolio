@@ -14,6 +14,14 @@ const compareProjects = (first: Project, second: Project): number => {
     return first.featured ? -1 : 1;
   }
 
+  if (
+    first.category === 'own' &&
+    second.category === 'own' &&
+    first.order !== second.order
+  ) {
+    return first.order - second.order;
+  }
+
   if (!first.featured && !second.featured) {
     const dateComparison = second.date.localeCompare(first.date);
 
